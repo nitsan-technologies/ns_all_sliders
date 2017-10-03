@@ -1,0 +1,159 @@
+
+plugin.tx_nsallsliders_owlcarousel {
+	view {
+		# cat=plugin.tx_nsallsliders_owlcarousel/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ns_all_sliders/Resources/Private/Templates/
+		# cat=plugin.tx_nsallsliders_owlcarousel/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ns_all_sliders/Resources/Private/Partials/
+		# cat=plugin.tx_nsallsliders_owlcarousel/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ns_all_sliders/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=Default storage PID
+		storagePid =
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=autoPlay
+		autoPlay = 3000
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=stopOnHover
+		stopOnHover = true
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=navigation
+		navigation = true
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=paginationSpeed
+		paginationSpeed = 1000
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=goToFirstSpeed
+		goToFirstSpeed = 2000
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=singleItem
+		singleItem = true
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=autoHeight
+		autoHeight = true
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=transitionStyle
+		transitionStyle = fade
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=items
+		items = 1
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=itemsDesktop
+		itemsDesktop = [1199,3]
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=itemsDesktopSmall
+		itemsDesktopSmall = [979,3]
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=lazyLoad
+		lazyLoad = true
+		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=slideSpeed
+		slideSpeed = 300
+		
+	}
+}
+
+plugin.tx_nsallsliders_royalslider {
+	view {
+		# cat=plugin.tx_nsallsliders_royalslider/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ns_all_sliders/Resources/Private/Templates/
+		# cat=plugin.tx_nsallsliders_royalslider/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ns_all_sliders/Resources/Private/Partials/
+		# cat=plugin.tx_nsallsliders_royalslider/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ns_all_sliders/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=Default storage PID
+		storagePid =
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=deeplinking_enabled
+		deeplinking_enabled = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=deeplinking_change
+		deeplinking_change = false
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=slidewidth
+		slidewidth = 1400
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=slideheight
+		slideheight = 680
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=thumbs_appendSpan
+		thumbs_appendSpan = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=thumbs_firstMargin
+		thumbs_firstMargin = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=thumbs_paddingBottom
+		thumbs_paddingBottom = 4
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=arrowsNav
+		arrowsNav = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=loop
+		loop = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=keyboardNavEnabled
+		keyboardNavEnabled = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=controlsInside
+		controlsInside = false
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=imageScaleMode
+		imageScaleMode = fit-if-smaller
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=arrowsNavAutoHide
+		arrowsNavAutoHide = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=autoScaleSlider
+		autoScaleSlider = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=autoScaleSliderWidth
+		autoScaleSliderWidth = 960
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=autoScaleSliderHeight
+		autoScaleSliderHeight = 350
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=controlNavigation
+		controlNavigation = thumbnails
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=thumbsFitInViewport
+		thumbsFitInViewport = false
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=navigateByClick
+		navigateByClick = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=startSlideId
+		startSlideId = 0
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=autoPlay
+		autoPlay = false
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=transitionType
+		transitionType = move
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=globalCaption
+		globalCaption = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=arrowsNavHideOnTouch
+		arrowsNavHideOnTouch = true
+		# cat=plugin.tx_nsallsliders_royalslider//a; type=string; label=globalCaptionInside
+		globalCaptionInside = false
+		
+	}
+}
+
+plugin.tx_nsallsliders_sliderjs {
+	view {
+		# cat=plugin.tx_nsallsliders_sliderjs/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ns_all_sliders/Resources/Private/Templates/
+		# cat=plugin.tx_nsallsliders_sliderjs/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ns_all_sliders/Resources/Private/Partials/
+		# cat=plugin.tx_nsallsliders_sliderjs/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ns_all_sliders/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=Default storage PID
+		storagePid =
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=slidewidth
+		slidewidth = 940
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=slideheight
+		slideheight = 228
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=navigation_effect
+		navigation_effect = fade
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=pagination_effect
+		pagination_effect = fade
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=effect_fade_speed
+		effect_fade_speed = 400
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=play_active
+		play_active = true
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=play_auto
+		play_auto = true
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=play_swap
+		play_swap = true
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=play_interval
+		play_interval = 4000
+		# cat=plugin.tx_nsallsliders_sliderjs//a; type=string; label=navagation
+		navagation = false
+
+	}
+}
+
+plugin.tx_nsallsliders_nivoslider {
+	view {
+		# cat=plugin.tx_nsallsliders_nivoslider/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ns_all_sliders/Resources/Private/Templates/
+		# cat=plugin.tx_nsallsliders_nivoslider/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ns_all_sliders/Resources/Private/Partials/
+		# cat=plugin.tx_nsallsliders_nivoslider/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ns_all_sliders/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_nsallsliders_nivoslider//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

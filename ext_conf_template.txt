@@ -1,0 +1,3 @@
+# cat=General/120_pagets/70; type=boolean; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:configuration.jquery
+jquery = 0
+

@@ -1,0 +1,18 @@
+{namespace custom=Nsallsliders\NsAllSliders\ViewHelpers}
+<!-- The container is used to define the width of the slideshow -->
+<div class="container">
+  <div id="slides">
+    <f:for each="{galleries}" as="people">
+      <f:if condition="{people.image}">
+        <f:for each="{people.image}" as="picture">
+          <f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />">
+            <f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}"/>
+          </f:link.page>
+        </f:for>
+      </f:if>
+    </f:for>
+    <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+    <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+  </div>
+</div>
+<!-- End SlidesJS Required: Start Slides -->

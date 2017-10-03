@@ -1,0 +1,95 @@
+
+plugin.tx_nsallsliders_owlcarousel {
+	view {
+		templateRootPaths.0 = {$plugin.tx_nsallsliders_owlcarousel.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_nsallsliders_owlcarousel.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_nsallsliders_owlcarousel.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_nsallsliders_owlcarousel.persistence.storagePid}
+		autoPlay = {$plugin.tx_nsallsliders_owlcarousel.persistence.autoPlay}
+		stopOnHover = {$plugin.tx_nsallsliders_owlcarousel.persistence.stopOnHover}
+		navigation = {$plugin.tx_nsallsliders_owlcarousel.persistence.navigation}
+		paginationSpeed = {$plugin.tx_nsallsliders_owlcarousel.persistence.paginationSpeed}
+		goToFirstSpeed = {$plugin.tx_nsallsliders_owlcarousel.persistence.goToFirstSpeed}
+		singleItem = {$plugin.tx_nsallsliders_owlcarousel.persistence.singleItem}
+		autoHeight = {$plugin.tx_nsallsliders_owlcarousel.persistence.autoHeight}
+		transitionStyle = {$plugin.tx_nsallsliders_owlcarousel.persistence.transitionStyle}
+		items = {$plugin.tx_nsallsliders_owlcarousel.persistence.items}
+		itemsDesktop = {$plugin.tx_nsallsliders_owlcarousel.persistence.itemsDesktop}
+		itemsDesktopSmall = {$plugin.tx_nsallsliders_owlcarousel.persistence.itemsDesktopSmall}
+		lazyLoad = {$plugin.tx_nsallsliders_owlcarousel.persistence.lazyLoad}
+		slideSpeed = {$plugin.tx_nsallsliders_owlcarousel.persistence.slideSpeed}
+
+	}
+}
+
+plugin.tx_nsallsliders_royalslider {
+	view {
+		templateRootPaths.0 = {$plugin.tx_nsallsliders_royalslider.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_nsallsliders_royalslider.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_nsallsliders_royalslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_nsallsliders_royalslider.persistence.storagePid}
+		deeplinking_enabled = {$plugin.tx_nsallsliders_royalslider.persistence.deeplinking_enabled}
+		deeplinking_change = {$plugin.tx_nsallsliders_royalslider.persistence.deeplinking_change}
+		slidewidth = {$plugin.tx_nsallsliders_royalslider.persistence.slidewidth}
+		slideheight = {$plugin.tx_nsallsliders_royalslider.persistence.slideheight}
+		thumbs_appendSpan = {$plugin.tx_nsallsliders_royalslider.persistence.thumbs_appendSpan}
+		thumbs_firstMargin = {$plugin.tx_nsallsliders_royalslider.persistence.thumbs_firstMargin}
+		thumbs_paddingBottom = {$plugin.tx_nsallsliders_royalslider.persistence.thumbs_paddingBottom}
+		arrowsNav = {$plugin.tx_nsallsliders_royalslider.persistence.arrowsNav}
+		loop = {$plugin.tx_nsallsliders_royalslider.persistence.loop}
+		keyboardNavEnabled = {$plugin.tx_nsallsliders_royalslider.persistence.keyboardNavEnabled}
+		controlsInside = {$plugin.tx_nsallsliders_royalslider.persistence.controlsInside}
+		imageScaleMode = {$plugin.tx_nsallsliders_royalslider.persistence.imageScaleMode}
+		arrowsNavAutoHide = {$plugin.tx_nsallsliders_royalslider.persistence.arrowsNavAutoHide}
+		autoScaleSlider = {$plugin.tx_nsallsliders_royalslider.persistence.autoScaleSlider}
+		autoScaleSliderWidth = {$plugin.tx_nsallsliders_royalslider.persistence.autoScaleSliderWidth}
+		autoScaleSliderHeight = {$plugin.tx_nsallsliders_royalslider.persistence.autoScaleSliderHeight}
+		controlNavigation = {$plugin.tx_nsallsliders_royalslider.persistence.controlNavigation}
+		thumbsFitInViewport = {$plugin.tx_nsallsliders_royalslider.persistence.thumbsFitInViewport}
+		navigateByClick = {$plugin.tx_nsallsliders_royalslider.persistence.navigateByClick}
+		startSlideId = {$plugin.tx_nsallsliders_royalslider.persistence.startSlideId}
+		autoPlay = {$plugin.tx_nsallsliders_royalslider.persistence.autoPlay}
+		transitionType = {$plugin.tx_nsallsliders_royalslider.persistence.transitionType}
+		globalCaption = {$plugin.tx_nsallsliders_royalslider.persistence.globalCaption}
+		arrowsNavHideOnTouch = {$plugin.tx_nsallsliders_royalslider.persistence.arrowsNavHideOnTouch}
+		globalCaptionInside = {$plugin.tx_nsallsliders_royalslider.persistence.globalCaptionInside}
+		
+
+	}
+}
+
+plugin.tx_nsallsliders_sliderjs {
+	view {
+		templateRootPaths.0 = {$plugin.tx_nsallsliders_sliderjs.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_nsallsliders_sliderjs.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_nsallsliders_sliderjs.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_nsallsliders_sliderjs.persistence.storagePid}
+		slidewidth = {$plugin.tx_nsallsliders_sliderjs.persistence.slidewidth}
+		slideheight = {$plugin.tx_nsallsliders_sliderjs.persistence.slideheight}
+		navigation_effect = {$plugin.tx_nsallsliders_sliderjs.persistence.navigation_effect}
+		pagination_effect = {$plugin.tx_nsallsliders_sliderjs.persistence.pagination_effect}
+		effect_fade_speed = {$plugin.tx_nsallsliders_sliderjs.persistence.effect_fade_speed}
+		play_active = {$plugin.tx_nsallsliders_sliderjs.persistence.play_active}
+		play_auto = {$plugin.tx_nsallsliders_sliderjs.persistence.play_auto}
+		play_swap = {$plugin.tx_nsallsliders_sliderjs.persistence.play_swap}
+		play_interval = {$plugin.tx_nsallsliders_sliderjs.persistence.play_interval}
+		navagation = {$plugin.tx_nsallsliders_sliderjs.persistence.navagation}
+	}
+}
+
+plugin.tx_nsallsliders_nivoslider {
+	view {
+		templateRootPaths.0 = {$plugin.tx_nsallsliders_nivoslider.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_nsallsliders_nivoslider.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_nsallsliders_nivoslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_nsallsliders_nivoslider.persistence.storagePid}
+	}
+}

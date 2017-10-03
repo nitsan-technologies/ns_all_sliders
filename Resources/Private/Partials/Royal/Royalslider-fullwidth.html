@@ -1,0 +1,20 @@
+{namespace custom=Nsallsliders\NsAllSliders\ViewHelpers}
+<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+    <f:for each="{galleries}" as="people">
+        <f:if condition="{people.image}">
+            <f:for each="{people.image}" as="picture">
+                <div class="rsContent">
+                    <f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />">
+                        <f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" />
+                    </f:link.page>
+                    <f:if condition="{picture.originalResource.title}">
+                        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+                            <h4>{picture.originalResource.title}</h4>
+                            <p>{picture.originalResource.description}</p>
+                        </div>
+                    </f:if>
+                </div>
+            </f:for>
+        </f:if>
+    </f:for>
+</div>

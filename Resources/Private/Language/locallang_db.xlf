@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders">
+		<header/>
+		<body>
+			<trans-unit id="tx_nsallsliders_domain_model_gallery">
+				<source>Gallery</source>
+			</trans-unit>
+			<trans-unit id="tx_nsallsliders_domain_model_gallery.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_nsallsliders_domain_model_gallery.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nsallsliders_domain_model_gallery.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
+				<source>Disable</source>
+			</trans-unit>
+			<trans-unit id="sliderimage">
+				<source>Images</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,244 @@
+/*Full width Royal Slider*/
+#full-width-slider {
+  width: 100%;
+  color: #000;
+}
+.coloredBlock {
+  padding: 12px;
+  background: rgba(255,0,0,0.6);
+  color: #FFF;
+   width: 200px;
+   left: 20%;
+   top: 5%;
+}
+.infoBlock {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  left: auto;
+  max-width: 25%;
+  padding-bottom: 0;
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  padding: 20px;
+}
+.infoBlockLeftBlack {
+  color: #FFF;
+  background: #000;
+  background: rgba(0,0,0,0.75);
+  left: 30px;
+  right: auto;
+}
+.infoBlock h4 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 3px;
+}
+.infoBlock p {
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+.infoBlock a {
+  color: #FFF;
+  text-decoration: underline;
+}
+.photosBy {
+  position: absolute;
+  line-height: 24px;
+  font-size: 12px;
+  background: #FFF;
+  color: #000;
+  padding: 0px 10px;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  top: auto;
+  border-radius: 2px;
+  z-index: 25; 
+} 
+.photosBy a {
+  color: #000;
+}
+.fullWidth {
+  max-width: 1400px;
+  margin: 0 auto 24px;
+}
+
+@media screen and (min-width:960px) and (min-height:660px) {
+  .heroSlider .rsOverflow,
+  .royalSlider.heroSlider {
+      height: 520px !important;
+  }
+}
+
+@media screen and (min-width:960px) and (min-height:1000px) {
+    .heroSlider .rsOverflow,
+    .royalSlider.heroSlider {
+        height: 660px !important;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .royalSlider.heroSlider,
+  .royalSlider.heroSlider .rsOverflow {
+    height: 300px !important;
+  }
+  .infoBlock {
+    padding: 10px;
+    height: auto;
+    max-height: 100%;
+    min-width: 40%;
+    left: 5px;
+    top: 5px;
+    right: auto;
+    font-size: 12px;
+  }
+  .infoBlock h3 {
+     font-size: 14px;
+     line-height: 17px;
+  }
+}
+/*Full width Royal Slider*/
+
+/*Slider with Animated Blocks*/
+#slider-with-blocks-1 {
+  width: 100%;
+}
+
+.rsContent {
+  color: #FFF;
+  font-size: 24px;
+  line-height: 32px;
+  float: left;
+}
+.bContainer {
+  position: relative;
+}
+.rsABlock {
+  position: relative;
+  display: block;
+  left: auto;
+  top: auto;
+}
+#slider-with-blocks-1 .rsABlock{
+    position: relative;
+}
+.blockHeadline {
+  font-size: 42px;
+  line-height: 50px;
+}
+.blockSubHeadline {
+  font-size: 32px;
+  line-height: 40px
+}
+.txtCent {
+  text-align: center; 
+  width: 100%; 
+}
+
+.slide1 {
+  background: #f06b50;
+}
+.slide1 .bContainer {
+  top: 36%;
+}
+.slide2 {
+    background: #ffbc11;
+    color:#000;
+}
+.slide2 .bContainer {
+  top: 24px;
+}
+.slide2 .txtCent {
+  line-height: 44px;
+}
+.slide2 .blockHeadline {
+   line-height: 66px;
+}
+.slide3 {
+    background: #45aab8;
+    color:#FFF;
+}
+.slide3 .bContainer {
+   top: 24px;
+}
+.slide3 span {
+  line-height: 44px;
+}
+.slide4 .bContainer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  top: 24px;
+}
+
+.photoCopy {
+  position: absolute;
+  line-height: 24px;
+  font-size: 12px;
+  background: black;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0px 10px;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  top: auto;
+  border-radius: 2px;
+  z-index: 25;
+}
+.photoCopy a {
+  color: #FFF;
+}
+.palmImg {
+  left: 0;
+  top: auto;
+  bottom: -60px;
+  position: absolute;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 960px) { 
+  .rsContent {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .blockHeadline {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .blockSubHeadline {
+    font-size: 26px;
+    line-height: 32px
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) { 
+  .royalSlider,
+  .rsOverflow {
+    height: 330px !important;
+  }
+  .rsContent {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .blockHeadline {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .blockSubHeadline {
+    font-size: 22px;
+    line-height: 32px
+  }
+}
+/*Slider with Animated Blocks*/
+/*gallery slider*/
+#gallery-1 {
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;  
+  user-select: none;
+}
+
+/*gallery slider*/
