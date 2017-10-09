@@ -8,6 +8,11 @@
 	text-align: center;
 }
 
+.span12 .owl-carousel .owl-controls{
+ float: left;
+ width: 100%;
+}
+
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{

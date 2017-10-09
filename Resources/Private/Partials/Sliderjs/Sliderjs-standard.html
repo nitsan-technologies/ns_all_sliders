@@ -6,7 +6,7 @@
       <f:if condition="{people.image}">
         <f:for each="{people.image}" as="picture">
           <f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />">
-            <f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}"/>
+            <f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" width="{settings.slidewidth}" height="{settings.slideheight}"/>
           </f:link.page>
         </f:for>
       </f:if>

@@ -5,7 +5,7 @@
             <f:for each="{people.image}" as="picture">
                 <div class="rsContent">
                     <f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />">
-                        <f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" />
+                        <f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" style="width: {settings.slidewidth}px!important; height: {settings.slideheight}px!important"/>
                     </f:link.page>
                     <f:if condition="{picture.originalResource.title}">
                         <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">

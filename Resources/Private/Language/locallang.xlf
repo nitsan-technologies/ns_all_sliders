@@ -225,6 +225,12 @@
                 <source>Enable Jquery : If this option is set, then it's add jquery in this site ! </source>
             </trans-unit>
 
+            <trans-unit id="width">
+				<source>Slider Width</source>
+			</trans-unit>
+			<trans-unit id="height">
+				<source>Slider Height</source>
+			</trans-unit>
 			
 		</body>
 	</file>

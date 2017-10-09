@@ -6,10 +6,10 @@
   }
   </script>
 <div id="demo">
-  <div class="container">
+    <div class="container">
     <div class="row">
       <div class="span12">
-		<div id="owl-demo" class="owl-carousel owl-theme">
+		<div id="owl-demo" class="owl-carousel owl-theme" style="height: {settings.height}px!important">
 			<f:for each="{galleries}" as="people">
 				<f:if condition="{people.image}">
 					<f:for each="{people.image}" as="picture">
@@ -17,14 +17,14 @@
 							<f:then>
 								<div class="item">
 									<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />">
-										<f:image class="lazyOwl" src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-src: '{picture.originalResource.publicUrl}'}" title="{picture.originalResource.title}" />
+										<f:image class="lazyOwl" src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-src: '{picture.originalResource.publicUrl}'}" title="{picture.originalResource.title}" style="height: {settings.height}px!important"/>
 									</f:link.page>
 								</div>
 							</f:then>
 							<f:else>
 								<div class="item">
 									<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />">
-										<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" />
+										<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" style="height: {settings.height}px!important" />
 									</f:link.page>
 								</div>
 							</f:else>
@@ -33,7 +33,7 @@
 				</f:if>
 			</f:for>
 		</div>
- 	 </div>
-   </div>
+ 	</div>
+ 	</div>
  </div>
 </div>

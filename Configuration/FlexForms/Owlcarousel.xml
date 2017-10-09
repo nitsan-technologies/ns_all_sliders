@@ -218,6 +218,17 @@
 						</config>
 					</TCEforms>
 				</settings.transitionStyle>
+				<settings.height>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:height</label>
+						<config>
+							<type>input</type>
+							<eval>string</eval>
+							<default>500</default>
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.height>
 			</el>
 		</ROOT>
 	</sDEF>
