@@ -116,9 +116,13 @@ class RoyalController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                 thumbsFitInViewport: ".(isset($this->settings['thumbsFitInViewport']) ? $this->settings['thumbsFitInViewport'] : $constant['thumbsFitInViewport']).",
                 navigateByClick: ".(isset($this->settings['navigateByClick']) ? $this->settings['navigateByClick'] : $constant['navigateByClick']).",
                 startSlideId: ".(isset($this->settings['startSlideId']) ? $this->settings['startSlideId'] : $constant['startSlideId']).",
-                autoPlay: ".(isset($this->settings['autoPlay']) ? $this->settings['autoPlay'] : $constant['autoPlay']).",
                 transitionType: '".(isset($this->settings['transitionType']) ? $this->settings['transitionType'] : $constant['transitionType'])."',
                 globalCaption: ".(isset($this->settings['globalCaption']) ? $this->settings['globalCaption'] : $constant['globalCaption']).",
+                autoPlay: {
+                    enabled: ".(isset($this->settings['autoPlay']) ? $this->settings['autoPlay'] : $constant['autoPlay']).",
+                    pauseOnHover: true,
+                    delay:3000,
+                },
                 ".$type."
                 
             });

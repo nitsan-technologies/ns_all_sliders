@@ -10,7 +10,8 @@
 .. figure:: Images/TYPO3-EXTns_all_sliders-Banner-min.jpg
 	:width: 800px
 	:alt: TYPO3-EXTns_all_sliders-Banner
-
+.. :border: 1
+.. :align: left
 
 What does it do?
 ================
@@ -23,10 +24,11 @@ Screenshots
 **1. Nivo Slider**
 ------------------------
 
-.. figure:: Images/TYPO3-EXTns_all_sliders-Nivo-min.png
+.. figure:: Images/TYPO3-EXTns_all_sliders-Nivo-min.jpg
 	:width: 800px
 	:alt: TYPO3-EXTns_all_sliders-Nivo
-
+.. :border: 1
+.. :align: left
 
 **2. Owlcarousel Slider**
 ---------------------------
@@ -34,7 +36,8 @@ Screenshots
 .. figure:: Images/TYPO3-EXTns_all_sliders-Owl-min.png
 	:width: 800px
 	:alt: TYPO3-EXTns_all_sliders-Owl
-
+.. :border: 1
+.. :align: left
 
 **3. Royal Slider**
 ------------------------
@@ -42,6 +45,8 @@ Screenshots
 .. figure:: Images/TYPO3-EXTns_all_sliders-Royal-1-min.png
 	:width: 800px
 	:alt: TYPO3-EXTns_all_sliders-Royal
+.. :border: 1
+.. :align: left
 
 
 **4. Slidejs Slider**
@@ -50,3 +55,5 @@ Screenshots
 .. figure:: Images/TYPO3-EXTns_all_sliders-Slide-min.png
 	:width: 800px
 	:alt: TYPO3-EXTns_all_sliders-Slide
+.. :border: 1
+.. :align: left

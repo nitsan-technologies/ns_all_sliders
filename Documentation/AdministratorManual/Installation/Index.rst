@@ -26,6 +26,8 @@ Install Extension from EM:
 .. figure:: Images/TYPO3-EXTns_all_sliders-Install-1-min.png
   :width: 800px
   :alt: Install_1
+.. :border: 1
+.. :align: left
 
 Preparation: Include static TypoScript
 --------------------------------------
@@ -43,5 +45,7 @@ The extension ships some TypoScript code which needs to be included.
 .. figure:: Images/TYPO3-EXTns_all_sliders-Install-2-min.png
   :width: 800px
   :alt: Install_2
+.. :border: 1
+.. :align: left
 
 
