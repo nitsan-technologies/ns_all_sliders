@@ -1,61 +1,57 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: Includes.txt
+﻿.. include:: Includes.txt
 
 
 .. _start:
 
-==================================
-[NITSAN] All in One Slider Plugin
-==================================
+=====================================
+Documentation for ext:ns_all_sliders
+=====================================
 
-.. only:: html
+:Extension:    `ns_all_sliders <https://extensions.typo3.org/extension/ns_all_sliders/>`_
+               for TYPO3_
 
-	:Classification:
-		ns_all_sliders
+:Version:      |release|
 
-	:Version:
-		|release|
+:Description:
+   One of the only TYPO3 extension which provides to use most popular jQuery slider plugins at your website. This TYPO3 extension provides to configure sliders eg., Nivo Slider, Royal Slider, Owlcarousel, Sliderjs Slider & more will be available in an upcoming version.
 
-	:Language:
-		en
+:Keywords:
+   All, Slider, Nivo, Royal, Owl, Sliderjs, Slide, ns, NITSAN, jQuery, Slideshow
 
-	:Description:
-		One of the only TYPO3 extension which provides to use most popular jQuery slider plugins at your website. This TYPO3 extension provides to configure sliders eg., Nivo Slider, Royal Slider, Owlcarousel, Sliderjs Slider & more will be available in an upcoming version.
+:Author:       Sanjay Chauhan <sanjay@nitsan.in>
 
-	:Keywords:
-		All, Slider, Nivo, Royal, Owl, Sliderjs, Slide, ns, NITSAN, jQuery, Slideshow
+:Company:
+   [NITSAN Technologies] http://www.nitsan.in/ \| http://www.itug.in/
 
-	:Copyright:
-		2017
+:License:
+   |cc-license| This work is licensed under a
+   `Creative Commons Attribution 4.0 International License
+   <http://creativecommons.org/licenses/by/4.0/>`_.
 
-	:Author:
-		Sanjay Chuahan [NITSAN Technologies]
+:Context:
+   The content of this document is related to TYPO3_, a GNU/GPL CMS framework
+   available from https://typo3.org/.
 
-	:Email:
-		sanjay@nitsan.in
+:Repository:   https://github.com/nitsan-technologies/ns_all_sliders
 
-	:License:
-		This document is published under the Open Content License
-		available from http://www.opencontent.org/openpub/
+:Contribute:   Please `report issues at Github
+               <https://github.com/nitsan-technologies/ns_all_sliders/issues>`__.
 
-	:Rendered:
-		|today|
-
-	The content of this document is related to TYPO3,
-	a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
+:Rendered:     |today|
 
 
-	**Table of Contents**
+
+.. |cc-license| image:: license.png
+                :alt: alt="Creative Commons License"
+                :target: http://creativecommons.org/licenses/by/4.0/
+
 
 .. toctree::
-	:maxdepth: 3
-	:titlesonly:
-	:glob:
+   :hidden:
 
-	Introduction/Index
-	AdministratorManual/Index
-	Support
+   Sitemap/Index
+   Introduction/Index
+   Installation/Index
+   Configuration/Index
+   Support
+   Targets

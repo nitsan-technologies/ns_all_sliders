@@ -16,14 +16,14 @@
 						<f:if condition="{settings.lazyLoad}=='true'">
 							<f:then>
 								<div class="item">
-									<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />">
+									<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />" title="{picture.originalResource.title}">
 										<f:image class="lazyOwl" src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-src: '{picture.originalResource.publicUrl}'}" title="{picture.originalResource.title}" style="height: {settings.height}px!important"/>
 									</f:link.page>
 								</div>
 							</f:then>
 							<f:else>
 								<div class="item">
-									<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />">
+									<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />" title="{picture.originalResource.title}">
 										<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" style="height: {settings.height}px!important" />
 									</f:link.page>
 								</div>
