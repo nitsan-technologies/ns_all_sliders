@@ -2,7 +2,7 @@
 return array(
   'ctrl' => array(
     'title'  => 'LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:tx_nsallsliders_domain_model_gallery',
-    'label' => 'image',
+    'label' => 'title',
     'tstamp' => 'tstamp',
     'crdate' => 'crdate',
     'cruser_id' => 'cruser_id',
@@ -24,10 +24,10 @@ return array(
     'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('ns_all_sliders') . 'Resources/Public/Icons/tx_nsallsliders_domain_model_gallery.gif'
   ),
   'interface' => array(
-    'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, image',
+    'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, image',
   ),
   'types' => array(
-    '1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, image, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'),
+    '1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, title, hidden;;1, image, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'),
   ),
   'palettes' => array(
     '1' => array('showitem' => ''),
@@ -73,6 +73,15 @@ return array(
         'size' => 30,
         'max' => 255,
       )
+    ),
+    'title' => array(
+      'exclude' => 1,
+      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.title',
+      'config' => array(
+        'type' => 'input',
+        'size' => 30,
+        'eval' => 'trim,required'
+      ),
     ),
     'hidden' => array(
       'exclude' => 1,
