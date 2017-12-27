@@ -1,3 +1,6 @@
+$(window).load(function() {
+    $('img').removeAttr('width').removeAttr('height');
+});
 jQuery(document).ready(function ($) {
    $('#full-width-slider').royalSlider({
         arrowsNav: true,

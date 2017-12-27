@@ -58,3 +58,17 @@ if (!defined('TYPO3_MODE')) {
 		
 	)
 );
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	'Nsallsliders.' . $_EXTKEY,
+	'Slickslider',
+	array(
+		'Slick' => 'list',
+		
+	),
+	// non-cacheable actions
+	array(
+		'Slick' => '',
+		
+	)
+);

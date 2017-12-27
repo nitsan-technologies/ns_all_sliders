@@ -157,3 +157,18 @@ plugin.tx_nsallsliders_nivoslider {
 		storagePid =
 	}
 }
+
+plugin.tx_nsallsliders_slickslider {
+	view {
+		# cat=plugin.tx_nsallsliders_slickslider/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ns_all_sliders/Resources/Private/Templates/
+		# cat=plugin.tx_nsallsliders_slickslider/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ns_all_sliders/Resources/Private/Partials/
+		# cat=plugin.tx_nsallsliders_slickslider/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ns_all_sliders/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_nsallsliders_slickslider/a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

@@ -13,10 +13,10 @@ Documentation for ext:ns_all_sliders
 :Version:      |release|
 
 :Description:
-   One of the only TYPO3 extension which provides to use most popular jQuery slider plugins at your website. This TYPO3 extension provides to configure sliders eg., Nivo Slider, Royal Slider, Owlcarousel, Sliderjs Slider & more will be available in an upcoming version.
+   One of the only TYPO3 extension which provides to use most popular jQuery slider plugins at your website. This TYPO3 extension provides to configure sliders eg., **Nivo Slider, Royal Slider, Owlcarousel, Slickslider, Sliderjs Slider** & more will be available in an upcoming version.
 
 :Keywords:
-   All, Slider, Nivo, Royal, Owl, Sliderjs, Slide, ns, NITSAN, jQuery, Slideshow
+   All, Slider, Nivo, Royal, Owl, Sliderjs, Slide, ns, NITSAN, jQuery, Slideshow, Slickslider, Slick
 
 :Author:       Sanjay Chauhan <sanjay@nitsan.in>
 

@@ -1,4 +1,5 @@
 $(window).load(function() {
+    $('img').removeAttr('width').removeAttr('height');
     $('#slider').nivoSlider();
 });
 var arrow= $('#arrow').val();

@@ -30,6 +30,7 @@ Just install this extension the usual way like any other TYPO3 extension.
 
    .. figure:: Images/TYPO3-EXTns_all_sliders-Install-1-min.png
        :alt: installation with the extension manager in the backend
+       :width: 1000px
 
 
 #. Activate the TypoScript
@@ -50,4 +51,5 @@ Just install this extension the usual way like any other TYPO3 extension.
 
    .. figure:: Images/TYPO3-EXTns_all_sliders-Install-2-min.png
        :alt: installation
+       :width: 1000px
 

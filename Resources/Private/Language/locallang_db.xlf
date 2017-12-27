@@ -10,10 +10,13 @@
 				<source>Image</source>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.title">
-				<source>Title</source>
+				<source>Gallery Title (Only For Backend Purpose)</source>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.description">
 				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_nsallsliders_domain_model_gallery.access">
+				<source>Access</source>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
 				<source>Disable</source>

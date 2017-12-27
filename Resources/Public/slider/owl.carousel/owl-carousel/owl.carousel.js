@@ -1510,3 +1510,7 @@ if (typeof Object.create !== "function") {
         afterLazyLoad: false
     };
 }(jQuery, window, document));
+
+$(window).load(function() {
+    $('img').removeAttr('width').removeAttr('height');
+});

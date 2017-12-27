@@ -1,0 +1,156 @@
+<T3DataStructure>
+<meta>
+	<langDisable>1</langDisable>
+</meta>
+<sheets>
+	<sDEF>
+		<ROOT>
+			<TCEforms>
+				<sheetTitle>Settings</sheetTitle>
+			</TCEforms>
+			<type>array</type>
+			<el>
+				<settings.storage_pid_images>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selectimage</label>
+						<config>
+							<type>group</type>
+							<internal_type>db</internal_type>
+							<allowed>pages</allowed>
+							<size>3</size>
+							<maxitems>1</maxitems>
+							<minitems>0</minitems>
+							<show_thumbs>1</show_thumbs>
+						</config>
+					</TCEforms>
+				</settings.storage_pid_images>
+				<settings.slider_type>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.type</label>
+						<onChange>reload</onChange>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.updown</numIndex>
+									<numIndex index="1">updown</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.sideways</numIndex>
+									<numIndex index="1">sideways</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.slider_type>
+				<settings.sldwidth>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slidewidthpercentage</label>
+						<config>
+							<type>input</type>
+							<eval>int</eval>
+							<range>
+								<lower>1</lower>
+								<upper>100</upper>
+							</range>
+							<default>80</default>
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.sldwidth>
+				<settings.dots>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dots</label>
+						<config>
+							<type>select</type>
+							<items type='array'>
+								<numIndex index='0' type='array'>
+									<numIndex index='0'>Display Dots</numIndex>
+									<numIndex index='1'>true</numIndex>
+								</numIndex>
+								<numIndex index='1' type='array'>
+									<numIndex index='0'>Remove Dots</numIndex>
+									<numIndex index='1'>false</numIndex>
+								</numIndex>
+							</items>
+							<minitems>1</minitems>
+							<maxitems>1</maxitems>
+						</config>
+					</TCEforms>
+				</settings.dots>
+				<settings.display>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.vertical</label>
+						<displayCond>FIELD:settings.slider_type:!=:sideways</displayCond>
+						<config>
+							<type>select</type>
+							<items type='array'>
+								<numIndex index='0' type='array'>
+									<numIndex index='0'>Centralize</numIndex>
+									<numIndex index='1'>true</numIndex>
+								</numIndex>
+								<numIndex index='1' type='array'>
+									<numIndex index='0'>Full Width</numIndex>
+									<numIndex index='1'>false</numIndex>
+								</numIndex>
+							</items>
+							<minitems>1</minitems>
+							<maxitems>1</maxitems>
+						</config>
+					</TCEforms>
+				</settings.display>
+				<settings.speed>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.speed</label>
+						<config>
+							<type>input</type>
+							<eval>int</eval>
+							<range>
+								<lower>100</lower>
+								<upper>1000</upper>
+							</range>
+							<default>500</default>
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.speed>
+				<settings.autoplay>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoPlay</label>
+						<config>
+							<type>select</type>
+							<items type='array'>
+								<numIndex index='0' type='array'>
+									<numIndex index='0'>True</numIndex>
+									<numIndex index='1'>true</numIndex>
+								</numIndex>
+								<numIndex index='1' type='array'>
+									<numIndex index='0'>False</numIndex>
+									<numIndex index='1'>false</numIndex>
+								</numIndex>
+							</items>
+							<minitems>1</minitems>
+							<maxitems>1</maxitems>
+						</config>
+					</TCEforms>
+				</settings.autoplay>
+				<settings.autoplaySpeed>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autospeed</label>
+						<config>
+							<type>input</type>
+							<eval>int</eval>
+							<range>
+								<lower>1000</lower>
+								<upper>10000</upper>
+							</range>
+							<default>2000</default>
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.autoplaySpeed>
+			</el>
+		</ROOT>
+	</sDEF>
+</sheets>
+</T3DataStructure>

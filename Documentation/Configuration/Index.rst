@@ -19,29 +19,35 @@ Quick & Easy configuration of "All Sliders" into TYPO3
 
    .. figure:: Images/TYPO3-EXTns_all_sliders-config-1-min.png
       :alt: Configuration 1
+      :width: 1000px
 
 #. *Include Jquery* if you have not included yet in your project.
 
    .. figure:: Images/TYPO3-EXTns_all_sliders-config-2-min.png
       :alt: Configuration 2
+      :width: 1000px
 
    .. figure:: Images/TYPO3-EXTns_all_sliders-config-3-min.png
       :alt: Configuration 3
+      :width: 1000px
 
 #. Create *Storage Folder* for this plugin.
 
    .. figure:: Images/TYPO3-EXTns_all_sliders-config-4-min.png
       :alt: Configuration 4
+      :width: 1000px
 
 #. Add those plugins in to page where you want to use these sliders. And configure it as per your requirement.
 
    .. figure:: Images/TYPO3-EXTns_all_sliders-config-5-min.png
       :alt: Configuration 5
+      :width: 1000px
 
 #. Add *Storage Folder* where your slider images are stored.
 
    .. figure:: Images/TYPO3-EXTns_all_sliders-config-6-min.png
       :alt: Configuration 6
+      :width: 1000px
 
 .. _Clearing-the-cache:
 

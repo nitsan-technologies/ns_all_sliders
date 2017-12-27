@@ -93,3 +93,14 @@ plugin.tx_nsallsliders_nivoslider {
 		storagePid = {$plugin.tx_nsallsliders_nivoslider.persistence.storagePid}
 	}
 }
+
+plugin.tx_nsallsliders_slickslider {
+	view {
+		templateRootPaths.0 = {$plugin.tx_nsallsliders_slickslider.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_nsallsliders_slickslider.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_nsallsliders_slickslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_nsallsliders_slickslider.persistence.storagePid}
+	}
+}

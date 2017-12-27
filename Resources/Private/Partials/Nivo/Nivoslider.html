@@ -3,12 +3,12 @@
 <f:form.hidden id="arrow" value="{arrow}" />
 <div id="wrapper">
     <div class="slider-wrapper theme-default">
-    	<div id="slider" class="nivoSlider" style="height: {settings.height}px!important" >
-				<f:for each="{galleries}" as="people">
+    	<div id="slider" class="nivoSlider" >
+			<f:for each="{galleries}" as="people">
 				<f:if condition="{people.image}">
 					<f:for each="{people.image}" as="picture">
 						<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />" title="{picture.originalResource.title}" >
-							<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-thumb: '{picture.originalResource.publicUrl}',data-transition: 'slideInLeft'}" title="{picture.originalResource.title}" style="height: 100%!important" />
+							<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-thumb: '{picture.originalResource.publicUrl}',data-transition: 'slideInLeft'}" title="{picture.originalResource.title}" />
 						</f:link.page>
 					</f:for>
 				</f:if>

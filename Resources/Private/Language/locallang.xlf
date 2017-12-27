@@ -18,7 +18,7 @@
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
 				<source>Disable</source>
 			</trans-unit>
-
+			
 			<trans-unit id="flexform.selectimage">
 				<source>Select storage folder of Images</source>
 			</trans-unit>
@@ -228,10 +228,31 @@
             <trans-unit id="width">
 				<source>Slider Width</source>
 			</trans-unit>
+			<trans-unit id="flexform.slidewidthpercentage">
+				<source>Slider Width In (%)</source>
+			</trans-unit>
 			<trans-unit id="height">
 				<source>Slider Height</source>
 			</trans-unit>
-			
+
+			<trans-unit id="flexform.updown">
+				<source>Slider Up-Down</source>
+			</trans-unit>
+			<trans-unit id="flexform.sideways">
+				<source>Slider Sideways</source>
+			</trans-unit>
+			<trans-unit id="flexform.dots">
+				<source>Display Dots</source>
+			</trans-unit>
+			<trans-unit id="flexform.vertical">
+				<source>Display Align</source>
+			</trans-unit>
+			<trans-unit id="flexform.speed">
+				<source>Transmission Speed</source>
+			</trans-unit>
+			<trans-unit id="flexform.autospeed">
+				<source>Autoplay Speed</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
