@@ -1,5 +1,3 @@
-{namespace custom=Nsallsliders\NsAllSliders\ViewHelpers}
-
 <f:form.hidden id="arrow" value="{arrow}" />
 <div id="wrapper">
     <div class="slider-wrapper theme-default">
@@ -7,9 +5,9 @@
 			<f:for each="{galleries}" as="people">
 				<f:if condition="{people.image}">
 					<f:for each="{people.image}" as="picture">
-						<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />" title="{picture.originalResource.title}" >
+						<f:link.typolink parameter="{picture.originalResource.link}" title="{picture.originalResource.title}">
 							<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-thumb: '{picture.originalResource.publicUrl}',data-transition: 'slideInLeft'}" title="{picture.originalResource.title}" />
-						</f:link.page>
+						</f:link.typolink>
 					</f:for>
 				</f:if>
 			</f:for>

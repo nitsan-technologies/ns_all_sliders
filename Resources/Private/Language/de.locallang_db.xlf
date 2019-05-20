@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders">
 		<header/>
 		<body>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery">
-				<source>Gallery</source>
+				<target>Gallery</target>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.startdate">
-				<source>Start Date</source>
+				<target>Anfangsdatum</target>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.endddate">
-				<source>End Date</source>
+				<target>Endtermin</target>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.hide">
-				<source>Hide</source>
+				<target>Verbergen</target>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.image">
-				<source>Image</source>
+				<target>Bild</target>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.title">
-				<source>Gallery Title (Only For Backend Purpose)</source>
+				<target>Galerietitel (nur für Backend-Zwecke)</target>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.description">
-				<source>Description</source>
+				<target>Beschreibung</target>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.access">
-				<source>Access</source>
+				<target>Zugriff</target>
 			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
-				<source>Disable</source>
+				<target>Deaktivieren</target>
 			</trans-unit>
 			<trans-unit id="sliderimage">
-				<source>Images</source>
+				<target>Bilder</target>
 			</trans-unit>
 		</body>
 	</file>

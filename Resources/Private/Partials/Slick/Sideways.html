@@ -1,13 +1,11 @@
-{namespace custom=Nsallsliders\NsAllSliders\ViewHelpers}
-
 <section class="lazy slider" data-sizes="50vw" style="width:{settings.sldwidth}%">
 	<f:for each="{galleries}" as="people">
 		<f:if condition="{people.image}">
 			<f:for each="{people.image}" as="picture">
 				<div>
-					<f:link.page pageUid="{picture.originalResource.link}" target="<custom:yesno myvalue='{picture.originalResource.link}' />" title="{picture.originalResource.title}" >
+					<f:link.typolink parameter="{picture.originalResource.link}" title="{picture.originalResource.title}">
 						<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" />
-					</f:link.page>
+					</f:link.typolink>
 				</div>
 			</f:for>
 		</f:if>
