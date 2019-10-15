@@ -19,6 +19,9 @@
 				<source>Disable</source>
 			</trans-unit>
 			
+			<trans-unit id="flexform.gallery">
+				<source>Select Gallery for of slider</source>
+			</trans-unit>
 			<trans-unit id="flexform.selectimage">
 				<source>Select storage folder of Images</source>
 			</trans-unit>
@@ -106,120 +109,6 @@
 			</trans-unit>
 			<!-- Owlcarousel  -->
 
-			<!-- Royalslider -->
-			<trans-unit id="flexform.slidewidth">
-				<source>Slide Width</source>
-			</trans-unit>
-			<trans-unit id="flexform.slideheight">
-				<source>Slide Height</source>
-			</trans-unit>
-			<trans-unit id="flexform.slidethumbwidth">
-				<source>Slide Thumb Width</source>
-			</trans-unit>
-			<trans-unit id="flexform.slidthumbeheight">
-				<source>Slide Thumb Height</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumbs_appendSpan">
-				<source>Thumbs Append Span</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumbs_firstMargin">
-				<source>Thumbs First Margin</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumbs_paddingBottom">
-				<source>Thumbs Padding Bottom</source>
-			</trans-unit>
-			<trans-unit id="flexform.deeplinking_enabled">
-				<source>Deep linking Enabled</source>
-			</trans-unit>
-			<trans-unit id="flexform.deeplinking_change">
-				<source>Deep linking Change</source>
-			</trans-unit>
-			<trans-unit id="flexform.arrowsNav">
-				<source>Arrows Nav</source>
-			</trans-unit>
-			<trans-unit id="flexform.loop">
-				<source>Loop</source>
-			</trans-unit>
-			<trans-unit id="flexform.keyboardNavEnabled">
-				<source>Keyboard Nav Enabled</source>
-			</trans-unit>
-			<trans-unit id="flexform.controlsInside">
-				<source>Controls Inside</source>
-			</trans-unit>
-			<trans-unit id="flexform.arrowsNavAutoHide">
-				<source>ArrowsNav Auto Hide</source>
-			</trans-unit>
-			<trans-unit id="flexform.autoScaleSlider">
-				<source>Auto Scale Slider</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumbsFitInViewport">
-				<source>Thumbs Fit In Viewport</source>
-			</trans-unit>
-			<trans-unit id="flexform.navigateByClick">
-				<source>Navigate By Click</source>
-			</trans-unit>
-			<trans-unit id="flexform.autoPlay">
-				<source>Auto Play</source>
-			</trans-unit>
-			<trans-unit id="flexform.globalCaption">
-				<source>Global Caption</source>
-			</trans-unit>
-			<trans-unit id="flexform.arrowsNavHideOnTouch">
-				<source>Arrows Nav Hide On Touch</source>
-			</trans-unit>
-			<trans-unit id="flexform.globalCaptionInside">
-				<source>Global Caption Inside</source>
-			</trans-unit>
-			<trans-unit id="flexform.autoScaleSliderWidth">
-				<source>Auto Scale Slider Width</source>
-			</trans-unit>
-			<trans-unit id="flexform.autoScaleSliderHeight">
-				<source>Auto Scale Slider Height</source>
-			</trans-unit>
-			<trans-unit id="flexform.startSlideId">
-				<source>Start Slide Id</source>
-			</trans-unit>
-			<trans-unit id="flexform.imageScaleMode">
-				<source>Image Scale Mode</source>
-			</trans-unit>
-			<trans-unit id="flexform.controlNavigation">
-				<source>Control Navigation</source>
-			</trans-unit>
-			<trans-unit id="flexform.transitionType">
-				<source>Transition Type</source>
-			</trans-unit>
-			<!-- Royalslider -->
-			
-
-			<!-- slider js -->
-			<trans-unit id="flexform.slidewidth">
-				<source>Slide Width</source>
-			</trans-unit>
-			<trans-unit id="flexform.slideheight">
-				<source>Slide Height</source>
-			</trans-unit>
-			<trans-unit id="flexform.navigation_effect">
-				<source>Navigation Effect</source>
-			</trans-unit>
-			<trans-unit id="flexform.pagination_effect">
-				<source>Pagination Effect</source>
-			</trans-unit>
-			<trans-unit id="flexform.effect_fade_speed">
-				<source>Effect Fade Speed</source>
-			</trans-unit>
-			<trans-unit id="flexform.play_active">
-				<source>Play Active</source>
-			</trans-unit>
-			<trans-unit id="flexform.play_auto">
-				<source>Play Auto</source>
-			</trans-unit>
-			<trans-unit id="flexform.play_swap">
-				<source>Play Swap</source>
-			</trans-unit>
-			<trans-unit id="flexform.play_interval">
-				<source>Play Interval</source>
-			</trans-unit>
-			<!-- slider js -->
 
 			<trans-unit id="configuration.jquery">
                 <source>Enable Jquery: If this option is set, then it adds jquery in this site!</source>

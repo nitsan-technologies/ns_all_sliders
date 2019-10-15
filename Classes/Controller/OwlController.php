@@ -108,13 +108,9 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $this->view->assign('settings', $this->settings);
 
         //set storage folder
-        $pid = $this->settings['storage_pid_images'];
-        $querySettings = $this->galleryRepository->createQuery()->getQuerySettings();
-        $querySettings->setStoragePageIds(array($pid));
-        $this->galleryRepository->setDefaultQuerySettings($querySettings);
-
+        $pid = $this->settings['gallery_uid'];
         // show all images
-        $galleries = $this->galleryRepository->findAll();
+        $galleries = $this->galleryRepository->findByUid($pid);
         $this->view->assign('galleries', $galleries);
 
         // show pluging name

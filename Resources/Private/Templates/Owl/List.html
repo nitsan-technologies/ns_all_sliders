@@ -2,7 +2,32 @@
 <f:layout name="Default" />
 
 <f:section name="main">
-<f:if condition="{pluginName}=='Owlcarousel'">
-	<f:render partial="Owl/Owlcarousel" arguments="{galleries: galleries, settings: settings}"/>
-</f:if>
+	<script>
+	  	var owldomain = window.location.hostname.indexOf('owlgraphic');
+	  	if(owldomain !== -1){
+	    	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+		}
+	</script>
+	<div id="demo">
+		<div id="owl-demo" class="owl-carousel owl-theme">
+			<f:for each="{galleries.image}" as="picture">
+				<f:if condition="{settings.lazyLoad}=='true'">
+					<f:then>
+						<div class="item">
+							<f:link.typolink parameter="{picture.originalResource.link}" title="{picture.originalResource.title}">
+								<f:image class="lazyOwl" src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-src: '{picture.originalResource.publicUrl}'}" title="{picture.originalResource.title}" height="{settings.height}"/>
+							</f:link.typolink>
+						</div>
+					</f:then>
+					<f:else>
+						<div class="item">
+							<f:link.typolink parameter="{picture.originalResource.link}" title="{picture.originalResource.title}">
+								<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" height="{settings.height}"/>
+							</f:link.typolink>
+						</div>
+					</f:else>
+				</f:if>
+			</f:for>
+		</div>
+	</div>
 </f:section>
