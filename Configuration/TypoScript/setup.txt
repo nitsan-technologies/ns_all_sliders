@@ -6,20 +6,50 @@ plugin.tx_nsallsliders_owlcarousel {
 	}
 	persistence {
 		storagePid = {$plugin.tx_nsallsliders_owlcarousel.persistence.storagePid}
-		autoPlay = {$plugin.tx_nsallsliders_owlcarousel.persistence.autoPlay}
-		stopOnHover = {$plugin.tx_nsallsliders_owlcarousel.persistence.stopOnHover}
-		navigation = {$plugin.tx_nsallsliders_owlcarousel.persistence.navigation}
-		paginationSpeed = {$plugin.tx_nsallsliders_owlcarousel.persistence.paginationSpeed}
-		goToFirstSpeed = {$plugin.tx_nsallsliders_owlcarousel.persistence.goToFirstSpeed}
-		singleItem = {$plugin.tx_nsallsliders_owlcarousel.persistence.singleItem}
-		autoHeight = {$plugin.tx_nsallsliders_owlcarousel.persistence.autoHeight}
-		transitionStyle = {$plugin.tx_nsallsliders_owlcarousel.persistence.transitionStyle}
-		items = {$plugin.tx_nsallsliders_owlcarousel.persistence.items}
-		itemsDesktop = {$plugin.tx_nsallsliders_owlcarousel.persistence.itemsDesktop}
-		itemsDesktopSmall = {$plugin.tx_nsallsliders_owlcarousel.persistence.itemsDesktopSmall}
-		lazyLoad = {$plugin.tx_nsallsliders_owlcarousel.persistence.lazyLoad}
-		slideSpeed = {$plugin.tx_nsallsliders_owlcarousel.persistence.slideSpeed}
 
 	}
-}
 
+	settings{
+		jQuery = {$plugin.tx_nsallsliders_owlcarousel.settings.jQuery}
+		ConAutoPlay = {$plugin.tx_nsallsliders_owlcarousel.settings.ConAutoPlay}
+		Connavigation = {$plugin.tx_nsallsliders_owlcarousel.settings.Connavigation}	
+		Conitems = {$plugin.tx_nsallsliders_owlcarousel.settings.Conitems}		
+		ConlazyLoad = {$plugin.tx_nsallsliders_owlcarousel.settings.ConlazyLoad}		
+		ConmouseDrag = {$plugin.tx_nsallsliders_owlcarousel.settings.ConmouseDrag}
+		ContouchDrag = {$plugin.tx_nsallsliders_owlcarousel.settings.ContouchDrag}
+		Conmargin = {$plugin.tx_nsallsliders_owlcarousel.settings.Conmargin}
+		Conloop = {$plugin.tx_nsallsliders_owlcarousel.settings.Conloop}
+		Concenter = {$plugin.tx_nsallsliders_owlcarousel.settings.Concenter}
+		ConpullDrag = {$plugin.tx_nsallsliders_owlcarousel.settings.ConpullDrag}
+		ConfreeDrag = {$plugin.tx_nsallsliders_owlcarousel.settings.ConfreeDrag}
+		ConstagePadding = {$plugin.tx_nsallsliders_owlcarousel.settings.ConstagePadding}
+		Conmerge = {$plugin.tx_nsallsliders_owlcarousel.settings.Conmerge}
+		ConmergeFit = {$plugin.tx_nsallsliders_owlcarousel.settings.ConmergeFit}
+		ConautoWidth = {$plugin.tx_nsallsliders_owlcarousel.settings.ConautoWidth}
+		ConstartPosition = {$plugin.tx_nsallsliders_owlcarousel.settings.ConstartPosition}
+		ConURLhashListener = {$plugin.tx_nsallsliders_owlcarousel.settings.ConURLhashListener}
+		Conrewind = {$plugin.tx_nsallsliders_owlcarousel.settings.Conrewind}
+		ConnavElement = {$plugin.tx_nsallsliders_owlcarousel.settings.ConnavElement}
+		ConslideBy = {$plugin.tx_nsallsliders_owlcarousel.settings.ConslideBy}
+		ConslideTransition = {$plugin.tx_nsallsliders_owlcarousel.settings.ConslideTransition}
+		Condots = {$plugin.tx_nsallsliders_owlcarousel.settings.Condots}
+		CondotsEach = {$plugin.tx_nsallsliders_owlcarousel.settings.CondotsEach}
+		CondotsData = {$plugin.tx_nsallsliders_owlcarousel.settings.CondotsData}
+		ConlazyLoadEager = {$plugin.tx_nsallsliders_owlcarousel.settings.ConlazyLoadEager}
+		ConautoplayTimeout = {$plugin.tx_nsallsliders_owlcarousel.settings.ConautoplayTimeout}
+		ConautoplayHoverPause = {$plugin.tx_nsallsliders_owlcarousel.settings.ConautoplayHoverPause}
+		ConautoplaySpeed = {$plugin.tx_nsallsliders_owlcarousel.settings.ConautoplaySpeed}
+		ConnavSpeed = {$plugin.tx_nsallsliders_owlcarousel.settings.ConnavSpeed}
+		CondotsSpeed = {$plugin.tx_nsallsliders_owlcarousel.settings.CondotsSpeed}
+		CondragEndSpeed = {$plugin.tx_nsallsliders_owlcarousel.settings.CondragEndSpeed}
+		ConanimateOut = {$plugin.tx_nsallsliders_owlcarousel.settings.ConanimateOut}
+		ConanimateIn = {$plugin.tx_nsallsliders_owlcarousel.settings.ConanimateIn}
+		ConfallbackEasing = {$plugin.tx_nsallsliders_owlcarousel.settings.ConfallbackEasing}
+		Coninfo = {$plugin.tx_nsallsliders_owlcarousel.settings.Coninfo}
+		ConnestedItemSelector = {$plugin.tx_nsallsliders_owlcarousel.settings.ConnestedItemSelector}
+		ConitemElement = {$plugin.tx_nsallsliders_owlcarousel.settings.ConitemElement}		
+		ConnavContainer = {$plugin.tx_nsallsliders_owlcarousel.settings.ConnavContainer}
+		CondotsContainer = {$plugin.tx_nsallsliders_owlcarousel.settings.CondotsContainer}
+		ConcheckVisible = {$plugin.tx_nsallsliders_owlcarousel.settings.ConcheckVisible}		
+	}
+}

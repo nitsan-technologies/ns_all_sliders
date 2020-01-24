@@ -59,5 +59,4 @@ class Gallery extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->image = $image;
     }
-
 }

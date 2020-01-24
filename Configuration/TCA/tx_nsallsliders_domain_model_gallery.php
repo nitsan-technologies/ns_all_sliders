@@ -1,6 +1,6 @@
 <?php
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:tx_nsallsliders_domain_model_gallery',
         'label' => 'title',
         'tstamp' => 'tstamp',
@@ -15,24 +15,24 @@ return array(
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
             'endtime' => 'endtime',
-        ),
+        ],
         'searchFields' => 'image,title,description,disable,',
         'iconfile' => 'EXT:ns_all_sliders/Resources/Public/Icons/tx_nsallsliders_domain_model_gallery.gif',
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, image,title,fal_media',
-    ),
-    'types' => array(
-        '1' => array('showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, title, image,fal_media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, hidden, starttime, endtime'),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => ''),
-    ),
-    'columns' => array(
+    ],
+    'types' => [
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, title, image,fal_media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, hidden, starttime, endtime'],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => ''],
+    ],
+    'columns' => [
         'sys_language_uid' => [
             'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
@@ -51,77 +51,77 @@ return array(
             ],
         ],
 
-        'l10n_parent' => array(
+        'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'items' => array(
-                    array('', 0),
-                ),
+                'items' => [
+                    ['', 0],
+                ],
                 'foreign_table' => 'tx_nsallsliders_domain_model_gallery',
                 'foreign_table_where' => 'AND tx_nsallsliders_domain_model_gallery.pid=###CURRENT_PID### AND tx_nsallsliders_domain_model_gallery.sys_language_uid IN (-1,0)',
-            ),
-        ),
+            ],
+        ],
 
-        'l10n_diffsource' => array(
-            'config' => array(
+        'l10n_diffsource' => [
+            'config' => [
                 'type' => 'passthrough',
-            ),
-        ),
+            ],
+        ],
 
-        't3ver_label' => array(
+        't3ver_label' => [
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.versionLabel',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => 30,
                 'max' => 255,
-            ),
-        ),
+            ],
+        ],
 
-        'hidden' => array(
+        'hidden' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:tx_nsallsliders_domain_model_gallery.hide',
-            'config' => array(
+            'config' => [
                 'type' => 'check',
-            ),
-        ),
+            ],
+        ],
 
-        'starttime' => array(
+        'starttime' => [
             'exclude' => 1,
             'l10n_mode' => 'mergeIfNotBlank',
             'label' => 'LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:tx_nsallsliders_domain_model_gallery.startdate',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => 13,
                 'max' => 20,
                 'eval' => 'datetime',
                 'checkbox' => 0,
                 'default' => 0,
-                'range' => array(
+                'range' => [
                     'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y')),
-                ),
-            ),
-        ),
+                ],
+            ],
+        ],
 
-        'endtime' => array(
+        'endtime' => [
             'exclude' => 1,
             'l10n_mode' => 'mergeIfNotBlank',
             'label' => 'LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:tx_nsallsliders_domain_model_gallery.endddate',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => 13,
                 'max' => 20,
                 'eval' => 'datetime',
                 'checkbox' => 0,
                 'default' => 0,
-                'range' => array(
+                'range' => [
                     'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y')),
-                ),
-            ),
-        ),
+                ],
+            ],
+        ],
 
         'title' => [
             'exclude' => false,
@@ -192,5 +192,5 @@ return array(
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),
         ],
-    ),
-);
+    ],
+];

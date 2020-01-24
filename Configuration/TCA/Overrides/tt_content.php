@@ -12,8 +12,8 @@ $_EXTKEY = 'ns_all_sliders';
     'Owl carousel'
 );
 
-
 /* Flexform setting  */
+
 /* Owlcarousel - Flexform setting  */
 $pluginSignature = str_replace('_', '', $_EXTKEY) . '_' . 'owlcarousel';
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'recursive,select_key,pages';

@@ -10,104 +10,63 @@
 			</TCEforms>
 			<type>array</type>
 			<el>
-				<settings.gallery_uid>
+				<settings.storage_pid_images>
 					<TCEforms>
-		                <exclude>1</exclude>
-		                <label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.gallery</label>
-		                <config>
-		                    <type>group</type>
-		                    <internal_type>db</internal_type>
-		                    <allowed>tx_nsallsliders_domain_model_gallery</allowed>
-		                    <size>1</size>
-		                    <maxitems>1</maxitems>
-		                    <minitems>0</minitems>
-		                    <show_thumbs>1</show_thumbs>
-		                </config>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selectimage</label>
+						<config>
+							<type>group</type>
+							<internal_type>db</internal_type>
+							<allowed>pages</allowed>
+							<size>3</size>
+							<maxitems>1</maxitems>
+							<minitems>0</minitems>
+							<show_thumbs>1</show_thumbs>
+						</config>
 					</TCEforms>
-				</settings.gallery_uid>
+				</settings.storage_pid_images>
+				<settings.refLink>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.refLink</label>
+						<config>
+							<type>input</type>
+							<eval>string</eval>
+							<default>https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html</default>
+							<readOnly>1</readOnly>
+						</config>
+					</TCEforms>
+				</settings.refLink>
+				<settings.height>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.nivo.height</label>
+						<config>
+							<type>input</type>
+							<eval>string</eval>
+							<placeholder>500</placeholder>
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.height>
+				<settings.imageWidth>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.nivo.imageWidth</label>
+						<config>
+							<type>input</type>
+							<eval>string</eval>
+							<placeholder>900</placeholder>
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.imageWidth>
 				<settings.autoPlay>
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoPlay</label>
 						<config>
-							<type>input</type>
-							<eval>string</eval>
-							<default>3000</default>
-							<size>5</size>
-						</config>
-					</TCEforms>
-				</settings.autoPlay>
-				<settings.paginationSpeed>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.paginationSpeed</label>
-						<config>
-							<type>input</type>
-							<eval>string</eval>
-							<default>1000</default>
-							<size>5</size>
-						</config>
-					</TCEforms>
-				</settings.paginationSpeed>
-				<settings.goToFirstSpeed>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.goToFirstSpeed</label>
-						<config>
-							<type>input</type>
-							<eval>string</eval>
-							<default>2000</default>
-							<size>5</size>
-						</config>
-					</TCEforms>
-				</settings.goToFirstSpeed>
-				<settings.items>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.items</label>
-						<config>
-							<type>input</type>
-							<eval>string</eval>
-							<default>1</default>
-							<size>5</size>
-						</config>
-					</TCEforms>
-				</settings.items>
-				<settings.slideSpeed>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideSpeed</label>
-						<config>
-							<type>input</type>
-							<eval>string</eval>
-							<default>300</default>
-							<size>5</size>
-						</config>
-					</TCEforms>
-				</settings.slideSpeed>
-				<settings.itemsDesktop>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.itemsDesktop</label>
-						<config>
-							<type>input</type>
-							<eval>string</eval>
-							<default>[1199,3]</default>
-							<size>5</size>
-						</config>
-					</TCEforms>
-				</settings.itemsDesktop>
-				<settings.itemsDesktopSmall>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.itemsDesktopSmall</label>
-						<config>
-							<type>input</type>
-							<eval>string</eval>
-							<default>[979,3]</default>
-							<size>5</size>
-						</config>
-					</TCEforms>
-				</settings.itemsDesktopSmall>
-				<settings.stopOnHover>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.stopOnHover</label>
-						<config>
 							<type>select</type>
 							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
 								<numIndex index="1">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
 									<numIndex index="1">true</numIndex>
@@ -119,13 +78,28 @@
 							</items>
 						</config>
 					</TCEforms>
-				</settings.stopOnHover>
+				</settings.autoPlay>
+				<settings.items>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.items</label>
+						<config>
+							<type>input</type>
+							<placeholder>1</placeholder>
+							<eval>string</eval>							
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.items>				
 				<settings.navigation>
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navigation</label>
 						<config>
 							<type>select</type>
 							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
 								<numIndex index="1">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
 									<numIndex index="1">true</numIndex>
@@ -137,49 +111,17 @@
 							</items>
 						</config>
 					</TCEforms>
-				</settings.navigation>
-				<settings.singleItem>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.singleItem</label>
-						<config>
-							<type>select</type>
-							<items>
-								<numIndex index="1">
-									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
-									<numIndex index="1">true</numIndex>
-								</numIndex>
-								<numIndex index="2">
-									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
-									<numIndex index="1">false</numIndex>
-								</numIndex>
-							</items>
-						</config>
-					</TCEforms>
-				</settings.singleItem>
-				<settings.autoHeight>
-					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoHeight</label>
-						<config>
-							<type>select</type>
-							<items>
-								<numIndex index="1">
-									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
-									<numIndex index="1">true</numIndex>
-								</numIndex>
-								<numIndex index="2">
-									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
-									<numIndex index="1">false</numIndex>
-								</numIndex>
-							</items>
-						</config>
-					</TCEforms>
-				</settings.autoHeight>
+				</settings.navigation>				
 				<settings.lazyLoad>
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoad</label>
 						<config>
 							<type>select</type>
 							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
 								<numIndex index="1">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
 									<numIndex index="1">true</numIndex>
@@ -192,43 +134,607 @@
 						</config>
 					</TCEforms>
 				</settings.lazyLoad>
-				<settings.transitionStyle>
+				<settings.mouseDrag>
+				    <TCEforms>
+				        <label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mouseDrag</label>
+				       	<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+				    </TCEforms>
+				</settings.mouseDrag>
+				<settings.touchDrag>
+				    <TCEforms>
+				        <label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.touchDrag</label>
+				        <config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+				    </TCEforms>
+				</settings.touchDrag>
+				<settings.margin>
 					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.transitionStyle</label>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.margin</label>
+						<config>
+							<type>input</type>
+							<placeholder>0</placeholder>
+							<eval>string</eval>
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.margin>
+				<settings.loop>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.loop</label>
 						<config>
 							<type>select</type>
 							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
 								<numIndex index="1">
-									<numIndex index="0">Fade</numIndex>
-									<numIndex index="1">fade</numIndex>
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
 								</numIndex>
 								<numIndex index="2">
-									<numIndex index="0">BackSlide</numIndex>
-									<numIndex index="1">backSlide</numIndex>
-								</numIndex>
-								<numIndex index="3">
-									<numIndex index="0">GoDown</numIndex>
-									<numIndex index="1">goDown</numIndex>
-								</numIndex>
-								<numIndex index="4">
-									<numIndex index="0">FadeUp</numIndex>
-									<numIndex index="1">fadeUp</numIndex>
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
 								</numIndex>
 							</items>
 						</config>
 					</TCEforms>
-				</settings.transitionStyle>
-				<settings.height>
+				</settings.loop>
+				<settings.center>
 					<TCEforms>
-						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:height</label>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.center</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.center>
+				<settings.pullDrag>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.pullDrag</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.pullDrag>
+				<settings.freeDrag>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.freeDrag</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.freeDrag>
+				<settings.stagePadding>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.stagePadding</label>
 						<config>
 							<type>input</type>
+							<placeholder>0</placeholder>
 							<eval>string</eval>
-							<default>500</default>
 							<size>5</size>
 						</config>
 					</TCEforms>
-				</settings.height>
+				</settings.stagePadding>
+				<settings.merge>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.merge</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.merge>
+				<settings.mergeFit>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mergeFit</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.mergeFit>
+				<settings.autoWidth>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoWidth</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.autoWidth>
+				<settings.startPosition>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.startPosition</label>
+						<config>
+							<type>input</type>
+							<placeholder>0</placeholder>
+							<eval>string</eval>
+							<size>5</size>
+						</config>
+					</TCEforms>
+				</settings.startPosition>
+				<settings.URLhashListener>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.URLhashListener</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.URLhashListener>
+				<settings.rewind>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.rewind</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.rewind>				
+				<settings.navElement>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navElement</label>
+						<config>
+							<type>input</type>
+							<placeholder>div</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.navElement>
+				<settings.slideBy>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideBy</label>
+						<config>
+							<type>input</type>
+							<placeholder>1</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.slideBy>
+				<settings.slideTransition>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideTransition</label>
+						<config>
+							<type>input</type>
+							<placeholder>linear</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.slideTransition>
+				<settings.dots>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dots</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.dots>
+				<settings.dotsEach>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsEach</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.dotsEach>
+				<settings.dotsData>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsData</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.dotsData>
+				<settings.lazyLoadEager>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoadEager</label>
+						<config>
+							<type>input</type>
+							<placeholder>0</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.lazyLoadEager>
+				<settings.autoplayTimeout>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayTimeout</label>
+						<config>
+							<type>input</type>
+							<placeholder>5000</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.autoplayTimeout>
+				<settings.autoplayHoverPause>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayHoverPause</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.autoplayHoverPause>
+				<settings.autoplaySpeed>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplaySpeed</label>
+						<config>
+							<type>input</type>
+							<placeholder>1000</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.autoplaySpeed>
+				<settings.navSpeed>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navSpeed</label>
+						<config>
+							<type>input</type>
+							<placeholder>1000</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.navSpeed>
+				<settings.dotsSpeed>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsSpeed</label>
+						<config>
+							<type>input</type>
+							<placeholder>1000</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.dotsSpeed>
+				<settings.dragEndSpeed>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dragEndSpeed</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.dragEndSpeed>				
+				<settings.animateOut>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut</label>
+						<config>
+							<type>input</type>
+							<placeholder>slideOutDown</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.animateOut>
+				<settings.animateIn>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn</label>
+						<config>
+							<type>input</type>
+							<placeholder>flipInX</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.animateIn>
+				<settings.fallbackEasing>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.fallbackEasing</label>
+						<config>
+							<type>input</type>
+							<placeholder>swing</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.fallbackEasing>
+				<settings.info>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.info</label>
+						<config>
+							<type>input</type>
+							<placeholder>false</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.info>
+				<settings.nestedItemSelector>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.nestedItemSelector</label>
+						<config>
+							<type>input</type>
+							<placeholder>String/Class</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.nestedItemSelector>
+				<settings.itemElement>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.itemElement</label>
+						<config>
+							<type>input</type>
+							<placeholder>div</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.itemElement>				
+				<settings.navContainer>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navContainer</label>
+						<config>
+							<type>input</type>
+							<placeholder>String/Class/ID/Boolean</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.navContainer>
+				<settings.dotsContainer>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsContainer</label>
+						<config>
+							<type>input</type>
+							<placeholder>String/Class/ID/Boolean</placeholder>
+							<eval>string</eval>
+							<size>20</size>
+						</config>
+					</TCEforms>
+				</settings.dotsContainer>
+				<settings.checkVisible>
+					<TCEforms>
+						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.checkVisible</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+							</items>
+						</config>
+					</TCEforms>
+				</settings.checkVisible>				
+				<settings.lightbox>
+				    <TCEforms>
+				        <label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lightbox</label>
+				        <config>
+				            <type>check</type>
+				            <default>0</default>
+				        </config>
+				    </TCEforms>
+				</settings.lightbox>
+				<settings.thumbs>
+				    <TCEforms>
+				        <label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.thumbs</label>
+				        <config>
+				            <type>check</type>
+				            <default>0</default>
+				        </config>
+				    </TCEforms>
+				</settings.thumbs>
 			</el>
 		</ROOT>
 	</sDEF>
