@@ -1,9 +1,5 @@
 <?php
 
-use TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider;
-use TYPO3\CMS\Core\Imaging\IconRegistry;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-
 if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
@@ -24,8 +20,8 @@ if (!defined('TYPO3_MODE')) {
 
 
 /* set iconidentifier */
-$iconRegistry = GeneralUtility::makeInstance(
-    IconRegistry::class
+$iconRegistry = TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+    \TYPO3\CMS\Core\Imaging\IconRegistry::class
 );
 $typeArray = [
     'ext-owl-carousel-icon'
@@ -33,7 +29,7 @@ $typeArray = [
 foreach ($typeArray as $currentType) {
     $iconRegistry->registerIcon(
         $currentType,
-        BitmapIconProvider::class,
+        \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
         ['source' => 'EXT:ns_all_sliders/Resources/Public/Icons/' . $currentType . '.png']
     );
 }
