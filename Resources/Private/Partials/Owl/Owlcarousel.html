@@ -83,7 +83,7 @@
     </f:then>
 </f:if>
 <div id="demo">
-	<div id="owl-demo" class="owl-carousel owl-theme{f:if(condition: settings.thumbs, then: 'owl-carousel-thumbs')}" >
+	<div id="owl-demo-{getContentId}" class="owl-carousel owl-theme{f:if(condition: settings.thumbs, then: 'owl-carousel-thumbs')}" >
 		<f:for each="{galleries}" as="people">
 			<f:if condition="{people.image}">
 				<f:for each="{people.image}" as="picture">

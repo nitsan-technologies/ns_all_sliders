@@ -52,6 +52,8 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $pluginName = $this->request->getPluginName();
         $extpath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::siteRelPath($this->request->getControllerExtensionKey());
         $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
+        $getContentId = $this->configurationManager->getContentObject()->data['uid'];
+        $this->view->assign('getContentId', $getContentId);
 
         if ($pluginName == 'Owlcarousel') {
             // add css js in header
@@ -92,11 +94,11 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             $GLOBALS['TSFE']->additionalFooterData[$this->extKey] .= "
                 <script>
                     (function($) {
-                        $('#owl-demo').owlCarousel({
+                        $('#owl-demo-".$getContentId."').owlCarousel({
                             autoplay : " . (isset($this->settings['autoPlay']) && $this->settings['autoPlay'] != '' ? $this->settings['autoPlay'] : $constant['ConAutoPlay']) . ',                        
                             nav : ' . (isset($this->settings['navigation']) && $this->settings['navigation'] != '' ? $this->settings['navigation'] : $constant['Connavigation']) . ',                        
                             items : ' . (isset($this->settings['items']) && $this->settings['items'] != '' ? $this->settings['items'] : $constant['Conitems']) . ',
-                            lazyLoad : ' . (isset($this->settings['lazyLoad'])  && $this->settings['lazyLoad'] != '' ? $this->settings['lazyLoad'] : $constant['ConlazyLoad']) . ',
+                            lazyLoad : "'. (isset($this->settings['lazyLoad'])  && $this->settings['lazyLoad'] != '' ? $this->settings['lazyLoad'] : $constant['ConlazyLoad']) . '",
                             mouseDrag:' . (isset($this->settings['mouseDrag']) && $this->settings['mouseDrag'] != '' ? $this->settings['mouseDrag'] : $constant['ConmouseDrag']) . ',
                             touchDrag:' . (isset($this->settings['touchDrag']) && $this->settings['touchDrag'] != '' ? $this->settings['touchDrag'] : $constant['ContouchDrag']) . ',
                             
@@ -141,7 +143,7 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                             checkVisible:' . (isset($this->settings['checkVisible']) && $this->settings['checkVisible'] != '' ? $this->settings['checkVisible'] : $constant['ConcheckVisible']) . ',                        
                             ' . $thumbs . "
                         });
-                     })(jQuery);
+                    })(jQuery);
                     function makePages() {
                         $.each(this.owl.userItems, function(i) {
                             $('.owl-controls .owl-page').eq(i)
