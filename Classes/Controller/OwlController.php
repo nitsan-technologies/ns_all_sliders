@@ -104,8 +104,6 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                             
                             margin:' . (isset($this->settings['margin']) && $this->settings['margin'] != '' ? $this->settings['margin'] : $constant['Conmargin']) . ',
                             loop:' . (isset($this->settings['loop']) && $this->settings['loop'] != '' ? $this->settings['loop'] : $constant['Conloop']) . ',
-                            
-
                             pullDrag:' . (isset($this->settings['pullDrag']) && $this->settings['pullDrag'] != '' ? $this->settings['pullDrag'] : $constant['ConpullDrag']) . ',                      
                             freeDrag:' . (isset($this->settings['freeDrag']) && $this->settings['freeDrag'] != '' ? $this->settings['freeDrag'] : $constant['ConfreeDrag']) . ',
                             stagePadding:' . (isset($this->settings['stagePadding']) && $this->settings['stagePadding'] != '' ? $this->settings['stagePadding'] : $constant['ConstagePadding']) . ',
