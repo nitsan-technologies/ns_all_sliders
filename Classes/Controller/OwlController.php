@@ -1,6 +1,8 @@
 <?php
 namespace Nsallsliders\NsAllSliders\Controller;
 
+use TYPO3\CMS\Extbase\Annotation\Inject as inject;
+
 /***************************************************************
  *
  *  Copyright notice
@@ -47,9 +49,12 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function listAction()
     {
-       
         $pluginName = $this->request->getPluginName();
-        $extpath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::siteRelPath($this->request->getControllerExtensionKey());
+        if (version_compare(TYPO3_branch, '9.0', '>')) {
+            $extpath = \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($this->request->getControllerExtensionKey()));
+        } else {
+            $extpath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::siteRelPath($this->request->getControllerExtensionKey());
+        }
         $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
         $getContentId = $this->configurationManager->getContentObject()->data['uid'];
         $this->view->assign('getContentId', $getContentId);
@@ -93,17 +98,17 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             $GLOBALS['TSFE']->additionalFooterData[$this->extKey] .= "
                 <script>
                     (function($) {
-                        $('#owl-demo-".$getContentId."').owlCarousel({
-                            autoplay : " . (isset($this->settings['autoPlay']) && $this->settings['autoPlay'] != '' ? $this->settings['autoPlay'] : $constant['ConAutoPlay']) . ',                        
-                            nav : ' . (isset($this->settings['navigation']) && $this->settings['navigation'] != '' ? $this->settings['navigation'] : $constant['Connavigation']) . ',                        
+                        $('#owl-demo-" . $getContentId . "').owlCarousel({
+                            autoplay : " . (isset($this->settings['autoPlay']) && $this->settings['autoPlay'] != '' ? $this->settings['autoPlay'] : $constant['ConAutoPlay']) . ',
+                            nav : ' . (isset($this->settings['navigation']) && $this->settings['navigation'] != '' ? $this->settings['navigation'] : $constant['Connavigation']) . ',
                             items : ' . (isset($this->settings['items']) && $this->settings['items'] != '' ? $this->settings['items'] : $constant['Conitems']) . ',
-                            lazyLoad : "'. (isset($this->settings['lazyLoad'])  && $this->settings['lazyLoad'] != '' ? $this->settings['lazyLoad'] : $constant['ConlazyLoad']) . '",
+                            lazyLoad : "' . (isset($this->settings['lazyLoad'])  && $this->settings['lazyLoad'] != '' ? $this->settings['lazyLoad'] : $constant['ConlazyLoad']) . '",
                             mouseDrag:' . (isset($this->settings['mouseDrag']) && $this->settings['mouseDrag'] != '' ? $this->settings['mouseDrag'] : $constant['ConmouseDrag']) . ',
                             touchDrag:' . (isset($this->settings['touchDrag']) && $this->settings['touchDrag'] != '' ? $this->settings['touchDrag'] : $constant['ContouchDrag']) . ',
-                            
+
                             margin:' . (isset($this->settings['margin']) && $this->settings['margin'] != '' ? $this->settings['margin'] : $constant['Conmargin']) . ',
                             loop:' . (isset($this->settings['loop']) && $this->settings['loop'] != '' ? $this->settings['loop'] : $constant['Conloop']) . ',
-                            pullDrag:' . (isset($this->settings['pullDrag']) && $this->settings['pullDrag'] != '' ? $this->settings['pullDrag'] : $constant['ConpullDrag']) . ',                      
+                            pullDrag:' . (isset($this->settings['pullDrag']) && $this->settings['pullDrag'] != '' ? $this->settings['pullDrag'] : $constant['ConpullDrag']) . ',
                             freeDrag:' . (isset($this->settings['freeDrag']) && $this->settings['freeDrag'] != '' ? $this->settings['freeDrag'] : $constant['ConfreeDrag']) . ',
                             stagePadding:' . (isset($this->settings['stagePadding']) && $this->settings['stagePadding'] != '' ? $this->settings['stagePadding'] : $constant['ConstagePadding']) . ',
                             merge:' . (isset($this->settings['merge']) && $this->settings['merge'] != '' ? $this->settings['merge'] : $constant['Conmerge']) . ',
@@ -131,13 +136,13 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                             fallbackEasing:'" . (isset($this->settings['fallbackEasing']) && $this->settings['fallbackEasing'] != '' ? $this->settings['fallbackEasing'] : $constant['ConfallbackEasing']) . "',
                             info:" . (isset($this->settings['info']) && $this->settings['info'] != '' ? $this->settings['info'] : $constant['Coninfo']) . ',
                             nestedItemSelector:' . (isset($this->settings['nestedItemSelector']) && $this->settings['nestedItemSelector'] != '' ? $this->settings['nestedItemSelector'] : $constant['ConnestedItemSelector']) . ",
-                            
-                            itemElement:'" . (isset($this->settings['itemElement']) && $this->settings['itemElement'] != '' ? $this->settings['itemElement'] : $constant['ConitemElement']) . "',                        
+
+                            itemElement:'" . (isset($this->settings['itemElement']) && $this->settings['itemElement'] != '' ? $this->settings['itemElement'] : $constant['ConitemElement']) . "',
                             navContainer:" . (isset($this->settings['navContainer']) && $this->settings['navContainer'] != '' ? $this->settings['navContainer'] : $constant['ConnavContainer']) . ',
                             center:' . (isset($this->settings['center']) && $this->settings['center'] != '' ? $this->settings['center'] : $constant['Concenter']) . ',
 
                             dotsContainer:' . (isset($this->settings['dotsContainer']) && $this->settings['dotsContainer'] != '' ? $this->settings['dotsContainer'] : $constant['CondotsContainer']) . ',
-                            checkVisible:' . (isset($this->settings['checkVisible']) && $this->settings['checkVisible'] != '' ? $this->settings['checkVisible'] : $constant['ConcheckVisible']) . ',                        
+                            checkVisible:' . (isset($this->settings['checkVisible']) && $this->settings['checkVisible'] != '' ? $this->settings['checkVisible'] : $constant['ConcheckVisible']) . ',
                             ' . $thumbs . "
                         });
                     })(jQuery);
@@ -149,7 +154,7 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                                     'background-size': 'cover'
                                 })
                         });
-                    }                   
+                    }
                 </script>";
 
             if ($this->settings['lightbox']) {

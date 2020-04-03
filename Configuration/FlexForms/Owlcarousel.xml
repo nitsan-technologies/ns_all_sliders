@@ -62,6 +62,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoPlay</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -85,16 +86,17 @@
 						<config>
 							<type>input</type>
 							<placeholder>1</placeholder>
-							<eval>string</eval>							
+							<eval>string</eval>
 							<size>5</size>
 						</config>
 					</TCEforms>
-				</settings.items>				
+				</settings.items>
 				<settings.navigation>
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navigation</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -111,12 +113,13 @@
 							</items>
 						</config>
 					</TCEforms>
-				</settings.navigation>				
+				</settings.navigation>
 				<settings.lazyLoad>
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoad</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -139,6 +142,7 @@
 				        <label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mouseDrag</label>
 				       	<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -161,6 +165,7 @@
 				        <label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.touchDrag</label>
 				        <config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -194,6 +199,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.loop</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -216,6 +222,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.center</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -238,6 +245,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.pullDrag</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -260,6 +268,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.freeDrag</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -293,6 +302,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.merge</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -315,6 +325,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mergeFit</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -337,6 +348,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoWidth</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -370,6 +382,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.URLhashListener</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -392,6 +405,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.rewind</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -408,7 +422,7 @@
 							</items>
 						</config>
 					</TCEforms>
-				</settings.rewind>				
+				</settings.rewind>
 				<settings.navElement>
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navElement</label>
@@ -447,6 +461,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dots</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -469,6 +484,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsEach</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -491,6 +507,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsData</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -535,6 +552,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayHoverPause</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -590,6 +608,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dragEndSpeed</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -606,7 +625,7 @@
 							</items>
 						</config>
 					</TCEforms>
-				</settings.dragEndSpeed>				
+				</settings.dragEndSpeed>
 				<settings.animateOut>
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut</label>
@@ -672,7 +691,7 @@
 							<size>20</size>
 						</config>
 					</TCEforms>
-				</settings.itemElement>				
+				</settings.itemElement>
 				<settings.navContainer>
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navContainer</label>
@@ -700,6 +719,7 @@
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.checkVisible</label>
 						<config>
 							<type>select</type>
+							<renderType>selectSingle</renderType>
 							<items>
 								<numIndex index="0">
 									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
@@ -716,7 +736,7 @@
 							</items>
 						</config>
 					</TCEforms>
-				</settings.checkVisible>				
+				</settings.checkVisible>
 				<settings.lightbox>
 				    <TCEforms>
 				        <label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lightbox</label>

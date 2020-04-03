@@ -28,7 +28,7 @@ stages:
     - php -r "unlink('composer-setup.php'); unlink('installer.sig');"
     - composer require friendsofphp/php-cs-fixer
   script:
-    - .Build/bin/php-cs-fixer fix --dry-run --config=.php_cs --diff
+    .Build/bin/php-cs-fixer fix --dry-run --config=.php_cs --diff
 
 # Tests in PHP 7.2 and TYPO3 9.5 version
 php:testphp72:typo3_95:

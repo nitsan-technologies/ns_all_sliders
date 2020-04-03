@@ -3,7 +3,7 @@
 if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
-
+$_EXTKEY = 'ns_all_sliders';
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'Nsallsliders.' . $_EXTKEY,
     'Owlcarousel',
@@ -17,7 +17,6 @@ if (!defined('TYPO3_MODE')) {
 
     ]
 );
-
 
 /* set iconidentifier */
 $iconRegistry = TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
