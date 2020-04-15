@@ -630,10 +630,62 @@
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut</label>
 						<config>
-							<type>input</type>
-							<placeholder>slideOutDown</placeholder>
-							<eval>string</eval>
-							<size>20</size>
+							<type>select</type>
+							<renderType>selectSingle</renderType>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">bounce</numIndex>
+									<numIndex index="1">bounce</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">shake</numIndex>
+									<numIndex index="1">shake</numIndex>
+								</numIndex>
+								<numIndex index="3">
+									<numIndex index="0">fadeOutLeft</numIndex>
+									<numIndex index="1">fadeOutLeft</numIndex>
+								</numIndex>
+								<numIndex index="4">
+									<numIndex index="0">flipOutX</numIndex>
+									<numIndex index="1">flipOutX</numIndex>
+								</numIndex>
+								<numIndex index="5">
+									<numIndex index="0">rollOut</numIndex>
+									<numIndex index="1">rollOut</numIndex>
+								</numIndex>
+								<numIndex index="6">
+									<numIndex index="0">fadeOutUpBig</numIndex>
+									<numIndex index="1">fadeOutUpBig</numIndex>
+								</numIndex>
+								<numIndex index="7">
+									<numIndex index="0">slideOutDown</numIndex>
+									<numIndex index="1">slideOutDown</numIndex>
+								</numIndex>
+								<numIndex index="8">
+									<numIndex index="0">slideOutUp</numIndex>
+									<numIndex index="1">slideOutUp</numIndex>
+								</numIndex>
+								<numIndex index="9">
+									<numIndex index="0">flipOutY</numIndex>
+									<numIndex index="1">flipOutY</numIndex>
+								</numIndex>
+								<numIndex index="10">
+									<numIndex index="0">bounceOutUp</numIndex>
+									<numIndex index="1">bounceOutUp</numIndex>
+								</numIndex>
+								<numIndex index="11">
+									<numIndex index="0">lightSpeedOut</numIndex>
+									<numIndex index="1">lightSpeedOut</numIndex>
+								</numIndex>
+								<numIndex index="12">
+									<numIndex index="0">rotateOutDownLeft</numIndex>
+									<numIndex index="1">rotateOutDownLeft</numIndex>
+								</numIndex>
+							</items>
 						</config>
 					</TCEforms>
 				</settings.animateOut>
@@ -641,10 +693,62 @@
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn</label>
 						<config>
-							<type>input</type>
-							<placeholder>flipInX</placeholder>
-							<eval>string</eval>
-							<size>20</size>
+							<type>select</type>
+							<renderType>selectSingle</renderType>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.selAction</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">bounce</numIndex>
+									<numIndex index="1">bounce</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">shake</numIndex>
+									<numIndex index="1">shake</numIndex>
+								</numIndex>
+								<numIndex index="3">
+									<numIndex index="0">fadeInLeft</numIndex>
+									<numIndex index="1">fadeInLeft</numIndex>
+								</numIndex>
+								<numIndex index="4">
+									<numIndex index="0">flipInX</numIndex>
+									<numIndex index="1">flipInX</numIndex>
+								</numIndex>
+								<numIndex index="5">
+									<numIndex index="0">rollIn</numIndex>
+									<numIndex index="1">rollIn</numIndex>
+								</numIndex>
+								<numIndex index="6">
+									<numIndex index="0">fadeInUpBig</numIndex>
+									<numIndex index="1">fadeInUpBig</numIndex>
+								</numIndex>
+								<numIndex index="7">
+									<numIndex index="0">slideInDown</numIndex>
+									<numIndex index="1">slideInDown</numIndex>
+								</numIndex>
+								<numIndex index="8">
+									<numIndex index="0">slideInUp</numIndex>
+									<numIndex index="1">slideInUp</numIndex>
+								</numIndex>
+								<numIndex index="9">
+									<numIndex index="0">flipInY</numIndex>
+									<numIndex index="1">flipInY</numIndex>
+								</numIndex>
+								<numIndex index="10">
+									<numIndex index="0">bounceInUp</numIndex>
+									<numIndex index="1">bounceInUp</numIndex>
+								</numIndex>
+								<numIndex index="11">
+									<numIndex index="0">lightSpeedIn</numIndex>
+									<numIndex index="1">lightSpeedIn</numIndex>
+								</numIndex>
+								<numIndex index="12">
+									<numIndex index="0">rotateInDownLeft</numIndex>
+									<numIndex index="1">rotateInDownLeft</numIndex>
+								</numIndex>
+							</items>
 						</config>
 					</TCEforms>
 				</settings.animateIn>
