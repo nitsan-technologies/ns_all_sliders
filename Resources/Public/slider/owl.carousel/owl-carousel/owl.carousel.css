@@ -184,3 +184,24 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+/**/
+
+.tx-ns-all-sliders .owl-thumbs {
+    position: relative !important;
+    padding: 0 !important;
+}
+.tx-ns-all-sliders .owl-thumbs .owl-thumb-item {
+    opacity: 1;
+    border: 5px solid #fff;
+}
+.tx-ns-all-sliders .owl-thumbs .owl-thumb-item.active {
+    border-color: #c9ae64;
+}
+.tx-ns-all-sliders .owl-carousel .owl-item img,
+.tx-ns-all-sliders .owl-carousel .owl-item,
+.owl-carousel .item {
+    height: auto;
+}
+
+/**/
