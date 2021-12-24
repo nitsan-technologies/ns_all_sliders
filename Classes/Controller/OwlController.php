@@ -42,6 +42,17 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     protected $galleryRepository = null;
 
+    /*
+     * Inject a gallery Repository
+     *
+     * @param \Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository $galleryRepository
+     * @return void
+     */
+    public function injectGalleryRepository(\Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository $galleryRepository)
+    {
+        $this->galleryRepository = $galleryRepository;
+    }
+    
     /**
      * action list
      *

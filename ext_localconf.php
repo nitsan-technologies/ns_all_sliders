@@ -4,16 +4,21 @@ if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 $_EXTKEY = 'ns_all_sliders';
+if (version_compare(TYPO3_branch, '10.0', '>')) {
+    $owlClass = \Nsallsliders\NsAllSliders\Controller\OwlController::class;
+} else {
+    $owlClass = 'Owl';
+}
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'Nsallsliders.' . $_EXTKEY,
     'Owlcarousel',
     [
-        'Owl' => 'list',
+        $owlClass => 'list',
 
     ],
     // non-cacheable actions
     [
-        'Owl' => '',
+        $owlClass => '',
 
     ]
 );
