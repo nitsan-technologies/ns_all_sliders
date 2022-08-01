@@ -34,6 +34,6 @@ foreach ($typeArray as $currentType) {
     $iconRegistry->registerIcon(
         $currentType,
         \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-        ['source' => 'EXT:ns_all_sliders/Resources/Public/Icons/' . $currentType . '.png']
+        ['source' => 'EXT:ns_all_sliders/Resources/Public/Icons/' . $currentType . '.svg']
     );
 }

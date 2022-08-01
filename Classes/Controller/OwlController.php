@@ -104,8 +104,12 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                     thumbs: true,
                     thumbImage:true
                 ';
+            } else {
+                $thumbs = isset($thumbs) ? $thumbs : '';
             }
 
+            $this->extKey = isset($this->extKey) ? $this->extKey : '';
+            $GLOBALS['TSFE']->additionalFooterData[$this->extKey] = isset($GLOBALS['TSFE']->additionalFooterData[$this->extKey]) ? $GLOBALS['TSFE']->additionalFooterData[$this->extKey] : '';            
             $GLOBALS['TSFE']->additionalFooterData[$this->extKey] .= "
                 <script>
                     (function($) {
