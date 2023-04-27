@@ -1,7 +1,6 @@
 <?php
 namespace Nsallsliders\NsAllSliders\Controller;
 
-use TYPO3\CMS\Extbase\Annotation\Inject as inject;
 
 /***************************************************************
  *
@@ -38,7 +37,6 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * galleryRepository
      *
      * @var \Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository
-     * @inject
      */
     protected $galleryRepository = null;
 
@@ -60,16 +58,15 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function listAction()
     {
+        
         $pluginName = $this->request->getPluginName();
-        if (version_compare(TYPO3_branch, '9.0', '>')) {
-            $extpath = \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($this->request->getControllerExtensionKey()));
-        } else {
-            $extpath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::siteRelPath($this->request->getControllerExtensionKey());
-        }
+      
+        $extpath = \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($this->request->getControllerExtensionKey()));
+      
         $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
         $getContentId = $this->configurationManager->getContentObject()->data['uid'];
         $this->view->assign('getContentId', $getContentId);
-
+        
         if ($pluginName == 'Owlcarousel') {
             // add css js in header
             $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS1'] = '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700" rel="stylesheet" type="text/css">';
@@ -107,10 +104,9 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             } else {
                 $thumbs = isset($thumbs) ? $thumbs : '';
             }
-
-            $this->extKey = isset($this->extKey) ? $this->extKey : '';
-            $GLOBALS['TSFE']->additionalFooterData[$this->extKey] = isset($GLOBALS['TSFE']->additionalFooterData[$this->extKey]) ? $GLOBALS['TSFE']->additionalFooterData[$this->extKey] : '';            
-            $GLOBALS['TSFE']->additionalFooterData[$this->extKey] .= "
+            
+         
+            $GLOBALS['TSFE']->additionalFooterData[] .= "
                 <script>
                     (function($) {
                         $('#owl-demo-" . $getContentId . "').owlCarousel({
@@ -171,9 +167,9 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                         });
                     }
                 </script>";
-
+            
             if ($this->settings['lightbox']) {
-                $GLOBALS['TSFE']->additionalFooterData[$this->extKey] .= "
+                $GLOBALS['TSFE']->additionalFooterData[] .= "
                     <script>
                         // fancybox
                         // ========
@@ -203,5 +199,7 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
         // show pluging name
         $this->view->assign('pluginName', $pluginName);
+        
+        return $this->htmlResponse();
     }
 }
