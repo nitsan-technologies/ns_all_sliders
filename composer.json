@@ -19,7 +19,7 @@
     "issues": "https://github.com/nitsan-technologies/ns_all_sliders/issues"
   },
   "require": {
-    "typo3/cms-core": "^12.4 "
+    "typo3/cms-core": "^12"
   },
   "autoload": {
     "psr-4": {

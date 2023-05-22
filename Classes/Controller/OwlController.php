@@ -70,32 +70,28 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         if ($pluginName == 'Owlcarousel') {
             // add css js in header
             $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS1'] = '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700" rel="stylesheet" type="text/css">';
-            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS3'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/assets/css/custom.css" />';
-            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS4'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/owl-carousel/owl.carousel.css" />';
-            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS5'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/owl-carousel/owl.theme.default.css" />';
-            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS6'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/owl-carousel/owl.transitions.css" />';
-            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS7'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/assets/js/google-code-prettify/prettify.css" />';
-            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS9'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/assets/css/animate.css" />';
+            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS3'] = $pageRenderer->addCssFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/assets/css/custom.css', 'stylesheet', '', '', false);
+            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS4'] = $pageRenderer->addCssFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/owl-carousel/owl.carousel.css', 'stylesheet', '', '', false);
+            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS5'] = $pageRenderer->addCssFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/owl-carousel/owl.theme.default.css', 'stylesheet', '', '', false);
+            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS6'] = $pageRenderer->addCssFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/owl-carousel/owl.transitions.css', 'stylesheet', '', '', false);
+            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS7'] = $pageRenderer->addCssFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/assets/js/google-code-prettify/prettify.css', 'stylesheet', '', '', false);
+            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS9'] = $pageRenderer->addCssFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/assets/css/animate.css', 'stylesheet', '', '', false);
 
             // set js value for slider
             $constant = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_nsallsliders_owlcarousel.']['settings.'];
 
             if ($constant['jQuery']) {
-                $ajax0 = $extpath . 'Resources/Public/slider/owl.carousel/assets/js/jquery.min.js';
-                $pageRenderer->addJsFooterFile($ajax0, 'text/javascript', false, false, '');
+                $pageRenderer->addJsFooterFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/assets/js/jquery.min.js', 'text/javascript', false, false, '');
             }
             // add js at footer
-            $ajax1 = $extpath . 'Resources/Public/slider/owl.carousel/owl-carousel/owl.carousel.js';
-            $pageRenderer->addJsFooterFile($ajax1, 'text/javascript', false, false, '');
+            $pageRenderer->addJsFooterFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/owl-carousel/owl.carousel.js', 'text/javascript', false, false, '');
 
             if ($this->settings['lightbox']) {
-                $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS8'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/Fancybox/jquery.fancybox.min.css" />';
-                $ajax7 = $extpath . 'Resources/Public/slider/Fancybox/jquery.fancybox.min.js';
-                $pageRenderer->addJsFooterFile($ajax7, 'text/javascript', false, false, '');
+                $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS8'] = $pageRenderer->addCssFile('EXT:ns_all_sliders/Resources/Public/slider/Fancybox/jquery.fancybox.min.css', 'stylesheet', '', '', false);
+                $pageRenderer->addJsFooterFile('EXT:ns_all_sliders/Resources/Public/slider/Fancybox/jquery.fancybox.min.js', 'text/javascript', false, false, '');
             }
             if ($this->settings['thumbs']) {
-                $ajax8 = $extpath . 'Resources/Public/slider/owl.carousel/assets/js/owl.carousel2.thumbs.js';
-                $pageRenderer->addJsFooterFile($ajax8, 'text/javascript', false, false, '');
+                $pageRenderer->addJsFooterFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/assets/js/owl.carousel2.thumbs.js', 'text/javascript', false, false, '');
 
                 $thumbs = '
                     thumbs: true,
