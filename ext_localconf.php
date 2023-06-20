@@ -23,13 +23,9 @@ $_EXTKEY = 'ns_all_sliders';
 $iconRegistry = TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
     \TYPO3\CMS\Core\Imaging\IconRegistry::class
 );
-$typeArray = [
-    'ext-owl-carousel-icon'
-];
-foreach ($typeArray as $currentType) {
-    $iconRegistry->registerIcon(
-        $currentType,
-        \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-        ['source' => 'EXT:ns_all_sliders/Resources/Public/Icons/' . $currentType . '.svg']
-    );
-}
+
+$iconRegistry->registerIcon(
+    'ext-owl-carousel-icon',
+    \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+    ['source' => 'EXT:ns_all_sliders/Resources/Public/Icons/' . 'ext-owl-carousel-icon' . '.svg']
+);

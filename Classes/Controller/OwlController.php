@@ -1,6 +1,8 @@
 <?php
+
 namespace Nsallsliders\NsAllSliders\Controller;
 
+use Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository;
 
 /***************************************************************
  *
@@ -32,41 +34,33 @@ namespace Nsallsliders\NsAllSliders\Controller;
  */
 class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
     /**
      * galleryRepository
      *
-     * @var \Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository
+     * @var GalleryRepository
      */
     protected $galleryRepository = null;
 
-    /*
-     * Inject a gallery Repository
-     *
-     * @param \Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository $galleryRepository
-     * @return void
-     */
-    public function injectGalleryRepository(\Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository $galleryRepository)
+    public function __construct(GalleryRepository $galleryRepository)
     {
         $this->galleryRepository = $galleryRepository;
     }
-    
+
     /**
      * action list
      *
-     * @return void
      */
     public function listAction()
     {
-        
+
         $pluginName = $this->request->getPluginName();
-      
+
         $extpath = \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($this->request->getControllerExtensionKey()));
-      
+
         $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
         $getContentId = $this->configurationManager->getContentObject()->data['uid'];
         $this->view->assign('getContentId', $getContentId);
-        
+
         if ($pluginName == 'Owlcarousel') {
             // add css js in header
             $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS1'] = '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700" rel="stylesheet" type="text/css">';
@@ -90,6 +84,7 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                 $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS8'] = $pageRenderer->addCssFile('EXT:ns_all_sliders/Resources/Public/slider/Fancybox/jquery.fancybox.min.css', 'stylesheet', '', '', false);
                 $pageRenderer->addJsFooterFile('EXT:ns_all_sliders/Resources/Public/slider/Fancybox/jquery.fancybox.min.js', 'text/javascript', false, false, '');
             }
+            $thumbs = '';
             if ($this->settings['thumbs']) {
                 $pageRenderer->addJsFooterFile('EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/assets/js/owl.carousel2.thumbs.js', 'text/javascript', false, false, '');
 
@@ -97,12 +92,10 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                     thumbs: true,
                     thumbImage:true
                 ';
-            } else {
-                $thumbs = isset($thumbs) ? $thumbs : '';
             }
-            
-         
-            $GLOBALS['TSFE']->additionalFooterData[] .= "
+
+
+            $GLOBALS['TSFE']->additionalFooterData[$this->request->getControllerExtensionKey()] .= "
                 <script>
                     (function($) {
                         $('#owl-demo-" . $getContentId . "').owlCarousel({
@@ -163,9 +156,9 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                         });
                     }
                 </script>";
-            
+
             if ($this->settings['lightbox']) {
-                $GLOBALS['TSFE']->additionalFooterData[] .= "
+                $GLOBALS['TSFE']->additionalFooterData[$this->request->getControllerExtensionKey()] .= "
                     <script>
                         // fancybox
                         // ========
@@ -195,7 +188,7 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
         // show pluging name
         $this->view->assign('pluginName', $pluginName);
-        
+
         return $this->htmlResponse();
     }
 }
