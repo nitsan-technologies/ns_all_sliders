@@ -1,5 +1,6 @@
 <?php
-defined('TYPO3_MODE') or die();
+
+defined('TYPO3') or die();
 
 $_EXTKEY = 'ns_all_sliders';
 
@@ -7,7 +8,7 @@ $_EXTKEY = 'ns_all_sliders';
  * Plugins
  */
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'Nsallsliders.' . $_EXTKEY,
+    $_EXTKEY,
     'Owlcarousel',
     'Owl carousel'
 );

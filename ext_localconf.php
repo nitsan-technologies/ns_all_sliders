@@ -1,24 +1,20 @@
 <?php
 
-if (!defined('TYPO3_MODE')) {
+if (!defined('TYPO3')) {
     die('Access denied.');
 }
 $_EXTKEY = 'ns_all_sliders';
-if (version_compare(TYPO3_branch, '10.0', '>')) {
-    $owlClass = \Nsallsliders\NsAllSliders\Controller\OwlController::class;
-} else {
-    $owlClass = 'Owl';
-}
+
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'Nsallsliders.' . $_EXTKEY,
+    $_EXTKEY,
     'Owlcarousel',
     [
-        $owlClass => 'list',
+        \Nsallsliders\NsAllSliders\Controller\OwlController::class => 'list',
 
     ],
     // non-cacheable actions
     [
-        $owlClass => '',
+        \Nsallsliders\NsAllSliders\Controller\OwlController::class => '',
 
     ]
 );
@@ -27,13 +23,9 @@ if (version_compare(TYPO3_branch, '10.0', '>')) {
 $iconRegistry = TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
     \TYPO3\CMS\Core\Imaging\IconRegistry::class
 );
-$typeArray = [
-    'ext-owl-carousel-icon'
-];
-foreach ($typeArray as $currentType) {
-    $iconRegistry->registerIcon(
-        $currentType,
-        \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-        ['source' => 'EXT:ns_all_sliders/Resources/Public/Icons/' . $currentType . '.svg']
-    );
-}
+
+$iconRegistry->registerIcon(
+    'ext-owl-carousel-icon',
+    \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+    ['source' => 'EXT:ns_all_sliders/Resources/Public/Icons/' . 'ext-owl-carousel-icon' . '.svg']
+);

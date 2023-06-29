@@ -10,94 +10,94 @@ plugin.tx_nsallsliders_owlcarousel {
 	}
 
 	persistence {
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=Default storage PID
+		# cat=plugin.tx_nsallsliders_owlcarousel//01; type=string; label=Default storage PID
 		storagePid =
 	}
 	settings{
 
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=boolean; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.jQuery
-		jQuery = 0
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navigation
+		# cat=plugin.tx_nsallsliders_owlcarousel//02; type=boolean; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.jQuery
+		jQuery = 1
+		# cat=plugin.tx_nsallsliders_owlcarousel//03; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navigation
 		Connavigation = true
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoPlay
+		# cat=plugin.tx_nsallsliders_owlcarousel//04; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoPlay
 		ConAutoPlay = true		
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.singleItem
+		# cat=plugin.tx_nsallsliders_owlcarousel//05; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.singleItem
 		ConsingleItem = true
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.items
+		# cat=plugin.tx_nsallsliders_owlcarousel//06; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.items
 		Conitems = 1		
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoad
+		# cat=plugin.tx_nsallsliders_owlcarousel//07; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoad
 		ConlazyLoad = true
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mouseDrag
+		# cat=plugin.tx_nsallsliders_owlcarousel//08; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mouseDrag
 		ConmouseDrag = true
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.touchDrag
+		# cat=plugin.tx_nsallsliders_owlcarousel//09; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.touchDrag
 		ContouchDrag = true		
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.margin
+		# cat=plugin.tx_nsallsliders_owlcarousel//10; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.margin
 		Conmargin = 0
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.loop
+		# cat=plugin.tx_nsallsliders_owlcarousel//11; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.loop
 		Conloop = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.center
+		# cat=plugin.tx_nsallsliders_owlcarousel//12; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.center
 		Concenter = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.pullDrag
+		# cat=plugin.tx_nsallsliders_owlcarousel//13; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.pullDrag
 		ConpullDrag = true
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.freeDrag
+		# cat=plugin.tx_nsallsliders_owlcarousel//14; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.freeDrag
 		ConfreeDrag = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.stagePadding
+		# cat=plugin.tx_nsallsliders_owlcarousel//15; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.stagePadding
 		ConstagePadding = 0
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.merge
+		# cat=plugin.tx_nsallsliders_owlcarousel//16; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.merge
 		Conmerge = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mergeFit
+		# cat=plugin.tx_nsallsliders_owlcarousel//17; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mergeFit
 		ConmergeFit = true
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoWidth
+		# cat=plugin.tx_nsallsliders_owlcarousel//18; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoWidth
 		ConautoWidth = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.startPosition
+		# cat=plugin.tx_nsallsliders_owlcarousel//19; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.startPosition
 		ConstartPosition = 0
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.URLhashListener
+		# cat=plugin.tx_nsallsliders_owlcarousel//20; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.URLhashListener
 		ConURLhashListener = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.rewind
+		# cat=plugin.tx_nsallsliders_owlcarousel//21; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.rewind
 		Conrewind = true
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navElement
+		# cat=plugin.tx_nsallsliders_owlcarousel//22; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navElement
 		ConnavElement = div
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideBy
+		# cat=plugin.tx_nsallsliders_owlcarousel//23; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideBy
 		ConslideBy = 1
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideTransition
+		# cat=plugin.tx_nsallsliders_owlcarousel//24; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideTransition
 		ConslideTransition = 
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dots
+		# cat=plugin.tx_nsallsliders_owlcarousel//25; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dots
 		Condots = true
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsEach
+		# cat=plugin.tx_nsallsliders_owlcarousel//26; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsEach
 		CondotsEach = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsData
+		# cat=plugin.tx_nsallsliders_owlcarousel//27; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsData
 		CondotsData= false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoadEager
+		# cat=plugin.tx_nsallsliders_owlcarousel//28; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoadEager
 		ConlazyLoadEager = 0
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayTimeout
+		# cat=plugin.tx_nsallsliders_owlcarousel//29; type=int; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayTimeout
 		ConautoplayTimeout = 5000
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayHoverPause
+		# cat=plugin.tx_nsallsliders_owlcarousel//30; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayHoverPause
 		ConautoplayHoverPause = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplaySpeed
+		# cat=plugin.tx_nsallsliders_owlcarousel//31; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplaySpeed
 		ConautoplaySpeed = 3000
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navSpeed
+		# cat=plugin.tx_nsallsliders_owlcarousel//32; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navSpeed
 		ConnavSpeed = 3000
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsSpeed
+		# cat=plugin.tx_nsallsliders_owlcarousel//33; type=type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsSpeed
 		CondotsSpeed = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dragEndSpeed
+		# cat=plugin.tx_nsallsliders_owlcarousel//34; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dragEndSpeed
 		CondragEndSpeed = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[flipInX,slideOutDown]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut
+		# cat=plugin.tx_nsallsliders_owlcarousel//35; type=options[flipInX,slideOutDown]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut
 		ConanimateOut = slideOutDown
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[flipInX,slideOutDown]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn
+		# cat=plugin.tx_nsallsliders_owlcarousel//36; type=options[flipInX,slideOutDown]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn
 		ConanimateIn = flipInX
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.fallbackEasing
+		# cat=plugin.tx_nsallsliders_owlcarousel//37; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.fallbackEasing
 		ConfallbackEasing = swing
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.info
+		# cat=plugin.tx_nsallsliders_owlcarousel//38; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.info
 		Coninfo = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.nestedItemSelector
+		# cat=plugin.tx_nsallsliders_owlcarousel//39; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.nestedItemSelector
 		ConnestedItemSelector = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.itemElement
+		# cat=plugin.tx_nsallsliders_owlcarousel//40; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.itemElement
 		ConitemElement = div
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navContainer
+		# cat=plugin.tx_nsallsliders_owlcarousel//41; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navContainer
 		ConnavContainer = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsContainer
+		# cat=plugin.tx_nsallsliders_owlcarousel//42; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsContainer
 		CondotsContainer = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.checkVisible
+		# cat=plugin.tx_nsallsliders_owlcarousel//43; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.checkVisible
 		ConcheckVisible = true
 	}
 }
