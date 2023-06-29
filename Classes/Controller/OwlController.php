@@ -94,7 +94,7 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
                 ';
             }
 
-
+            $GLOBALS['TSFE']->additionalFooterData[$this->request->getControllerExtensionKey()] = isset($GLOBALS['TSFE']->additionalFooterData[$this->request->getControllerExtensionKey()]) ? $GLOBALS['TSFE']->additionalFooterData[$this->request->getControllerExtensionKey()] : '';
             $GLOBALS['TSFE']->additionalFooterData[$this->request->getControllerExtensionKey()] .= "
                 <script>
                     (function($) {
