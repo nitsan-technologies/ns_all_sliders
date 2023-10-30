@@ -34,6 +34,7 @@ use TYPO3\CMS\Extbase\Annotation\Inject as inject;
 class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
 
+    protected $extKey;
     /**
      * galleryRepository
      *

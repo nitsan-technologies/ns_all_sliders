@@ -16,7 +16,7 @@ plugin.tx_nsallsliders_owlcarousel {
 	settings{
 
 		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=boolean; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.jQuery
-		jQuery = 0
+		jQuery = 1
 		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navigation
 		Connavigation = true
 		# cat=plugin.tx_nsallsliders_owlcarousel//a; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoPlay
