@@ -68,7 +68,7 @@
 			</trans-unit>
 			<!-- Owlcarousel  -->
 			<trans-unit id="flexform.autoPlay">
-				<source>AutoPlay</source>
+				<source>Auto Play</source>
 			</trans-unit>
 			<trans-unit id="flexform.paginationSpeed">
 				<source>Pagination Speed</source>
@@ -200,7 +200,7 @@
 				<source>Lazy load eager</source>
 			</trans-unit>
 			<trans-unit id="flexform.autoplayTimeout">
-				<source>Autoplay timeout</source>
+				<source>Auto play timeout</source>
 			</trans-unit>
 			<trans-unit id="flexform.autoplayHoverPause">
 				<source>Auto play hover pause</source>
@@ -215,7 +215,7 @@
 				<source>Dots speed</source>
 			</trans-unit>
 			<trans-unit id="flexform.dragEndSpeed">
-				<source>Drag endSpeed</source>
+				<source>Drag end speed</source>
 			</trans-unit>
 			<trans-unit id="flexform.callbacks">
 				<source>Callbacks</source>

@@ -84,9 +84,12 @@
 					<TCEforms>
 						<label>LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.items</label>
 						<config>
-							<type>input</type>
+							<type>number</type>
 							<placeholder>1</placeholder>
-							<eval>string</eval>
+							<default>1</default>
+							<range>
+								<lower>1</lower>
+							</range>
 							<size>5</size>
 						</config>
 					</TCEforms>

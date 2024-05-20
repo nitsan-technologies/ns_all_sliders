@@ -2,6 +2,9 @@
 
 namespace Nsallsliders\NsAllSliders\Domain\Model;
 
+use TYPO3\CMS\Extbase\Domain\Model\FileReference;
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 /***************************************************************
  *
  *  Copyright notice
@@ -30,19 +33,19 @@ namespace Nsallsliders\NsAllSliders\Domain\Model;
 /**
  * Gallery
  */
-class Gallery extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Gallery extends AbstractEntity
 {
     /**
      * image
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+     * @var ObjectStorage<FileReference>
      */
     protected $image = null;
 
     /**
      * Returns the image
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage $image
+     * @return ObjectStorage $image
      */
     public function getImage()
     {
@@ -52,7 +55,7 @@ class Gallery extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the image
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $image
+     * @param ObjectStorage $image
      * @return void
      */
     public function setImage($image)
