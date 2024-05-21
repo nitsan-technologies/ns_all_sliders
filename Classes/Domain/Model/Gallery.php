@@ -38,16 +38,16 @@ class Gallery extends AbstractEntity
     /**
      * image
      *
-     * @var ObjectStorage<FileReference>
+     * @var ObjectStorage<FileReference>|null
      */
-    protected $image = null;
+    protected ?ObjectStorage $image = null;
 
     /**
      * Returns the image
      *
-     * @return ObjectStorage $image
+     * @return ObjectStorage|null $image
      */
-    public function getImage()
+    public function getImage(): ?ObjectStorage
     {
         return $this->image;
     }
@@ -58,7 +58,7 @@ class Gallery extends AbstractEntity
      * @param ObjectStorage $image
      * @return void
      */
-    public function setImage($image)
+    public function setImage(ObjectStorage $image): void
     {
         $this->image = $image;
     }

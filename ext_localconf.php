@@ -9,19 +9,16 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 if (!defined('TYPO3')) {
     die('Access denied.');
 }
-$_EXTKEY = 'ns_all_sliders';
 
 ExtensionUtility::configurePlugin(
-    $_EXTKEY,
+    'ns_all_sliders',
     'Owlcarousel',
     [
         OwlController::class => 'list',
-
     ],
     // non-cacheable actions
     [
         OwlController::class => '',
-
     ]
 );
 

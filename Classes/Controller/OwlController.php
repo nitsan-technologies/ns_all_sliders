@@ -3,6 +3,7 @@
 namespace Nsallsliders\NsAllSliders\Controller;
 
 use Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository;
+use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
@@ -47,18 +48,18 @@ class OwlController extends ActionController
     {
     }
 
+
     /**
-     * action list
-     *
+     * @return ResponseInterface
      */
-    public function listAction()
+    public function listAction(): ResponseInterface
     {
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
         $currentContentObject = $this->request->getAttribute('currentContentObject');
         $getContentId = $currentContentObject->data['uid'];
         $settings=$this->settings;
-
         $extkey = $this->request->getControllerExtensionKey();
+        
         $owlCarouselPath = 'EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/';
         $cssFiles = [
             'CSS1' => 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700',
@@ -84,20 +85,42 @@ class OwlController extends ActionController
         $constant = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_nsallsliders_owlcarousel.']['settings.'];
 
         if ($constant['jQuery']) {
-            $pageRenderer->addJsFooterFile($owlCarouselPath.'assets/js/jquery.min.js', 'text/javascript', false);
+            $pageRenderer->addJsFooterFile(
+                $owlCarouselPath.'assets/js/jquery.min.js',
+                'text/javascript',
+                false
+            );
         }
         // add js at footer
-        $pageRenderer->addJsFooterFile($owlCarouselPath.'owl-carousel/owl.carousel.js', 'text/javascript', false);
+        $pageRenderer->addJsFooterFile(
+            $owlCarouselPath.'owl-carousel/owl.carousel.js',
+            'text/javascript',
+            false
+        );
 
         $sliderJsPath = 'EXT:ns_all_sliders/Resources/Public/slider/';
         if ($settings['lightbox']) {
-            $GLOBALS['TSFE']->additionalHeaderData[$extkey . 'CSS8'] = $pageRenderer->addCssFile($sliderJsPath.'Fancybox/jquery.fancybox.min.css', 'stylesheet', '', '', false);
-            $pageRenderer->addJsFooterFile($sliderJsPath.'Fancybox/jquery.fancybox.min.js', 'text/javascript', false);
+            $GLOBALS['TSFE']->additionalHeaderData[$extkey . 'CSS8'] = $pageRenderer->addCssFile(
+                $sliderJsPath.'Fancybox/jquery.fancybox.min.css',
+                'stylesheet',
+                '',
+                '',
+                false
+            );
+
+            $pageRenderer->addJsFooterFile(
+                $sliderJsPath.'Fancybox/jquery.fancybox.min.js',
+                'text/javascript',
+                false
+            );
         }
         $thumbs = '';
         if ($settings['thumbs']) {
-            $pageRenderer->addJsFooterFile($sliderJsPath.'owl.carousel/assets/js/owl.carousel2.thumbs.js', 'text/javascript', false, false, '');
-
+            $pageRenderer->addJsFooterFile(
+                $sliderJsPath.'owl.carousel/assets/js/owl.carousel2.thumbs.js',
+                'text/javascript',
+                false
+            );
             $thumbs = '
                 thumbs: true,
                 thumbImage:true
@@ -194,7 +217,6 @@ class OwlController extends ActionController
             'getContentId' => $getContentId
 
         ]);
-
         return $this->htmlResponse();
     }
 }
