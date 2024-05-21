@@ -1,18 +1,20 @@
 <?php
 
 $EM_CONF['ns_all_sliders'] = [
-    'title' => '[NITSAN] All in One Slider Plugin',
-    'description' => 'One of the only TYPO3 extension which provides to use most popular jQuery slider plugins at your website. This TYPO3 extension provides to configure sliders eg., Nivo Slider, Royal Slider, Owlcarousel, Sliderjs Slider & more. Demo: https://demo.t3planet.com/t3t-extensions/sliders/ You can download PRO version for more-features & free-support at https://t3planet.com/typo3-slider-extension',
+    'title' => 'All in One Slider',
+    'description' => 'TYPO3 Slider Extension - All In One TYPO3 Slider Extension. Experience the power of this versatile TYPO3 slider plugin, integrating the most popular jQuery slider plugins seamlessly into your website. With configurable options for Nivo Slider, Royal Slider, Owlcarousel, Sliderjs Slider, and more, our TYPO3 Slider Extension transforms your site\'s visual appeal.
+
+	*** Live Demo: https://demo.t3planet.com/t3-extensions/all-sliders *** Premium Version, Documentation & Free Support: https://t3planet.com/typo3-slider-extension',
     'category' => 'plugin',
-    'author' => 'NITSAN Technologies Pvt Ltd',
+    'author' => 'T3: Rohan Parmar, Divya Goklani, Nilesh Malankiya, QA: Krishna Dhapa',
     'author_email' => 'sanjay@nitsan.in',
-    'author_company' => 'NITSAN Technologies Pvt Ltd',
+    'author_company' => 'T3Planet // NITSAN',
     'state' => 'stable',
     'internal' => '',
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '6.1.1',
+    'version' => '6.2.0',
     'constraints' => [
         'depends' => [
             'typo3' => '6.0.0-11.5.99',

@@ -8,7 +8,6 @@ plugin.tx_nsallsliders_owlcarousel {
 		storagePid = {$plugin.tx_nsallsliders_owlcarousel.persistence.storagePid}
 
 	}
-
 	settings{
 		jQuery = {$plugin.tx_nsallsliders_owlcarousel.settings.jQuery}
 		ConAutoPlay = {$plugin.tx_nsallsliders_owlcarousel.settings.ConAutoPlay}
