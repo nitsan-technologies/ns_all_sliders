@@ -136,6 +136,7 @@ return [
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'image',
                 [
+                    'maxitems' => 6,
                     'appearance' => [
                         'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference',
                     ],
@@ -186,7 +187,7 @@ return [
                         ],
                     ],
                 ],
-                $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
+                $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
             ),
         ],
     ],

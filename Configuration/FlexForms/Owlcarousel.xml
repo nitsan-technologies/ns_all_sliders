@@ -86,7 +86,11 @@
 						<config>
 							<type>input</type>
 							<placeholder>1</placeholder>
-							<eval>string</eval>
+							<eval>int</eval>
+							<default>1</default>
+							<range>
+								<lower>1</lower>
+							</range>
 							<size>5</size>
 						</config>
 					</TCEforms>
