@@ -110,7 +110,7 @@
 								</div>
 							</f:then>
 							<f:else>
-								<div class="item"  style="{styleHeight}">
+								<div class="item"  style="{styleHeight}" data-dot="{f:if(condition: picture.originalResource.title, then: picture.originalResource.title, else: picture.originalResource.alternative)}">
 									<f:if condition="{settings.lightbox}">
 										<f:then>
 											<f:link.typolink parameter="{picture.originalResource.publicUrl}" title="{picture.originalResource.title}" additionalAttributes="{'data-fancybox':'gallery'}">
