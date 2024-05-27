@@ -1,4 +1,5 @@
 <?php
+
 namespace Nsallsliders\NsAllSliders\Controller;
 
 use TYPO3\CMS\Extbase\Annotation\Inject as inject;
@@ -33,11 +34,11 @@ use TYPO3\CMS\Extbase\Annotation\Inject as inject;
  */
 class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
     /**
      * galleryRepository
      *
      * @var \Nsallsliders\NsAllSliders\Domain\Repository\GalleryRepository
+     * @extensionScannerIgnoreLine
      * @inject
      */
     protected $galleryRepository = null;
@@ -52,7 +53,7 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     {
         $this->galleryRepository = $galleryRepository;
     }
-    
+
     /**
      * action list
      *
@@ -62,6 +63,7 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     {
         $extkey = $this->request->getControllerExtensionKey();
         $settings = $this->settings;
+        //@extensionScannerIgnoreLine
         if (version_compare(TYPO3_branch, '9.0', '>')) {
             $extpath = \TYPO3\CMS\Core\Utility\PathUtility::stripPathSitePrefix(
                 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($extkey)

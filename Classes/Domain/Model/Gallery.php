@@ -1,4 +1,5 @@
 <?php
+
 namespace Nsallsliders\NsAllSliders\Domain\Model;
 
 /***************************************************************
@@ -31,7 +32,6 @@ namespace Nsallsliders\NsAllSliders\Domain\Model;
  */
 class Gallery extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
-
     /**
      * image
      *

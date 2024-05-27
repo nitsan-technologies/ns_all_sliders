@@ -4,6 +4,7 @@ if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 $_EXTKEY = 'ns_all_sliders';
+//@extensionScannerIgnoreLine
 if (version_compare(TYPO3_branch, '10.0', '>')) {
     $owlClass = \Nsallsliders\NsAllSliders\Controller\OwlController::class;
 } else {
