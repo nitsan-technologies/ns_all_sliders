@@ -1,4 +1,5 @@
 <?php
+
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:tx_nsallsliders_domain_model_gallery',
@@ -92,7 +93,7 @@ return [
                 'eval' => 'datetime',
                 'checkbox' => 0,
                 'default' => 0,
-                'behaviour' =>[
+                'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ],
                 'range' => [
@@ -111,7 +112,7 @@ return [
                 'eval' => 'datetime',
                 'checkbox' => 0,
                 'default' => 0,
-                'behaviour' =>[
+                'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ],
                 'range' => [
@@ -136,6 +137,7 @@ return [
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'image',
                 [
+                    'maxitems' => 6,
                     'appearance' => [
                         'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference',
                     ],

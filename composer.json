@@ -1,7 +1,7 @@
 {
   "name": "nitsan/ns-all-sliders",
   "type": "typo3-cms-extension",
-  "description": "One of the only TYPO3 extension which provides to use most popular jQuery slider plugins at your website. This TYPO3 extension provides to configure sliders eg., Nivo Slider, Royal Slider, Owlcarousel, Sliderjs Slider & more. Demo: https://demo.t3planet.com/t3t-extensions/sliders/ You can download PRO version for more-features & free-support at https://t3planet.com/typo3-slider-extension",
+  "description": "TYPO3 Slider Extension - All In One TYPO3 Slider Extension. Experience the power of this versatile TYPO3 slider plugin, integrating the most popular jQuery slider plugins seamlessly into your website. With configurable options for Nivo Slider, Royal Slider, Owlcarousel, Sliderjs Slider, and more.",
   "homepage": "https://t3planet.com/typo3-slider-extension",
   "license": ["GPL-2.0-or-later"],
   "keywords": [

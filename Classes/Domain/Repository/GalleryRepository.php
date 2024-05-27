@@ -1,4 +1,5 @@
 <?php
+
 namespace Nsallsliders\NsAllSliders\Domain\Repository;
 
 /***************************************************************
@@ -31,9 +32,6 @@ namespace Nsallsliders\NsAllSliders\Domain\Repository;
  */
 class GalleryRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
-    /**
-     * @var array
-     */
     protected $defaultOrderings = [
         'sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING,
     ];
