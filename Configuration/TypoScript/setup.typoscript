@@ -1,12 +1,17 @@
 plugin.tx_nsallsliders_owlcarousel {
 	view {
-		templateRootPaths.0 = {$plugin.tx_nsallsliders_owlcarousel.view.templateRootPath}
-		partialRootPaths.0 = {$plugin.tx_nsallsliders_owlcarousel.view.partialRootPath}
-		layoutRootPaths.0 = {$plugin.tx_nsallsliders_owlcarousel.view.layoutRootPath}
+		templateRootPaths {
+            0 = {$plugin.tx_nsallsliders_owlcarousel.view.templateRootPath}
+        }
+		partialRootPaths {
+            0 = {$plugin.tx_nsallsliders_owlcarousel.view.partialRootPath}
+        }
+		layoutRootPaths {
+            0 = {$plugin.tx_nsallsliders_owlcarousel.view.layoutRootPath}
+        }
 	}
 	persistence {
 		storagePid = {$plugin.tx_nsallsliders_owlcarousel.persistence.storagePid}
-
 	}
 	settings{
 		jQuery = {$plugin.tx_nsallsliders_owlcarousel.settings.jQuery}

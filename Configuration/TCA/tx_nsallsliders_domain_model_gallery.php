@@ -98,7 +98,7 @@ return [
                 'eval' => 'datetime',
                 'checkbox' => 0,
                 'default' => 0,
-                'behaviour' =>[
+                'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ],
                 'range' => [
@@ -117,7 +117,7 @@ return [
                 'eval' => 'datetime',
                 'checkbox' => 0,
                 'default' => 0,
-                'behaviour' =>[
+                'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ],
                 'range' => [

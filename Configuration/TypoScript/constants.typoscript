@@ -13,7 +13,7 @@ plugin.tx_nsallsliders_owlcarousel {
 		# cat=plugin.tx_nsallsliders_owlcarousel//01; type=string; label=Default storage PID
 		storagePid =
 	}
-	settings{
+	settings {
 
 		# cat=plugin.tx_nsallsliders_owlcarousel//02; type=boolean; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.jQuery
 		jQuery = 1

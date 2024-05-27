@@ -38,14 +38,12 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
  */
 class OwlController extends ActionController
 {
-
     /**
      * @param GalleryRepository $galleryRepository
      */
     public function __construct(
         protected GalleryRepository $galleryRepository
-    )
-    {
+    ) {
     }
 
 
@@ -57,9 +55,9 @@ class OwlController extends ActionController
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
         $currentContentObject = $this->request->getAttribute('currentContentObject');
         $getContentId = $currentContentObject->data['uid'];
-        $settings=$this->settings;
+        $settings = $this->settings;
         $extkey = $this->request->getControllerExtensionKey();
-        
+
         $owlCarouselPath = 'EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/';
         $cssFiles = [
             'CSS1' => 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700',
@@ -78,7 +76,8 @@ class OwlController extends ActionController
                     'stylesheet',
                     '',
                     '',
-                    false);
+                    false
+                );
         }
 
         // set js value for slider
