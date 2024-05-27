@@ -2,7 +2,145 @@
 <f:layout name="Default" />
 
 <f:section name="main">
-<f:if condition="{pluginName}=='Owlcarousel'">
-	<f:render partial="Owl/Owlcarousel" arguments="{galleries: galleries, settings: settings,getContentId:getContentId}"/>
-</f:if>
+	<script>
+		var owldomain = window.location.hostname.indexOf('owlgraphic');
+		if(owldomain !== -1){
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+		}
+	</script>
+	<f:asset.css identifier="identifier123">
+		* {
+			-webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+			-moz-box-sizing: border-box; /* Firefox 1 - 28 */
+			box-sizing: border-box;
+		}
+
+		body, html {
+			height: 100%;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.owl-carousel {
+			height: 100%;
+		}
+
+		.owl-carousel .owl-item, .owl-carousel .item {
+			height: 100vh;
+		}
+
+		.owl-carousel .owl-item img {
+			transform-style: initial;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.owl-thumb-item img {
+			width: 150px;
+			height: auto;
+		}
+
+		.owl-thumbs {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			display: table;
+			width: 100%;
+			text-align: center;
+			padding: 5%;
+		}
+
+		.owl-thumb-item {
+			display: table-cell;
+			border: none;
+			background: none;
+			padding: 0;
+			opacity: .4;
+		}
+
+		.owl-thumb-item.active {
+			opacity: 1;
+		}
+
+		.label {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			background-color: #0a6cff;
+			color: white;
+			padding: 10px 20px;
+			z-index: 5;
+			text-align: center;
+		}
+	</f:asset.css>
+
+	<f:if condition="{settings.height}">
+		<f:then>
+			<f:variable name="styleHeight" value="height: {settings.height}px !important;" />
+			<f:variable name="height" value="{settings.height}c" />
+		</f:then>
+	</f:if>
+	<f:if condition="{settings.imageWidth}">
+		<f:then>
+			<f:variable name="width" value="{settings.imageWidth}c" />
+		</f:then>
+	</f:if>
+	<div id="demo">
+		<div id="owl-demo-{getContentId}" class="owl-carousel owl-theme{f:if(condition: settings.thumbs, then: 'owl-carousel-thumbs')}" >
+			<f:for each="{galleries}" as="people">
+				<f:if condition="{people.image}">
+					<f:for each="{people.image}" as="picture">
+						<f:if condition="{settings.lazyLoad}=='true'">
+							<f:then>
+								<div class="item" data-dot="{f:if(condition: picture.originalResource.title, then: picture.originalResource.title, else: picture.originalResource.alternative)}" style="{styleHeight}">
+									<f:if condition="{settings.lightbox}">
+										<f:then>
+											<f:link.typolink parameter="{picture.originalResource.publicUrl}" title="{picture.originalResource.title}" additionalAttributes="{'data-fancybox':'gallery'}">
+												<f:image class="lazyOwl" src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-src: '{picture.originalResource.publicUrl}'}" title="{picture.originalResource.title}" height="{height}"  width="{width}"/>
+											</f:link.typolink>
+											<f:if condition="{settings.showcaption}">
+												<figcaption class="owl-carousel-caption animated fadeInUp">{picture.originalResource.description}</figcaption>
+											</f:if>
+										</f:then>
+										<f:else>
+											<f:link.typolink parameter="{picture.originalResource.link}" title="{picture.originalResource.title}">
+												<f:image class="lazyOwl" src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" additionalAttributes="{data-src: '{picture.originalResource.publicUrl}'}" title="{picture.originalResource.title}" height="{height}" width="{width}"/>
+												<f:if condition="{settings.showcaption}">
+													<figcaption class="owl-carousel-caption animated fadeInUp">{picture.originalResource.description}</figcaption>
+												</f:if>
+											</f:link.typolink>
+										</f:else>
+									</f:if>
+								</div>
+							</f:then>
+							<f:else>
+								<div class="item"  data-dot="{f:if(condition: picture.originalResource.title, then: picture.originalResource.title, else: picture.originalResource.alternative)}" style="{styleHeight}">
+									<f:if condition="{settings.lightbox}">
+										<f:then>
+											<f:link.typolink parameter="{picture.originalResource.publicUrl}" title="{picture.originalResource.title}" additionalAttributes="{'data-fancybox':'gallery'}">
+												<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" height="{height}" width="{width}"/>
+											</f:link.typolink>
+											<f:if condition="{settings.showcaption}">
+												<figcaption class="animated fadeInUp">{picture.originalResource.description}</figcaption>
+											</f:if>
+										</f:then>
+										<f:else>
+											<f:link.typolink parameter="{picture.originalResource.link}" title="{picture.originalResource.title}">
+												<f:image src="{picture.originalResource.publicUrl}" alt="{picture.originalResource.alternative}" title="{picture.originalResource.title}" height="{height}" width="{width}"/>
+												<f:if condition="{settings.showcaption}">
+													<figcaption class="animated fadeInUp">{picture.originalResource.description}</figcaption>
+												</f:if>
+											</f:link.typolink>
+										</f:else>
+									</f:if>
+								</div>
+							</f:else>
+						</f:if>
+					</f:for>
+				</f:if>
+			</f:for>
+		</div>
+	</div>
 </f:section>

@@ -68,7 +68,7 @@
 			</trans-unit>
 			<!-- Owlcarousel  -->
 			<trans-unit id="flexform.autoPlay">
-				<source>AutoPlay</source>
+				<source>Auto Play</source>
 			</trans-unit>
 			<trans-unit id="flexform.paginationSpeed">
 				<source>Pagination Speed</source>
@@ -200,7 +200,7 @@
 				<source>Lazy load eager</source>
 			</trans-unit>
 			<trans-unit id="flexform.autoplayTimeout">
-				<source>Autoplay timeout</source>
+				<source>Auto play timeout</source>
 			</trans-unit>
 			<trans-unit id="flexform.autoplayHoverPause">
 				<source>Auto play hover pause</source>
@@ -215,7 +215,7 @@
 				<source>Dots speed</source>
 			</trans-unit>
 			<trans-unit id="flexform.dragEndSpeed">
-				<source>Drag endSpeed</source>
+				<source>Drag end speed</source>
 			</trans-unit>
 			<trans-unit id="flexform.callbacks">
 				<source>Callbacks</source>
@@ -303,249 +303,15 @@
 			<trans-unit id="flexform.autospeed">
 				<source>Autoplay Speed</source>
 			</trans-unit>
-
-			<!-- slider js -->
-			<trans-unit id="flexform.nivo.arrow">
-				<source>Navigation arrow (Next/Prev navigation)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect">
-				<source>Effect ( Specify sets like: 'fold,fade,sliceDown' )</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.sliceDown">
-				<source>Slice Down</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.sliceDownLeft">
-				<source>Slice Down Left</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.sliceUp">
-				<source>Slice Up</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.sliceUpLeft">
-				<source>Slice Up Left</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.sliceUpDownLeft">
-				<source>Slice Up-Down Left</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.fold">
-				<source>Fold</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.fade">
-				<source>Fade</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.random">
-				<source>Random</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.slideInRight">
-				<source>Slide In Right</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.slideInLeft">
-				<source>Slide In Left</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.boxRandom">
-				<source>Box Random</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.boxRain">
-				<source>Box Rain</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.boxRainReverse">
-				<source>Box Rain Reverse</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.boxRainGrow">
-				<source>Box Rain Grow</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.effect.boxRainGrowReverse">
-				<source>Box Rain Grow Reverse</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.slices">
-				<source>Slices (For slice animations)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.boxCols">
-				<source>Box cols (For box animations)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.boxRows">
-				<source>Box rows (For box animations)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.animSpeed">
-				<source>Animations speed (Slide transition speed)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.pauseTime">
-				<source>Pause time (How long each slide will show)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.startSlide">
-				<source>Start slide (Set starting Slide [0 index])</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.controlNav">
-				<source>Control Nav(1,2,3... navigation)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.controlNavThumbs">
-				<source>Thumbnails for Control Nav (Use thumbnails for Control Nav)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.pauseOnHover">
-				<source>Pause on hover (Stop animation while hovering )</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.manualAdvance">
-				<source>Manual advance (Force manual transitions)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.prevText">
-				<source>Preview text (Prev directionNav text)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.nextText">
-				<source>Next text (Next directionNav text)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.randomStart">
-				<source>Random start (Start on a random slide)</source>
-			</trans-unit>
-			<trans-unit id="flexform.nivo.imageWidth">
-				<source>Image width</source>
+			<trans-unit id="flexform.refLink">
+				<source>Slider reference link</source>
 			</trans-unit>
 			<trans-unit id="flexform.nivo.height">
 				<source>Slider Height (Image height)</source>
 			</trans-unit>
-			<trans-unit id="flexform.accessibility">
-				<source>Accessibility</source>
+			<trans-unit id="flexform.nivo.imageWidth">
+				<source>Image width</source>
 			</trans-unit>
-			<trans-unit id="flexform.adaptiveHeight">
-				<source>Adaptive height</source>
-			</trans-unit>
-			<trans-unit id="flexform.arrows">
-				<source>Arrows</source>
-			</trans-unit>
-			<trans-unit id="flexform.centerPadding">
-				<source>Center padding</source>
-			</trans-unit>
-			<trans-unit id="flexform.cssEase">
-				<source>Css ease</source>
-			</trans-unit>
-			<trans-unit id="flexform.draggable">
-				<source>Draggable</source>
-			</trans-unit>
-			<trans-unit id="flexform.fade">
-				<source>Fade</source>
-			</trans-unit>
-			<trans-unit id="flexform.focusOnSelect">
-				<source>Focus on select</source>
-			</trans-unit>
-			<trans-unit id="flexform.infinite">
-				<source>Infinite</source>
-			</trans-unit>
-			<trans-unit id="flexform.initialSlide">
-				<source>Initial slide</source>
-			</trans-unit>
-			<trans-unit id="flexform.mobileFirst">
-				<source>Mobile first</source>
-			</trans-unit>
-			<trans-unit id="flexform.pauseOnFocus">
-				<source>Pause on focus</source>
-			</trans-unit>
-			<trans-unit id="flexform.pauseOnHover">
-				<source>Pause on hover</source>
-			</trans-unit>
-			<trans-unit id="flexform.pauseOnDotsHover">
-				<source>Pause on dots hover</source>
-			</trans-unit>
-			<trans-unit id="flexform.slidesToShow">
-				<source>Slides to show</source>
-			</trans-unit>
-			<trans-unit id="flexform.slidesToScroll">
-				<source>Slides to scroll</source>
-			</trans-unit>
-			<trans-unit id="flexform.swipe">
-				<source>Swipe</source>
-			</trans-unit>
-			<trans-unit id="flexform.swipeToSlide">
-				<source>Swipe to slide</source>
-			</trans-unit>
-			<trans-unit id="flexform.touchMove">
-				<source>Touch move</source>
-			</trans-unit>
-			<trans-unit id="flexform.touchThreshold">
-				<source>Touch threshold</source>
-			</trans-unit>
-			<trans-unit id="flexform.useCSS">
-				<source>Use CSS</source>
-			</trans-unit>
-			<trans-unit id="flexform.useTransform">
-				<source>Use transform</source>
-			</trans-unit>
-			<trans-unit id="flexform.variableWidth">
-				<source>Variable width</source>
-			</trans-unit>
-			<trans-unit id="flexform.vertical">
-				<source>Vertical</source>
-			</trans-unit>
-			<trans-unit id="flexform.verticalSwiping">
-				<source>Vertical swiping</source>
-			</trans-unit>
-			<trans-unit id="flexform.rtl">
-				<source>Right to left slide</source>
-			</trans-unit>
-			<trans-unit id="flexform.waitForAnimate">
-				<source>Wait for animate</source>
-			</trans-unit>
-			<trans-unit id="flexform.jQuery">
-				<source>Include jQuery</source>
-			</trans-unit>
-			<trans-unit id="flexform.centerMode">
-				<source>Center mode</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_drag">
-				<source>Thumbnails mouse drag</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_touch">
-				<source>Thumbnails touch</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_orientation">
-				<source>Orientation</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_arrows">
-				<source>Thumbnails arrows</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_spacing">
-				<source>Spacing between thumbs</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_arrowsAutoHide">
-				<source>Auto hide thumbnails arrows on hover</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_autoCenter">
-				<source>Automatically centers container with thumbs</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_transitionSpeed">
-				<source>Thumbnails transition speed</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_fitInViewport">
-				<source>Reduces size of main viewport</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_arrowLeft">
-				<source>Use Custom Left Arrow</source>
-			</trans-unit>
-			<trans-unit id="flexform.thumb_arrowRight">
-				<source>Use Custom Left Arrow</source>
-			</trans-unit>
-			<trans-unit id="flexform.fullScreen_enabled">
-				<source>Fullscreen functions enabled</source>
-			</trans-unit>
-			<trans-unit id="flexform.fullScreen_keyboardNav">
-				<source>Navigate slider with keyboard left and right arrows</source>
-			</trans-unit>
-			<trans-unit id="flexform.fullScreen_buttonFS">
-				<source>Fullscreen button at top right</source>
-			</trans-unit>
-			<trans-unit id="flexform.fullScreen_nativeFS">
-				<source>Native browser fullscreen</source>
-			</trans-unit>
-			<trans-unit id="autoPlay_stopAtAction">
-				<source>Stop autoplay at first user action</source>
-			</trans-unit>
-			<trans-unit id="autoPlay_pauseOnHover">
-				<source>Pause autoplay on hover</source>
-			</trans-unit>
-			<trans-unit id="autoPlay_delay">
-				<source>Delay between items in ms</source>
-			</trans-unit>
-			<trans-unit id="flexform.refLink">
-				<source>Slider reference link</source>
-			</trans-unit>
-
 		</body>
 	</file>
 </xliff>

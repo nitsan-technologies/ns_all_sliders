@@ -1,31 +1,34 @@
 <?php
 
+use Nsallsliders\NsAllSliders\Controller\OwlController;
+use TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider;
+use TYPO3\CMS\Core\Imaging\IconRegistry;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
 if (!defined('TYPO3')) {
     die('Access denied.');
 }
-$_EXTKEY = 'ns_all_sliders';
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    $_EXTKEY,
+ExtensionUtility::configurePlugin(
+    'ns_all_sliders',
     'Owlcarousel',
     [
-        \Nsallsliders\NsAllSliders\Controller\OwlController::class => 'list',
-
+        OwlController::class => 'list',
     ],
     // non-cacheable actions
     [
-        \Nsallsliders\NsAllSliders\Controller\OwlController::class => '',
-
+        OwlController::class => '',
     ]
 );
 
 /* set iconidentifier */
-$iconRegistry = TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Core\Imaging\IconRegistry::class
+$iconRegistry = GeneralUtility::makeInstance(
+    IconRegistry::class
 );
 
 $iconRegistry->registerIcon(
     'ext-owl-carousel-icon',
-    \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+    BitmapIconProvider::class,
     ['source' => 'EXT:ns_all_sliders/Resources/Public/Icons/' . 'ext-owl-carousel-icon' . '.svg']
 );

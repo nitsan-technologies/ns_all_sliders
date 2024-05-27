@@ -34,7 +34,7 @@
 				<source>Images</source>
 			</trans-unit>
 			<trans-unit id="Owl_Carousel">
-				<source>[NITSAN] Owl Carousel</source>
+				<source>Owl Carousel</source>
 			</trans-unit>
 			<trans-unit id="Owl_Carousel.description">
 				<source>Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</source>

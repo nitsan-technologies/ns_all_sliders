@@ -1,0 +1,15 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+    elements {
+        Owlcarousel {
+            icon = ../typo3conf/ext/ns_all_sliders/Resources/Public/Icons/user_plugin_owl_carousel.png
+            iconIdentifier = ext-owl-carousel-icon
+            title = LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:Owl_Carousel
+            description = LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:Owl_Carousel.description
+            tt_content_defValues {
+                CType = list
+                list_type = nsallsliders_owlcarousel
+            }
+        }
+    }
+    show = *
+}
