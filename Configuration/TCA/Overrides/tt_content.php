@@ -13,7 +13,9 @@ $_EXTKEY = 'ns_all_sliders';
 ExtensionUtility::registerPlugin(
     $_EXTKEY,
     'Owlcarousel',
-    'Owl carousel'
+    'Owl carousel',
+    '',
+    'plugins'
 );
 
 /* Flexform setting  */
