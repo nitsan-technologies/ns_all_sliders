@@ -57,9 +57,11 @@ class OwlController extends ActionController
         $settings = $this->settings;
         $extkey = $this->request->getControllerExtensionKey();
 
-        $owlCarouselPath = 'EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/';
+        $owlCarouselPath = 'EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/';  
+
+        $checkURL = GeneralUtility::getIndpEnv('TYPO3_SSL') ? 'https://' : 'http://';
         $cssFiles = [
-            'CSS1' => 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700',
+            'CSS1' => $checkURL . 'fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700',
             'CSS3' => 'assets/css/custom.css',
             'CSS4' => 'owl-carousel/owl.carousel.css',
             'CSS5' => 'owl-carousel/owl.theme.default.css',
