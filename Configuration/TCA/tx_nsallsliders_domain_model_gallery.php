@@ -142,7 +142,7 @@ return [
             'config' => [
                 'type' => 'file',
                 'maxitems' => 6,
-                'allowed' => 'jpg,jpeg,png,gif,webp'
+                'allowed' => 'jpg,jpeg,png,webp'
             ],
         ],
     ],
