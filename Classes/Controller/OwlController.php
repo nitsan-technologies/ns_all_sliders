@@ -7,6 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 
 /***************************************************************
  *
@@ -38,12 +39,10 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
  */
 class OwlController extends ActionController
 {
-    /**
-     * @param GalleryRepository $galleryRepository
-     */
     public function __construct(
         protected GalleryRepository $galleryRepository
-    ) {
+    )
+    {
     }
 
 
@@ -58,9 +57,11 @@ class OwlController extends ActionController
         $settings = $this->settings;
         $extkey = $this->request->getControllerExtensionKey();
 
-        $owlCarouselPath = 'EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/';
+        $owlCarouselPath = 'EXT:ns_all_sliders/Resources/Public/slider/owl.carousel/';  
+
+        $checkURL = GeneralUtility::getIndpEnv('TYPO3_SSL') ? 'https://' : 'http://';
         $cssFiles = [
-            'CSS1' => 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700',
+            'CSS1' => $checkURL . 'fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700',
             'CSS3' => 'assets/css/custom.css',
             'CSS4' => 'owl-carousel/owl.carousel.css',
             'CSS5' => 'owl-carousel/owl.theme.default.css',
@@ -81,7 +82,9 @@ class OwlController extends ActionController
         }
 
         // set js value for slider
-        $constant = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_nsallsliders_owlcarousel.']['settings.'];
+        $configurationManager = GeneralUtility::makeInstance(ConfigurationManagerInterface::class);
+        $typoScriptSetup = $configurationManager->getConfiguration(ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
+        $constant = $typoScriptSetup['plugin.']['tx_nsallsliders_owlcarousel.']['settings.'];
 
         if ($constant['jQuery']) {
             $pageRenderer->addJsFooterFile(

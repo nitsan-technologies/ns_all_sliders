@@ -15,7 +15,7 @@ plugin.tx_nsallsliders_owlcarousel {
 	}
 	settings {
 
-		# cat=plugin.tx_nsallsliders_owlcarousel//02; type=boolean; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.jQuery
+		# cat=plugin.tx_nsallsliders_owlcarousel//02; type=boolean; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.addjquery
 		jQuery = 1
 		# cat=plugin.tx_nsallsliders_owlcarousel//03; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navigation
 		Connavigation = true
@@ -78,12 +78,12 @@ plugin.tx_nsallsliders_owlcarousel {
 		# cat=plugin.tx_nsallsliders_owlcarousel//32; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navSpeed
 		ConnavSpeed = 3000
 		# cat=plugin.tx_nsallsliders_owlcarousel//33; type=type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsSpeed
-		CondotsSpeed = false
+		CondotsSpeed = 1000
 		# cat=plugin.tx_nsallsliders_owlcarousel//34; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dragEndSpeed
 		CondragEndSpeed = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//35; type=options[flipInX,slideOutDown]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut
+		# cat=plugin.tx_nsallsliders_owlcarousel//35; type=options[bounce,shake,fadeOutLeft,flipOutX,rollOut,fadeOutUpBig,slideOutDown,slideOutUp,flipOutY,bounceOutUp,lightSpeedOut,rotateOutDownLeft,slideOutDown]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut
 		ConanimateOut = slideOutDown
-		# cat=plugin.tx_nsallsliders_owlcarousel//36; type=options[flipInX,slideOutDown]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn
+		# cat=plugin.tx_nsallsliders_owlcarousel//36; type=options[bounce,shake,fadeInLeft,flipInX,rollIn,fadeInUpBig,slideInDown,slideInUp,flipInY,bounceInUp,lightSpeedIn,rotateInDownLeft,slideOutDown]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn
 		ConanimateIn = flipInX
 		# cat=plugin.tx_nsallsliders_owlcarousel//37; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.fallbackEasing
 		ConfallbackEasing = swing

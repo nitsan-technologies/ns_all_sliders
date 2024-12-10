@@ -439,6 +439,13 @@ NO MORE TABLES!! ;)
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+.owl-nav{
+	display : flex;
+	font-size: 50px;
+}
+.owl-prev{
+	margin: 0 50px;
+}
 
 
 

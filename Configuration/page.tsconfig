@@ -1,6 +1,6 @@
 mod.wizards.newContentElement.wizardItems.plugins {
     elements {
-        Owlcarousel {
+        nsallsliders_owlcarousel {
             icon = ../typo3conf/ext/ns_all_sliders/Resources/Public/Icons/user_plugin_owl_carousel.png
             iconIdentifier = ext-owl-carousel-icon
             title = LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf:Owl_Carousel

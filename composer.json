@@ -7,7 +7,7 @@
   "keywords": [
     "TYPO3 CMS",
     "Sliders",
-    "NITSAN",
+    "T3planet",
     "jQuery",
     "nivo",
     "owlcarousel",
@@ -19,7 +19,7 @@
     "issues": "https://github.com/nitsan-technologies/ns_all_sliders/issues"
   },
   "require": {
-    "typo3/cms-core": "^12"
+    "typo3/cms-core": "^12 || ^13"
   },
   "autoload": {
     "psr-4": {
