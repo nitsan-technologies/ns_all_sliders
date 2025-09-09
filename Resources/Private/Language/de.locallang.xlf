@@ -5,71 +5,71 @@
     <body>
       <trans-unit id="tx_nsallsliders_domain_model_gallery">
         <source>Gallery</source>
-        <target state="needs-translation">Gallery</target>
+        <target state="translated">Galerie</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.image">
         <source>Image</source>
-        <target state="needs-translation">Image</target>
+        <target state="translated">Bild</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.title">
         <source>Title</source>
-        <target state="needs-translation">Title</target>
+        <target state="translated">Titel</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.description">
         <source>Description</source>
-        <target state="needs-translation">Description</target>
+        <target state="translated">Beschreibung</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
         <source>Disable</source>
-        <target state="needs-translation">Disable</target>
+        <target state="translated">Deaktivieren</target>
       </trans-unit>
       <trans-unit id="flexform.selectimage">
         <source>Select storage folder of Images</source>
-        <target state="needs-translation">Select storage folder of Images</target>
+        <target state="translated">Speicherordner für Bilder auswählen</target>
       </trans-unit>
       <trans-unit id="flexform.arrow">
         <source>Navigation arrow</source>
-        <target state="needs-translation">Navigation arrow</target>
+        <target state="translated">Navigation-Pfeil</target>
       </trans-unit>
       <trans-unit id="flexform.yes">
         <source>Yes</source>
-        <target state="needs-translation">Yes</target>
+        <target state="translated">Ja</target>
       </trans-unit>
       <trans-unit id="flexform.no">
         <source>No</source>
-        <target state="needs-translation">No</target>
+        <target state="translated">Nein</target>
       </trans-unit>
       <trans-unit id="flexform.true">
         <source>True</source>
-        <target state="needs-translation">True</target>
+        <target state="translated">Wahr</target>
       </trans-unit>
       <trans-unit id="flexform.false">
         <source>False</source>
-        <target state="needs-translation">False</target>
+        <target state="translated">Falsch</target>
       </trans-unit>
       <trans-unit id="flexform.type">
         <source>Slider Type</source>
-        <target state="needs-translation">Slider Type</target>
+        <target state="translated">Slider-Typ</target>
       </trans-unit>
       <trans-unit id="flexform.fullwidth">
         <source>Full width</source>
-        <target state="needs-translation">Full width</target>
+        <target state="translated">Volle Breite</target>
       </trans-unit>
       <trans-unit id="flexform.fullscreen">
         <source>Full Screen</source>
-        <target state="needs-translation">Full Screen</target>
+        <target state="translated">Vollbild</target>
       </trans-unit>
       <trans-unit id="flexform.basic_fade">
         <source>Basic fade</source>
-        <target state="needs-translation">Basic fade</target>
+        <target state="translated">Einfadeschwindigkeit</target>
       </trans-unit>
       <trans-unit id="flexform.basic_slide">
         <source>Basic slide</source>
-        <target state="needs-translation">Basic slide</target>
+        <target state="translated">Standard-Durchlauf</target>
       </trans-unit>
       <trans-unit id="flexform.playing">
         <source>Playing</source>
-        <target state="needs-translation">Playing</target>
+        <target state="translated">Abspielen</target>
       </trans-unit>
       <trans-unit id="flexform.standard">
         <source>Standard</source>
@@ -77,15 +77,15 @@
       </trans-unit>
       <trans-unit id="flexform.showcaption">
         <source>Show caption</source>
-        <target state="needs-translation">Show caption</target>
+        <target state="translated">Beschriftung anzeigen</target>
       </trans-unit>
       <trans-unit id="flexform.lightbox">
         <source>Enable Lightbox</source>
-        <target state="needs-translation">Enable Lightbox</target>
+        <target state="translated">Lightbox</target>
       </trans-unit>
       <trans-unit id="flexform.thumbs">
         <source>Enable Thumbs</source>
-        <target state="needs-translation">Enable Thumbs</target>
+        <target state="translated">Vorschaubilder</target>
       </trans-unit>
       <!-- Owlcarousel  -->
       <trans-unit id="flexform.autoPlay">
@@ -94,43 +94,43 @@
       </trans-unit>
       <trans-unit id="flexform.paginationSpeed">
         <source>Pagination Speed</source>
-        <target state="needs-translation">Pagination Speed</target>
+        <target state="translated">Geschwindigkeit der Paginierung</target>
       </trans-unit>
       <trans-unit id="flexform.goToFirstSpeed">
         <source>GoTo First Speed</source>
-        <target state="needs-translation">GoTo First Speed</target>
+        <target state="translated">Geschwindigkeit zu erstem Element wechseln</target>
       </trans-unit>
       <trans-unit id="flexform.items">
         <source>Items</source>
-        <target state="needs-translation">Items</target>
+        <target state="translated">Elemente</target>
       </trans-unit>
       <trans-unit id="flexform.slideSpeed">
         <source>Slide Speed</source>
-        <target state="needs-translation">Slide Speed</target>
+        <target state="translated">Slide-Geschwindigkeit</target>
       </trans-unit>
       <trans-unit id="flexform.itemsDesktop">
         <source>ItemsDesktop : value like [x,x]</source>
-        <target state="needs-translation">ItemsDesktop : value like [x,x]</target>
+        <target state="translated">ItemsDesktop: Wert ähnlich [x,x]</target>
       </trans-unit>
       <trans-unit id="flexform.itemsDesktopSmall">
         <source>ItemsDesktopSmall : value like [x,x]</source>
-        <target state="needs-translation">ItemsDesktopSmall : value like [x,x]</target>
+        <target state="translated">ItemsDesktopSmall: Wert ähnlich [x,x]</target>
       </trans-unit>
       <trans-unit id="flexform.itemsTablet">
         <source>itemsTablet : value like [x,x]</source>
-        <target state="needs-translation">itemsTablet : value like [x,x]</target>
+        <target state="translated">ItemsTablet: Wert ähnlich [x,x]</target>
       </trans-unit>
       <trans-unit id="flexform.itemsTabletSmall">
         <source>itemsTabletSmall : value like [x,x]</source>
-        <target state="needs-translation">itemsTabletSmall : value like [x,x]</target>
+        <target state="translated">ItemsTabletSmall: Wert ähnlich [x,x]</target>
       </trans-unit>
       <trans-unit id="flexform.itemsMobile">
         <source>itemsMobile : value like [x,x]</source>
-        <target state="needs-translation">itemsMobile : value like [x,x]</target>
+        <target state="translated">ItemsMobile: Wert ähnlich [x,x]</target>
       </trans-unit>
       <trans-unit id="flexform.stopOnHover">
         <source>Stop On Hover</source>
-        <target state="needs-translation">Stop On Hover</target>
+        <target state="translated">Stopp bei Überfahren mit der Maus</target>
       </trans-unit>
       <trans-unit id="flexform.navigation">
         <source>Navigation</source>
@@ -138,11 +138,11 @@
       </trans-unit>
       <trans-unit id="flexform.singleItem">
         <source>Single Item</source>
-        <target state="needs-translation">Single Item</target>
+        <target state="translated">Einzelnes Element</target>
       </trans-unit>
       <trans-unit id="flexform.autoHeight">
         <source>Auto Height</source>
-        <target state="needs-translation">Auto Height</target>
+        <target state="translated">Automatische Höhe</target>
       </trans-unit>
       <trans-unit id="flexform.lazyLoad">
         <source>Lazy Load</source>
@@ -154,39 +154,39 @@
       </trans-unit>
       <trans-unit id="flexform.transitionStyle">
         <source>Transition Style</source>
-        <target state="needs-translation">Transition Style</target>
+        <target state="translated">Übergangsstil</target>
       </trans-unit>
       <trans-unit id="flexform.addjquery">
         <source>Add jquery</source>
-        <target state="needs-translation">Add jquery</target>
+        <target state="translated">Füge JQuery hinzu</target>
       </trans-unit>
       <trans-unit id="flexform.baseClass">
         <source>Add base class to main div</source>
-        <target state="needs-translation">Add base class to main div</target>
+        <target state="translated">Füge Hauptdiv eine Basis-Klasse hinzu</target>
       </trans-unit>
       <trans-unit id="flexform.theme">
         <source>Theme</source>
-        <target state="needs-translation">Theme</target>
+        <target state="translated">Designvorlage</target>
       </trans-unit>
       <trans-unit id="flexform.mouseDrag">
         <source>Enable/Disable Mouse drag functionality</source>
-        <target state="needs-translation">Enable/Disable Mouse drag functionality</target>
+        <target state="translated">Maus- Drag-Funktionalität aktivieren/deaktivieren</target>
       </trans-unit>
       <trans-unit id="flexform.touchDrag">
         <source>Enable/Disable touch drag functionality</source>
-        <target state="needs-translation">Enable/Disable touch drag functionality</target>
+        <target state="translated">Touch Drag-Funktionalität aktivieren/deaktivieren</target>
       </trans-unit>
       <trans-unit id="flexform.addClassActive">
         <source>Add class active for visible slide</source>
-        <target state="needs-translation">Add class active for visible slide</target>
+        <target state="translated">Füge der sichtbaren Slide eine aktive Klasse hinzu</target>
       </trans-unit>
       <trans-unit id="flexform.selAction">
         <source>Use global setting</source>
-        <target state="needs-translation">Use global setting</target>
+        <target state="translated">Globale Einstellungen verwenden</target>
       </trans-unit>
       <trans-unit id="flexform.margin">
         <source>Margin</source>
-        <target state="needs-translation">Margin</target>
+        <target state="translated">Abstand</target>
       </trans-unit>
       <trans-unit id="flexform.loop">
         <source>Loop</source>
@@ -194,99 +194,99 @@
       </trans-unit>
       <trans-unit id="flexform.center">
         <source>Center</source>
-        <target state="needs-translation">Center</target>
+        <target state="translated">Zentrieren</target>
       </trans-unit>
       <trans-unit id="flexform.pullDrag">
         <source>Pull drag</source>
-        <target state="needs-translation">Pull drag</target>
+        <target state="translated">Ziehen ziehen</target>
       </trans-unit>
       <trans-unit id="flexform.freeDrag">
         <source>Free drag</source>
-        <target state="needs-translation">Free drag</target>
+        <target state="translated">Freies ziehen</target>
       </trans-unit>
       <trans-unit id="flexform.stagePadding">
         <source>Stage padding</source>
-        <target state="needs-translation">Stage padding</target>
+        <target state="translated">Szenenpolsterung</target>
       </trans-unit>
       <trans-unit id="flexform.merge">
         <source>Merge</source>
-        <target state="needs-translation">Merge</target>
+        <target state="translated">Zusammenführen</target>
       </trans-unit>
       <trans-unit id="flexform.mergeFit">
         <source>Merge fit</source>
-        <target state="needs-translation">Merge fit</target>
+        <target state="translated">Passende Zusammenführung</target>
       </trans-unit>
       <trans-unit id="flexform.autoWidth">
         <source>Auto width</source>
-        <target state="needs-translation">Auto width</target>
+        <target state="translated">Automatische Breite</target>
       </trans-unit>
       <trans-unit id="flexform.startPosition">
         <source>Start position</source>
-        <target state="needs-translation">Start position</target>
+        <target state="translated">Startposition</target>
       </trans-unit>
       <trans-unit id="flexform.URLhashListener">
         <source>URL hash listener</source>
-        <target state="needs-translation">URL hash listener</target>
+        <target state="translated">URL-Hash-Listener</target>
       </trans-unit>
       <trans-unit id="flexform.rewind">
         <source>Rewind</source>
-        <target state="needs-translation">Rewind</target>
+        <target state="translated">Zurückspulen</target>
       </trans-unit>
       <trans-unit id="flexform.navText">
         <source>Navigation Text</source>
-        <target state="needs-translation">Navigation Text</target>
+        <target state="translated">Navigationstext</target>
       </trans-unit>
       <trans-unit id="flexform.navElement">
         <source>Navigation element</source>
-        <target state="needs-translation">Navigation element</target>
+        <target state="translated">Navigationselement</target>
       </trans-unit>
       <trans-unit id="flexform.slideBy">
         <source>Slide by</source>
-        <target state="needs-translation">Slide by</target>
+        <target state="translated">Umblättern</target>
       </trans-unit>
       <trans-unit id="flexform.slideTransition">
         <source>Slide transition</source>
-        <target state="needs-translation">Slide transition</target>
+        <target state="translated">Übergang umblättern</target>
       </trans-unit>
       <trans-unit id="flexform.dots">
         <source>Dots</source>
-        <target state="needs-translation">Dots</target>
+        <target state="translated">Punkte anzeigen</target>
       </trans-unit>
       <trans-unit id="flexform.dotsEach">
         <source>Dots each</source>
-        <target state="needs-translation">Dots each</target>
+        <target state="translated">Punkte je</target>
       </trans-unit>
       <trans-unit id="flexform.dotsData">
         <source>Dots data</source>
-        <target state="needs-translation">Dots data</target>
+        <target state="translated">Datenpunkte</target>
       </trans-unit>
       <trans-unit id="flexform.lazyLoadEager">
         <source>Lazy load eager</source>
-        <target state="needs-translation">Lazy load eager</target>
+        <target state="translated">Eager-Load</target>
       </trans-unit>
       <trans-unit id="flexform.autoplayTimeout">
         <source>Auto play timeout</source>
-        <target state="needs-translation">Auto play timeout</target>
+        <target state="translated">Zeitüberschreitung automatisch abspielen</target>
       </trans-unit>
       <trans-unit id="flexform.autoplayHoverPause">
         <source>Auto play hover pause</source>
-        <target state="needs-translation">Auto play hover pause</target>
+        <target state="translated">Automatische Pause bei Mouseover</target>
       </trans-unit>
       <trans-unit id="flexform.autoplaySpeed">
         <source>Auto play speed</source>
-        <target state="needs-translation">Auto play speed</target>
+        <target state="translated">Geschwindigkeit automatisch abspielen</target>
       </trans-unit>
       <trans-unit id="flexform.navSpeed">
         <source>Navigation speed</source>
-        <target state="needs-translation">Navigation speed</target>
+        <target state="translated">Navigationsgeschwindigkeit</target>
       </trans-unit>
       <trans-unit id="flexform.dotsSpeed">
         <source>Dots speed</source>
-        <target state="needs-translation">Dots speed</target>
+        <target state="translated">Punkte Geschwindigkeit</target>
       </trans-unit>
       <trans-unit id="flexform.dragEndSpeed">
         <source>Drag end speed</source>
-        <target state="needs-translation">Drag end speed</target>
+        <target state="translated">Ziehen-Ende Geschwindigkeit</target>
       </trans-unit>
       <trans-unit id="flexform.callbacks">
         <source>Callbacks</source>
@@ -298,23 +298,23 @@
       </trans-unit>
       <trans-unit id="flexform.videoHeight">
         <source>Video height</source>
-        <target state="needs-translation">Video height</target>
+        <target state="translated">Videohöhe</target>
       </trans-unit>
       <trans-unit id="flexform.videoWidth">
         <source>Video width</source>
-        <target state="needs-translation">Video width</target>
+        <target state="translated">Videobreite</target>
       </trans-unit>
       <trans-unit id="flexform.animateOut">
         <source>Animate out</source>
-        <target state="needs-translation">Animate out</target>
+        <target state="translated">Heraus-Animation</target>
       </trans-unit>
       <trans-unit id="flexform.animateIn">
         <source>Animate In</source>
-        <target state="needs-translation">Animate In</target>
+        <target state="translated">Hinein-Animation</target>
       </trans-unit>
       <trans-unit id="flexform.fallbackEasing">
         <source>Fallback easing</source>
-        <target state="needs-translation">Fallback easing</target>
+        <target state="translated">Fallback-Easing</target>
       </trans-unit>
       <trans-unit id="flexform.info">
         <source>Info</source>
@@ -322,96 +322,96 @@
       </trans-unit>
       <trans-unit id="flexform.nestedItemSelector">
         <source>Nested item selector</source>
-        <target state="needs-translation">Nested item selector</target>
+        <target state="translated">Selektor für verschachtelte Elemente</target>
       </trans-unit>
       <trans-unit id="flexform.itemElement">
         <source>Item element</source>
-        <target state="needs-translation">Item element</target>
+        <target state="translated">Element der Objekte</target>
       </trans-unit>
       <trans-unit id="flexform.stageElement">
         <source>Stage element</source>
-        <target state="needs-translation">Stage element</target>
+        <target state="translated">Bühnenelement</target>
       </trans-unit>
       <trans-unit id="flexform.navContainer">
         <source>Nav container</source>
-        <target state="needs-translation">Nav container</target>
+        <target state="translated">Nav-Container</target>
       </trans-unit>
       <trans-unit id="flexform.dotsContainer">
         <source>Dots container</source>
-        <target state="needs-translation">Dots container</target>
+        <target state="translated">Punkte-Container</target>
       </trans-unit>
       <trans-unit id="flexform.checkVisible">
         <source>Check visible</source>
-        <target state="needs-translation">Check visible</target>
+        <target state="translated">Sichtbarkeit prüfen</target>
       </trans-unit>
       <trans-unit id="flexform.showcaption">
         <source>Show caption</source>
-        <target state="needs-translation">Show caption</target>
+        <target state="translated">Beschriftung anzeigen</target>
       </trans-unit>
       <trans-unit id="flexform.lightbox">
         <source>Lightbox</source>
-        <target state="needs-translation">Enable Lightbox</target>
+        <target state="translated">Lightbox</target>
       </trans-unit>
       <trans-unit id="flexform.thumbs">
         <source>Thumbs</source>
-        <target state="needs-translation">Enable Thumbs</target>
+        <target state="translated">Vorschaubilder</target>
       </trans-unit>
       <trans-unit id="flexform.paginationNumbers">
         <source>Pagination Numbers</source>
-        <target state="needs-translation">Pagination Numbers</target>
+        <target state="translated">Paginierungszahlen</target>
       </trans-unit>
       <!-- Owlcarousel  -->
       <trans-unit id="configuration.jquery">
         <source>Enable Jquery: If this option is set, then it adds jquery in this site!</source>
-        <target state="needs-translation">Enable Jquery: If this option is set, then it adds jquery in this site!</target>
+        <target state="translated">Jquery aktivieren: Wenn diese Option gesetzt ist, fügt sie jquery auf dieser Seite hinzu!</target>
       </trans-unit>
       <trans-unit id="width">
         <source>Slider Width</source>
-        <target state="needs-translation">Slider Width</target>
+        <target state="translated">Slider-Breite</target>
       </trans-unit>
       <trans-unit id="flexform.slidewidthpercentage">
         <source>Slider Width In (%)</source>
-        <target state="needs-translation">Slider Width In (%)</target>
+        <target state="translated">Slider-Breite In (%)</target>
       </trans-unit>
       <trans-unit id="height">
         <source>Slider Height</source>
-        <target state="needs-translation">Slider Height</target>
+        <target state="translated">Slider-Höhe</target>
       </trans-unit>
       <trans-unit id="flexform.updown">
         <source>Slider Up-Down</source>
-        <target state="needs-translation">Slider Up-Down</target>
+        <target state="translated">Slider Auf-Ab</target>
       </trans-unit>
       <trans-unit id="flexform.sideways">
         <source>Slider Sideways</source>
-        <target state="needs-translation">Slider Sideways</target>
+        <target state="translated">Slider seitwärts</target>
       </trans-unit>
       <trans-unit id="flexform.dots">
         <source>Display Dots</source>
-        <target state="needs-translation">Dots</target>
+        <target state="translated">Punkte anzeigen</target>
       </trans-unit>
       <trans-unit id="flexform.vertical">
         <source>Display Align</source>
-        <target state="needs-translation">Display Align</target>
+        <target state="translated">Anzeige ausrichten</target>
       </trans-unit>
       <trans-unit id="flexform.speed">
         <source>Transmission Speed</source>
-        <target state="needs-translation">Transmission Speed</target>
+        <target state="translated">Übertragungsgeschwindigkeit</target>
       </trans-unit>
       <trans-unit id="flexform.autospeed">
         <source>Autoplay Speed</source>
-        <target state="needs-translation">Autoplay Speed</target>
+        <target state="translated">Automatische Wiedergabegeschwindigkeit</target>
       </trans-unit>
       <trans-unit id="flexform.refLink">
         <source>Slider reference link</source>
-        <target state="needs-translation">Slider reference link</target>
+        <target state="translated">Slider-Referenzlink</target>
       </trans-unit>
       <trans-unit id="flexform.nivo.height">
         <source>Slider Height (Image height)</source>
-        <target state="needs-translation">Slider Height (Image height)</target>
+        <target state="translated">Slider-Höhe (Bildhöhe)</target>
       </trans-unit>
       <trans-unit id="flexform.nivo.imageWidth">
         <source>Image width</source>
-        <target state="needs-translation">Image width</target>
+        <target state="translated">Bildbreite</target>
       </trans-unit>
     </body>
   </file>
