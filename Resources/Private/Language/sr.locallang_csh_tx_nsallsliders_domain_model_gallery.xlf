@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="EXT:ns_all_sliders/Resources/Private/Language/locallang_csh_tx_nsallsliders_domain_model_gallery.xlf" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders" target-language="sr">
+    <header/>
+    <body>
+      <trans-unit id="image.description">
+        <source>image</source>
+        <target state="needs-translation">image</target>
+      </trans-unit>
+      <trans-unit id="title.description">
+        <source>title</source>
+        <target state="needs-translation">title</target>
+      </trans-unit>
+      <trans-unit id="description.description">
+        <source>description</source>
+        <target state="needs-translation">description</target>
+      </trans-unit>
+      <trans-unit id="disable.description">
+        <source>disable</source>
+        <target state="needs-translation">disable</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
