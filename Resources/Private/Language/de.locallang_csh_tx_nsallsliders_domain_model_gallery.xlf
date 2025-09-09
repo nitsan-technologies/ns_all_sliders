@@ -5,19 +5,19 @@
     <body>
       <trans-unit id="image.description">
         <source>image</source>
-        <target state="needs-translation">image</target>
+        <target state="translated">Bild</target>
       </trans-unit>
       <trans-unit id="title.description">
         <source>title</source>
-        <target state="needs-translation">title</target>
+        <target state="translated">Titel</target>
       </trans-unit>
       <trans-unit id="description.description">
         <source>description</source>
-        <target state="needs-translation">description</target>
+        <target state="translated">Beschreibung</target>
       </trans-unit>
       <trans-unit id="disable.description">
         <source>disable</source>
-        <target state="needs-translation">disable</target>
+        <target state="translated">deaktivieren</target>
       </trans-unit>
     </body>
   </file>
