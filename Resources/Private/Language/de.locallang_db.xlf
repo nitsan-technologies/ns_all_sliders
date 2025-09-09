@@ -5,43 +5,43 @@
     <body>
       <trans-unit id="tx_nsallsliders_domain_model_gallery">
         <source>Gallery</source>
-        <target state="needs-translation">Gallery</target>
+        <target state="translated">Galerie</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.startdate">
         <source>Start Date</source>
-        <target state="needs-translation">Start Date</target>
+        <target state="translated">Startdatum</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.endddate">
         <source>End Date</source>
-        <target state="needs-translation">End Date</target>
+        <target state="translated">Enddatum</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.hide">
         <source>Hide</source>
-        <target state="needs-translation">Hide</target>
+        <target state="translated">Verbergen</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.image">
         <source>Image</source>
-        <target state="needs-translation">Image</target>
+        <target state="translated">Bild</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.title">
         <source>Gallery Title (Only For Backend Purpose)</source>
-        <target state="needs-translation">Gallery Title (Only For Backend Purpose)</target>
+        <target state="translated">Galerietitel (Nur zu Backend-Zwecken)</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.description">
         <source>Description</source>
-        <target state="needs-translation">Description</target>
+        <target state="translated">Beschreibung</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.access">
         <source>Access</source>
-        <target state="needs-translation">Access</target>
+        <target state="translated">Zugriff</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
         <source>Disable</source>
-        <target state="needs-translation">Disable</target>
+        <target state="translated">Deaktivieren</target>
       </trans-unit>
       <trans-unit id="sliderimage">
         <source>Images</source>
-        <target state="needs-translation">Images</target>
+        <target state="translated">Bilder</target>
       </trans-unit>
       <trans-unit id="Owl_Carousel">
         <source>Owl Carousel</source>
@@ -49,7 +49,7 @@
       </trans-unit>
       <trans-unit id="Owl_Carousel.description">
         <source>Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</source>
-        <target state="needs-translation">Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</target>
+        <target state="translated">Touch-aktivierte jQuery-Plugin, das Ihnen erlaubt, einen schönen responsiven Karussellschieber zu erstellen.</target>
       </trans-unit>
     </body>
   </file>
