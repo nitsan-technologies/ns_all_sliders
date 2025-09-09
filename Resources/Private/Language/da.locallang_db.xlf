@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders" target-language="da">
+    <header/>
+    <body>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery">
+        <source>Gallery</source>
+        <target state="needs-translation">Gallery</target>
+      </trans-unit>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.startdate">
+        <source>Start Date</source>
+        <target state="needs-translation">Start Date</target>
+      </trans-unit>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.endddate">
+        <source>End Date</source>
+        <target state="needs-translation">End Date</target>
+      </trans-unit>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.hide">
+        <source>Hide</source>
+        <target state="needs-translation">Hide</target>
+      </trans-unit>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.image">
+        <source>Image</source>
+        <target state="needs-translation">Image</target>
+      </trans-unit>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.title">
+        <source>Gallery Title (Only For Backend Purpose)</source>
+        <target state="needs-translation">Gallery Title (Only For Backend Purpose)</target>
+      </trans-unit>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.description">
+        <source>Description</source>
+        <target state="needs-translation">Description</target>
+      </trans-unit>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.access">
+        <source>Access</source>
+        <target state="needs-translation">Access</target>
+      </trans-unit>
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
+        <source>Disable</source>
+        <target state="needs-translation">Disable</target>
+      </trans-unit>
+      <trans-unit id="sliderimage">
+        <source>Images</source>
+        <target state="needs-translation">Images</target>
+      </trans-unit>
+      <trans-unit id="Owl_Carousel">
+        <source>Owl Carousel</source>
+        <target state="needs-translation">Owl Carousel</target>
+      </trans-unit>
+      <trans-unit id="Owl_Carousel.description">
+        <source>Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</source>
+        <target state="needs-translation">Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
