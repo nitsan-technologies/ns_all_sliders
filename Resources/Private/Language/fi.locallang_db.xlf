@@ -43,14 +43,6 @@
         <source>Images</source>
         <target state="needs-translation">Images</target>
       </trans-unit>
-      <trans-unit id="Owl_Carousel">
-        <source>Owl Carousel</source>
-        <target state="needs-translation">Owl Carousel</target>
-      </trans-unit>
-      <trans-unit id="Owl_Carousel.description">
-        <source>Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</source>
-        <target state="needs-translation">Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>
