@@ -3,21 +3,21 @@
   <file source-language="en" datatype="plaintext" original="EXT:ns_all_sliders/Resources/Private/Language/locallang_csh_tx_nsallsliders_domain_model_gallery.xlf" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders" target-language="de">
     <header/>
     <body>
-      <trans-unit id="image.description">
+      <trans-unit id="image.description" approved="yes">
         <source>image</source>
-        <target state="translated">Bild</target>
+        <target state="final">Bild</target>
       </trans-unit>
-      <trans-unit id="title.description">
+      <trans-unit id="title.description" approved="yes">
         <source>title</source>
-        <target state="translated">Titel</target>
+        <target state="final">Titel</target>
       </trans-unit>
-      <trans-unit id="description.description">
+      <trans-unit id="description.description" approved="yes">
         <source>description</source>
-        <target state="translated">Beschreibung</target>
+        <target state="final">Beschreibung</target>
       </trans-unit>
-      <trans-unit id="disable.description">
+      <trans-unit id="disable.description" approved="yes">
         <source>disable</source>
-        <target state="translated">deaktivieren</target>
+        <target state="final">deaktivieren</target>
       </trans-unit>
     </body>
   </file>
