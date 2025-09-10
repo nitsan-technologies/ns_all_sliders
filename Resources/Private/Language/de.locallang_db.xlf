@@ -3,45 +3,45 @@
   <file source-language="en" datatype="plaintext" original="EXT:ns_all_sliders/Resources/Private/Language/locallang_db.xlf" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders" target-language="de">
     <header/>
     <body>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery" approved="yes">
         <source>Gallery</source>
-        <target state="translated">Galerie</target>
+        <target state="final">Galerie</target>
       </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.startdate">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.startdate" approved="yes">
         <source>Start Date</source>
-        <target state="translated">Startdatum</target>
+        <target state="final">Startdatum</target>
       </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.endddate">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.endddate" approved="yes">
         <source>End Date</source>
-        <target state="translated">Enddatum</target>
+        <target state="final">Enddatum</target>
       </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.hide">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.hide" approved="yes">
         <source>Hide</source>
-        <target state="translated">Verbergen</target>
+        <target state="final">Verbergen</target>
       </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.image">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.image" approved="yes">
         <source>Image</source>
-        <target state="translated">Bild</target>
+        <target state="final">Bild</target>
       </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.title">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.title" approved="yes">
         <source>Gallery Title (Only For Backend Purpose)</source>
-        <target state="translated">Galerietitel (Nur zu Backend-Zwecken)</target>
+        <target state="final">Galerietitel (Nur zu Backend-Zwecken)</target>
       </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.description">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.description" approved="yes">
         <source>Description</source>
-        <target state="translated">Beschreibung</target>
+        <target state="final">Beschreibung</target>
       </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.access">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.access" approved="yes">
         <source>Access</source>
-        <target state="translated">Zugriff</target>
+        <target state="final">Zugriff</target>
       </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
+      <trans-unit id="tx_nsallsliders_domain_model_gallery.disable" approved="yes">
         <source>Disable</source>
-        <target state="translated">Deaktivieren</target>
+        <target state="final">Deaktivieren</target>
       </trans-unit>
-      <trans-unit id="sliderimage">
+      <trans-unit id="sliderimage" approved="yes">
         <source>Images</source>
-        <target state="translated">Bilder</target>
+        <target state="final">Bilder</target>
       </trans-unit>
     </body>
   </file>
