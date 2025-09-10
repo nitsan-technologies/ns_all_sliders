@@ -3,66 +3,6 @@
   <file source-language="en" datatype="plaintext" original="EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders" target-language="cs">
     <header/>
     <body>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.title">
-        <source>Title</source>
-        <target state="needs-translation">Title</target>
-      </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.description">
-        <source>Description</source>
-        <target state="needs-translation">Description</target>
-      </trans-unit>
-      <trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
-        <source>Disable</source>
-        <target state="needs-translation">Disable</target>
-      </trans-unit>
-      <trans-unit id="flexform.selectimage">
-        <source>Select storage folder of Images</source>
-        <target state="needs-translation">Select storage folder of Images</target>
-      </trans-unit>
-      <trans-unit id="flexform.arrow">
-        <source>Navigation arrow</source>
-        <target state="needs-translation">Navigation arrow</target>
-      </trans-unit>
-      <trans-unit id="flexform.yes">
-        <source>Yes</source>
-        <target state="needs-translation">Yes</target>
-      </trans-unit>
-      <trans-unit id="flexform.no">
-        <source>No</source>
-        <target state="needs-translation">No</target>
-      </trans-unit>
-      <trans-unit id="flexform.true">
-        <source>True</source>
-        <target state="needs-translation">True</target>
-      </trans-unit>
-      <trans-unit id="flexform.false">
-        <source>False</source>
-        <target state="needs-translation">False</target>
-      </trans-unit>
-      <trans-unit id="flexform.type">
-        <source>Slider Type</source>
-        <target state="needs-translation">Slider Type</target>
-      </trans-unit>
-      <trans-unit id="flexform.fullwidth">
-        <source>Full width</source>
-        <target state="needs-translation">Full width</target>
-      </trans-unit>
-      <trans-unit id="flexform.fullscreen">
-        <source>Full Screen</source>
-        <target state="needs-translation">Full Screen</target>
-      </trans-unit>
-      <trans-unit id="flexform.basic_slide">
-        <source>Basic slide</source>
-        <target state="needs-translation">Basic slide</target>
-      </trans-unit>
-      <trans-unit id="flexform.playing">
-        <source>Playing</source>
-        <target state="needs-translation">Playing</target>
-      </trans-unit>
-      <trans-unit id="flexform.showcaption">
-        <source>Show caption</source>
-        <target state="needs-translation">Show caption</target>
-      </trans-unit>
       <trans-unit id="flexform.thumbs">
         <source>Enable Thumbs</source>
         <target state="needs-translation">Enable Thumbs</target>
@@ -208,10 +148,6 @@
         <source>Animate In</source>
         <target state="needs-translation">Animate In</target>
       </trans-unit>
-      <trans-unit id="flexform.fallbackEasing">
-        <source>Fallback easing</source>
-        <target state="needs-translation">Fallback easing</target>
-      </trans-unit>
       <trans-unit id="flexform.nestedItemSelector">
         <source>Nested item selector</source>
         <target state="needs-translation">Nested item selector</target>
@@ -224,10 +160,6 @@
         <source>Stage element</source>
         <target state="needs-translation">Stage element</target>
       </trans-unit>
-      <trans-unit id="flexform.navContainer">
-        <source>Nav container</source>
-        <target state="needs-translation">Nav container</target>
-      </trans-unit>
       <trans-unit id="flexform.dotsContainer">
         <source>Dots container</source>
         <target state="needs-translation">Dots container</target>
@@ -236,15 +168,7 @@
         <source>Check visible</source>
         <target state="needs-translation">Check visible</target>
       </trans-unit>
-      <trans-unit id="flexform.paginationNumbers">
-        <source>Pagination Numbers</source>
-        <target state="needs-translation">Pagination Numbers</target>
-      </trans-unit>
       <!-- Owlcarousel  -->
-      <trans-unit id="configuration.jquery">
-        <source>Enable Jquery: If this option is set, then it adds jquery in this site!</source>
-        <target state="needs-translation">Enable Jquery: If this option is set, then it adds jquery in this site!</target>
-      </trans-unit>
       <trans-unit id="width">
         <source>Slider Width</source>
         <target state="needs-translation">Slider Width</target>
