@@ -8,6 +8,7 @@ use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
+use TYPO3\CMS\Core\Page\AssetCollector;
 
 /***************************************************************
  *
@@ -37,6 +38,7 @@ use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 /**
  * OwlController
  */
+
 class OwlController extends ActionController
 {
     public function __construct(
@@ -44,7 +46,6 @@ class OwlController extends ActionController
     )
     {
     }
-
 
     /**
      * @return ResponseInterface
@@ -71,14 +72,13 @@ class OwlController extends ActionController
         ];
 
         foreach ($cssFiles as $index => $cssFile) {
-            $GLOBALS['TSFE']->additionalHeaderData[$extkey . $index] =
-                $pageRenderer->addCssFile(
-                    $index == 'CSS1' ? $cssFile : $owlCarouselPath.$cssFile,
-                    'stylesheet',
-                    '',
-                    '',
-                    false
-                );
+            $pageRenderer->addCssFile(
+                $index == 'CSS1' ? $cssFile : $owlCarouselPath.$cssFile,
+                'stylesheet',
+                '',
+                '',
+                false
+            );
         }
 
         // set js value for slider
@@ -102,7 +102,7 @@ class OwlController extends ActionController
 
         $sliderJsPath = 'EXT:ns_all_sliders/Resources/Public/slider/';
         if ($settings['lightbox']) {
-            $GLOBALS['TSFE']->additionalHeaderData[$extkey . 'CSS8'] = $pageRenderer->addCssFile(
+            $pageRenderer->addCssFile(
                 $sliderJsPath.'Fancybox/jquery.fancybox.min.css',
                 'stylesheet',
                 '',
@@ -129,8 +129,7 @@ class OwlController extends ActionController
             ';
         }
 
-        $GLOBALS['TSFE']->additionalFooterData[$extkey] = isset($GLOBALS['TSFE']->additionalFooterData[$extkey]) ? $GLOBALS['TSFE']->additionalFooterData[$extkey] : '';
-        $GLOBALS['TSFE']->additionalFooterData[$extkey] .= "
+        $jsFileContent = "
             <script>
                 (function($) {
                     $('#owl-demo-" . $getContentId . "').owlCarousel({
@@ -140,7 +139,6 @@ class OwlController extends ActionController
                         lazyLoad : "' . (isset($settings['lazyLoad'])  && $settings['lazyLoad'] != '' ? $settings['lazyLoad'] : $constant['ConlazyLoad']) . '",
                         mouseDrag:' . (isset($settings['mouseDrag']) && $settings['mouseDrag'] != '' ? $settings['mouseDrag'] : $constant['ConmouseDrag']) . ',
                         touchDrag:' . (isset($settings['touchDrag']) && $settings['touchDrag'] != '' ? $settings['touchDrag'] : $constant['ContouchDrag']) . ',
-
                         margin:' . (isset($settings['margin']) && $settings['margin'] != '' ? $settings['margin'] : $constant['Conmargin']) . ',
                         loop:' . (isset($settings['loop']) && $settings['loop'] != '' ? $settings['loop'] : $constant['Conloop']) . ',
                         pullDrag:' . (isset($settings['pullDrag']) && $settings['pullDrag'] != '' ? $settings['pullDrag'] : $constant['ConpullDrag']) . ',
@@ -182,7 +180,7 @@ class OwlController extends ActionController
                     });
                 })(jQuery);
                 function makePages() {
-                    $.each(this.owl.userItems, function(i) {
+                    $.each(this.owl.userItems, function(i){
                         $('.owl-controls .owl-page').eq(i)
                             .css({
                                 'background': 'url(' + $(this).find('img').attr('src') + ')',
@@ -193,7 +191,7 @@ class OwlController extends ActionController
             </script>";
 
         if ($settings['lightbox']) {
-            $GLOBALS['TSFE']->additionalFooterData[$extkey] .= "
+            $jsFileContent .= "
                 <script>
                     // fancybox
                     $().fancybox({
@@ -202,6 +200,11 @@ class OwlController extends ActionController
                     });
                 </script>";
         }
+
+        $pageRenderer->addFooterData(
+            $jsFileContent,
+            $extkey
+        );
 
         //set storage folder
         $pid = $settings['storage_pid_images'];

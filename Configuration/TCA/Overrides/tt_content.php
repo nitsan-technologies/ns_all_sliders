@@ -15,13 +15,7 @@ ExtensionUtility::registerPlugin(
     'Owlcarousel',
     'Owl carousel',
     '',
-    'plugins'
+    'plugins',
+    '',
+    'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/Owlcarousel.xml'
 );
-
-/* Flexform setting  */
-
-/* Owlcarousel - Flexform setting  */
-$pluginSignature = str_replace('_', '', $_EXTKEY) . '_' . 'owlcarousel';
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'recursive,select_key,pages';
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/Owlcarousel.xml');
