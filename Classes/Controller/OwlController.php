@@ -8,7 +8,6 @@ use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Core\Page\AssetCollector;
 
 /***************************************************************
  *
@@ -38,7 +37,6 @@ use TYPO3\CMS\Core\Page\AssetCollector;
 /**
  * OwlController
  */
-
 class OwlController extends ActionController
 {
     public function __construct(
@@ -180,7 +178,7 @@ class OwlController extends ActionController
                     });
                 })(jQuery);
                 function makePages() {
-                    $.each(this.owl.userItems, function(i){
+                    $.each(this.owl.userItems, function(i) {
                         $('.owl-controls .owl-page').eq(i)
                             .css({
                                 'background': 'url(' + $(this).find('img').attr('src') + ')',
