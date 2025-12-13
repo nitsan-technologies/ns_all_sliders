@@ -9,7 +9,9 @@ if (!defined('TYPO3')) {
 }
 
 $versionNumber =  VersionNumberUtility::convertVersionStringToArray(VersionNumberUtility::getCurrentTypo3Version());
+
 if($versionNumber['version_main'] <= '12') {
+    // @extensionScannerIgnoreLine
     ExtensionUtility::configurePlugin(
         'ns_all_sliders',
         'Owlcarousel',

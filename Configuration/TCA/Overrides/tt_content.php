@@ -20,11 +20,12 @@ if($versionNumber['version_main'] <= '12') {
         '',
         'plugins'
     );
-    
+
     /* Owlcarousel - Flexform setting  */
     $pluginSignature = str_replace('_', '', $_EXTKEY) . '_' . 'owlcarousel';
     $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'recursive,select_key,pages';
     $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+    // @extensionScannerIgnoreLine
     ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/Owlcarousel.xml');
 }else{
     /***************
@@ -51,6 +52,7 @@ if($versionNumber['version_main'] <= '12') {
         /***************
          * FlexForms
          */
+        // @extensionScannerIgnoreLine
         ExtensionManagementUtility::addPiFlexFormValue(
             '*',
             'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/Owlcarousel.xml',
