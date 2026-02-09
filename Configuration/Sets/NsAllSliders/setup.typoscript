@@ -1,0 +1,61 @@
+@import 'EXT:ns_news_slider/Configuration/TypoScript/setup.typoscript'
+
+plugin.tx_nsallsliders_owlcarousel {
+	view {
+		templateRootPaths {
+            0 = {$ns_all_sliders.view.templateRootPath}
+        }
+		partialRootPaths {
+            0 = {$ns_all_sliders.view.partialRootPath}
+        }
+		layoutRootPaths {
+            0 = {$ns_all_sliders.view.layoutRootPath}
+        }
+	}
+	persistence {
+		storagePid = {$ns_all_sliders.persistence.storagePid}
+	}
+	settings{
+		jQuery = {$ns_all_sliders.owlcarousel.jQuery}
+		ConAutoPlay = {$ns_all_sliders.owlcarousel.ConAutoPlay}
+		Connavigation = {$ns_all_sliders.owlcarousel.Connavigation}	
+		Conitems = {$ns_all_sliders.owlcarousel.Conitems}		
+		ConlazyLoad = {$ns_all_sliders.owlcarousel.ConlazyLoad}		
+		ConmouseDrag = {$ns_all_sliders.owlcarousel.ConmouseDrag}
+		ContouchDrag = {$ns_all_sliders.owlcarousel.ContouchDrag}
+		Conmargin = {$ns_all_sliders.owlcarousel.Conmargin}
+		Conloop = {$ns_all_sliders.owlcarousel.Conloop}
+		Concenter = {$ns_all_sliders.owlcarousel.Concenter}
+		ConpullDrag = {$ns_all_sliders.owlcarousel.ConpullDrag}
+		ConfreeDrag = {$ns_all_sliders.owlcarousel.ConfreeDrag}
+		ConstagePadding = {$ns_all_sliders.owlcarousel.ConstagePadding}
+		Conmerge = {$ns_all_sliders.owlcarousel.Conmerge}
+		ConmergeFit = {$ns_all_sliders.owlcarousel.ConmergeFit}
+		ConautoWidth = {$ns_all_sliders.owlcarousel.ConautoWidth}
+		ConstartPosition = {$ns_all_sliders.owlcarousel.ConstartPosition}
+		ConURLhashListener = {$ns_all_sliders.owlcarousel.ConURLhashListener}
+		Conrewind = {$ns_all_sliders.owlcarousel.Conrewind}
+		ConnavElement = {$ns_all_sliders.owlcarousel.ConnavElement}
+		ConslideBy = {$ns_all_sliders.owlcarousel.ConslideBy}
+		ConslideTransition = {$ns_all_sliders.owlcarousel.ConslideTransition}
+		Condots = {$ns_all_sliders.owlcarousel.Condots}
+		CondotsEach = {$ns_all_sliders.owlcarousel.CondotsEach}
+		CondotsData = {$ns_all_sliders.owlcarousel.CondotsData}
+		ConlazyLoadEager = {$ns_all_sliders.owlcarousel.ConlazyLoadEager}
+		ConautoplayTimeout = {$ns_all_sliders.owlcarousel.ConautoplayTimeout}
+		ConautoplayHoverPause = {$ns_all_sliders.owlcarousel.ConautoplayHoverPause}
+		ConautoplaySpeed = {$ns_all_sliders.owlcarousel.ConautoplaySpeed}
+		ConnavSpeed = {$ns_all_sliders.owlcarousel.ConnavSpeed}
+		CondotsSpeed = {$ns_all_sliders.owlcarousel.CondotsSpeed}
+		CondragEndSpeed = {$ns_all_sliders.owlcarousel.CondragEndSpeed}
+		ConanimateOut = {$ns_all_sliders.owlcarousel.ConanimateOut}
+		ConanimateIn = {$ns_all_sliders.owlcarousel.ConanimateIn}
+		ConfallbackEasing = {$ns_all_sliders.owlcarousel.ConfallbackEasing}
+		Coninfo = {$ns_all_sliders.owlcarousel.Coninfo}
+		ConnestedItemSelector = {$ns_all_sliders.owlcarousel.ConnestedItemSelector}
+		ConitemElement = {$ns_all_sliders.owlcarousel.ConitemElement}		
+		ConnavContainer = {$ns_all_sliders.owlcarousel.ConnavContainer}
+		CondotsContainer = {$ns_all_sliders.owlcarousel.CondotsContainer}
+		ConcheckVisible = {$ns_all_sliders.owlcarousel.ConcheckVisible}		
+	}
+}

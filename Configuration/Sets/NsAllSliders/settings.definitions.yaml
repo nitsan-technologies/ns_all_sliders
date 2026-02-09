@@ -1,0 +1,306 @@
+categories:
+  ns_all_sliders:
+    label: News Slider
+
+  ns_all_sliders.view:
+    label: View Settings
+    parent: ns_all_sliders
+
+  ns_all_sliders.persistence:
+    label: Persistence
+    parent: ns_all_sliders
+
+  ns_all_sliders.owlcarousel:
+    label: Owl Carousel
+    parent: ns_all_sliders
+
+settings:
+
+  ##################################################
+  # View
+  ##################################################
+
+  ns_all_sliders.view.templateRootPath:
+    label: Template Root Path
+    category: ns_all_sliders.view
+    type: string
+    default: 'EXT:ns_all_sliders/Resources/Private/Templates/'
+
+  ns_all_sliders.view.partialRootPath:
+    label: Partial Root Path
+    category: ns_all_sliders.view
+    type: string
+    default: 'EXT:ns_all_sliders/Resources/Private/Partials/'
+
+  ns_all_sliders.view.layoutRootPath:
+    label: Layout Root Path
+    category: ns_all_sliders.view
+    type: string
+    default: 'EXT:ns_all_sliders/Resources/Private/Layouts/'
+
+  ##################################################
+  # Persistence
+  ##################################################
+
+  ns_all_sliders.persistence.storagePid:
+    label: Storage PID
+    category: ns_all_sliders.persistence
+    type: int
+    default: 0
+
+
+  ##################################################
+  # Owl Carousel
+  ##################################################
+
+  ns_all_sliders.owlcarousel.jQuery:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.addjquery
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.Connavigation:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navigation
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.ConAutoPlay:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoPlay
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.ConsingleItem:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.singleItem
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.Conitems:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.items
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 1
+
+  ns_all_sliders.owlcarousel.ConlazyLoad:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoad
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.ConmouseDrag:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mouseDrag
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.ContouchDrag:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.touchDrag
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.Conmargin:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.margin
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 0
+
+  ns_all_sliders.owlcarousel.Conloop:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.loop
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.Concenter:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.center
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.ConpullDrag:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.pullDrag
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.ConfreeDrag:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.freeDrag
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.ConstagePadding:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.stagePadding
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 0
+
+  ns_all_sliders.owlcarousel.Conmerge:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.merge
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.ConmergeFit:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.mergeFit
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.ConautoWidth:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoWidth
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.ConstartPosition:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.startPosition
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 0
+
+  ns_all_sliders.owlcarousel.ConURLhashListener:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.URLhashListener
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.Conrewind:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.rewind
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.ConnavElement:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navElement
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: 'div'
+
+  ns_all_sliders.owlcarousel.ConslideBy:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideBy
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 1
+
+  ns_all_sliders.owlcarousel.ConslideTransition:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.slideTransition
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: ''
+
+  ns_all_sliders.owlcarousel.Condots:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dots
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
+
+  ns_all_sliders.owlcarousel.CondotsEach:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsEach
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.CondotsData:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsData
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.ConlazyLoadEager:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoadEager
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 0
+
+  ns_all_sliders.owlcarousel.ConautoplayTimeout:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayTimeout
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 5000
+
+  ns_all_sliders.owlcarousel.ConautoplayHoverPause:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoplayHoverPause
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.ConautoplaySpeed:
+    label: Autoplay Speed
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 3000
+
+  ns_all_sliders.owlcarousel.ConnavSpeed:
+    label: Nav Speed
+    category: ns_all_sliders.owlcarousel
+    type: int
+    default: 3000
+
+  ns_all_sliders.owlcarousel.CondotsSpeed:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsSpeed
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.CondragEndSpeed:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dragEndSpeed
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.ConanimateOut:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: 'slideOutDown'
+
+  ns_all_sliders.owlcarousel.ConanimateIn:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: 'flipInX'
+
+  ns_all_sliders.owlcarousel.ConfallbackEasing:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.fallbackEasing
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: 'swing'
+
+  ns_all_sliders.owlcarousel.Coninfo:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.info
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: false
+
+  ns_all_sliders.owlcarousel.ConnestedItemSelector:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.nestedItemSelector
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: ''
+
+  ns_all_sliders.owlcarousel.ConitemElement:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.itemElement
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: 'div'
+
+  ns_all_sliders.owlcarousel.ConnavContainer:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navContainer
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: ''
+
+  ns_all_sliders.owlcarousel.CondotsContainer:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.dotsContainer
+    category: ns_all_sliders.owlcarousel
+    type: string
+    default: ''
+
+  ns_all_sliders.owlcarousel.ConcheckVisible:
+    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.checkVisible
+    category: ns_all_sliders.owlcarousel
+    type: bool
+    default: true
