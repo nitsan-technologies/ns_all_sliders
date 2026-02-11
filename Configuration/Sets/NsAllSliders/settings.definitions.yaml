@@ -1,6 +1,6 @@
 categories:
   ns_all_sliders:
-    label: News Slider
+    label: All Slider
 
   ns_all_sliders.view:
     label: View Settings
