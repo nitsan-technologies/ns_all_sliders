@@ -256,12 +256,40 @@ settings:
     category: ns_all_sliders.owlcarousel
     type: string
     default: 'slideOutDown'
+    enum:
+      bounce: 'bounce'
+      shake: 'shake'
+      fadeOutLeft: 'fadeOutLeft'
+      flipOutX: 'flipOutX'
+      rollOut: 'rollOut'
+      fadeOutUpBig: 'fadeOutUpBig'
+      slideOutDown: 'slideOutDown'
+      slideOutUp: 'slideOutUp'
+      flipOutY: 'flipOutY'
+      bounceOutUp: 'bounceOutUp'
+      lightSpeedOut: 'lightSpeedOut'
+      rotateOutDownLeft: 'rotateOutDownLeft'
+      slideOutDown: 'slideOutDown'
 
   ns_all_sliders.owlcarousel.ConanimateIn:
     label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn
     category: ns_all_sliders.owlcarousel
     type: string
     default: 'flipInX'
+    enum:
+      bounce: 'bounce'
+      shake: 'shake'
+      fadeInLeft: 'fadeInLeft'
+      flipInX: 'flipInX'
+      rollIn: 'rollIn'
+      fadeInUpBig: 'fadeInUpBig'
+      slideInDown: 'slideInDown'
+      slideInUp: 'slideInUp'
+      flipInY: 'flipInY'
+      bounceInUp: 'bounceInUp'
+      lightSpeedIn: 'lightSpeedIn'
+      rotateInDownLeft: 'rotateInDownLeft'
+      slideOutDown: 'slideOutDown'
 
   ns_all_sliders.owlcarousel.ConfallbackEasing:
     label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.fallbackEasing
