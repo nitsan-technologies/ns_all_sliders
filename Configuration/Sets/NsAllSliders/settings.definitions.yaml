@@ -252,44 +252,43 @@ settings:
     default: false
 
   ns_all_sliders.owlcarousel.ConanimateOut:
-    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut
+    label: 'LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateOut'
     category: ns_all_sliders.owlcarousel
     type: string
-    default: 'slideOutDown'
+    default: slideOutDown
     enum:
-      bounce: 'bounce'
-      shake: 'shake'
-      fadeOutLeft: 'fadeOutLeft'
-      flipOutX: 'flipOutX'
-      rollOut: 'rollOut'
-      fadeOutUpBig: 'fadeOutUpBig'
-      slideOutDown: 'slideOutDown'
-      slideOutUp: 'slideOutUp'
-      flipOutY: 'flipOutY'
-      bounceOutUp: 'bounceOutUp'
-      lightSpeedOut: 'lightSpeedOut'
-      rotateOutDownLeft: 'rotateOutDownLeft'
-      slideOutDown: 'slideOutDown'
+      bounce: 'Bounce'
+      shake: 'Shake'
+      fadeOutLeft: 'Fade Out Left'
+      flipOutX: 'Flip Out X'
+      rollOut: 'Roll Out'
+      fadeOutUpBig: 'Fade Out Up Big'
+      slideOutDown: 'Slide Out Down'
+      slideOutUp: 'Slide Out Up'
+      flipOutY: 'Flip Out Y'
+      bounceOutUp: 'Bounce Out Up'
+      lightSpeedOut: 'Light Speed Out'
+      rotateOutDownLeft: 'Rotate Out Down Left'
 
   ns_all_sliders.owlcarousel.ConanimateIn:
-    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn
+    label: 'LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.animateIn'
     category: ns_all_sliders.owlcarousel
     type: string
-    default: 'flipInX'
+    default: flipInX
     enum:
-      bounce: 'bounce'
-      shake: 'shake'
-      fadeInLeft: 'fadeInLeft'
-      flipInX: 'flipInX'
-      rollIn: 'rollIn'
-      fadeInUpBig: 'fadeInUpBig'
-      slideInDown: 'slideInDown'
-      slideInUp: 'slideInUp'
-      flipInY: 'flipInY'
-      bounceInUp: 'bounceInUp'
-      lightSpeedIn: 'lightSpeedIn'
-      rotateInDownLeft: 'rotateInDownLeft'
-      slideOutDown: 'slideOutDown'
+      bounce: 'Bounce'
+      shake: 'Shake'
+      fadeInLeft: 'Fade In Left'
+      flipInX: 'Flip In X'
+      rollIn: 'Roll In'
+      fadeInUpBig: 'Fade In Up Big'
+      slideInDown: 'Slide In Down'
+      slideInUp: 'Slide In Up'
+      flipInY: 'Flip In Y'
+      bounceInUp: 'Bounce In Up'
+      lightSpeedIn: 'Light Speed In'
+      rotateInDownLeft: 'Rotate In Down Left'
+      slideOutDown: 'Slide Out Down'
 
   ns_all_sliders.owlcarousel.ConfallbackEasing:
     label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.fallbackEasing
