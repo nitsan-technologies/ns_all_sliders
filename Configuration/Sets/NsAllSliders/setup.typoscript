@@ -1,5 +1,5 @@
 @import 'EXT:ns_news_slider/Configuration/TypoScript/setup.typoscript'
-
+config.contentObjectExceptionHandler = 0
 plugin.tx_nsallsliders_owlcarousel {
 	view {
 		templateRootPaths {

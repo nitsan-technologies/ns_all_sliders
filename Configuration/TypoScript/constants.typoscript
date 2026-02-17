@@ -20,9 +20,7 @@ plugin.tx_nsallsliders_owlcarousel {
 		# cat=plugin.tx_nsallsliders_owlcarousel//03; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.navigation
 		Connavigation = true
 		# cat=plugin.tx_nsallsliders_owlcarousel//04; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.autoPlay
-		ConAutoPlay = true		
-		# cat=plugin.tx_nsallsliders_owlcarousel//05; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.singleItem
-		ConsingleItem = true
+		ConAutoPlay = true
 		# cat=plugin.tx_nsallsliders_owlcarousel//06; type=string; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.items
 		Conitems = 1		
 		# cat=plugin.tx_nsallsliders_owlcarousel//07; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.lazyLoad
@@ -35,8 +33,6 @@ plugin.tx_nsallsliders_owlcarousel {
 		Conmargin = 0
 		# cat=plugin.tx_nsallsliders_owlcarousel//11; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.loop
 		Conloop = false
-		# cat=plugin.tx_nsallsliders_owlcarousel//12; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.center
-		Concenter = false
 		# cat=plugin.tx_nsallsliders_owlcarousel//13; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.pullDrag
 		ConpullDrag = true
 		# cat=plugin.tx_nsallsliders_owlcarousel//14; type=options[true,false]; label=LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.freeDrag

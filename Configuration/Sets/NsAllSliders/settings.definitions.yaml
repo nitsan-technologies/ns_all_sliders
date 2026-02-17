@@ -71,12 +71,6 @@ settings:
     type: bool
     default: true
 
-  ns_all_sliders.owlcarousel.ConsingleItem:
-    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.singleItem
-    category: ns_all_sliders.owlcarousel
-    type: bool
-    default: true
-
   ns_all_sliders.owlcarousel.Conitems:
     label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.items
     category: ns_all_sliders.owlcarousel
@@ -109,12 +103,6 @@ settings:
 
   ns_all_sliders.owlcarousel.Conloop:
     label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.loop
-    category: ns_all_sliders.owlcarousel
-    type: bool
-    default: false
-
-  ns_all_sliders.owlcarousel.Concenter:
-    label: LLL:EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf:flexform.center
     category: ns_all_sliders.owlcarousel
     type: bool
     default: false
