@@ -185,7 +185,8 @@ class OwlController extends ActionController
                             })
                     });
                 }
-            </script>";
+            </script>
+        ";
 
         if ($settings['lightbox']) {
             $jsFileContent .= "
