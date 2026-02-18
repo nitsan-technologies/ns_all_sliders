@@ -45,7 +45,6 @@ class OwlController extends ActionController
     {
     }
 
-
     /**
      * @return ResponseInterface
      */
@@ -71,14 +70,13 @@ class OwlController extends ActionController
         ];
 
         foreach ($cssFiles as $index => $cssFile) {
-            $GLOBALS['TSFE']->additionalHeaderData[$extkey . $index] =
-                $pageRenderer->addCssFile(
-                    $index == 'CSS1' ? $cssFile : $owlCarouselPath.$cssFile,
-                    'stylesheet',
-                    '',
-                    '',
-                    false
-                );
+            $pageRenderer->addCssFile(
+                $index == 'CSS1' ? $cssFile : $owlCarouselPath.$cssFile,
+                'stylesheet',
+                '',
+                '',
+                false
+            );
         }
 
         // set js value for slider
@@ -102,7 +100,7 @@ class OwlController extends ActionController
 
         $sliderJsPath = 'EXT:ns_all_sliders/Resources/Public/slider/';
         if ($settings['lightbox']) {
-            $GLOBALS['TSFE']->additionalHeaderData[$extkey . 'CSS8'] = $pageRenderer->addCssFile(
+            $pageRenderer->addCssFile(
                 $sliderJsPath.'Fancybox/jquery.fancybox.min.css',
                 'stylesheet',
                 '',
@@ -129,54 +127,51 @@ class OwlController extends ActionController
             ';
         }
 
-        $GLOBALS['TSFE']->additionalFooterData[$extkey] = isset($GLOBALS['TSFE']->additionalFooterData[$extkey]) ? $GLOBALS['TSFE']->additionalFooterData[$extkey] : '';
-        $GLOBALS['TSFE']->additionalFooterData[$extkey] .= "
+        $jsFileContent = "
             <script>
                 (function($) {
                     $('#owl-demo-" . $getContentId . "').owlCarousel({
-                        autoplay : " . (isset($settings['autoPlay']) && $settings['autoPlay'] != '' ? $settings['autoPlay'] : $constant['ConAutoPlay']) . ',
-                        nav : ' . (isset($settings['navigation']) && $settings['navigation'] != '' ? $settings['navigation'] : $constant['Connavigation']) . ',
-                        items : ' . (isset($settings['items']) && $settings['items'] != '' ? $settings['items'] : $constant['Conitems']) . ',
-                        lazyLoad : "' . (isset($settings['lazyLoad'])  && $settings['lazyLoad'] != '' ? $settings['lazyLoad'] : $constant['ConlazyLoad']) . '",
-                        mouseDrag:' . (isset($settings['mouseDrag']) && $settings['mouseDrag'] != '' ? $settings['mouseDrag'] : $constant['ConmouseDrag']) . ',
-                        touchDrag:' . (isset($settings['touchDrag']) && $settings['touchDrag'] != '' ? $settings['touchDrag'] : $constant['ContouchDrag']) . ',
-
+                        autoplay : " . (isset($settings['autoPlay']) && $settings['autoPlay'] != '' ? $settings['autoPlay'] : (($constant['ConAutoPlay'] ?? '') === '' ? 'false' : 'true')) . ',
+                        nav : ' . (isset($settings['navigation']) && $settings['navigation'] != '' ? $settings['navigation'] : (($constant['Connavigation'] ?? '') === '' ? 'false' : 'true')) . ',
+                        items : ' . (isset($settings['items']) && $settings['items'] >= 2 ? $settings['items'] : $constant['Conitems']) . ',
+                        lazyLoad : ' . (isset($settings['lazyLoad'])  && $settings['lazyLoad'] != '' ? $settings['lazyLoad'] : (($constant['ConlazyLoad'] ?? '') === '' ? 'false' : 'true')) . ',
+                        mouseDrag:' . (isset($settings['mouseDrag']) && $settings['mouseDrag'] != '' ? $settings['mouseDrag'] : (($constant['ConmouseDrag'] ?? '') === '' ? 'false' : 'true')) . ',
+                        touchDrag:' . (isset($settings['touchDrag']) && $settings['touchDrag'] != '' ? $settings['touchDrag'] : (($constant['ContouchDrag'] ?? '') === '' ? 'false' : 'true')) . ',
                         margin:' . (isset($settings['margin']) && $settings['margin'] != '' ? $settings['margin'] : $constant['Conmargin']) . ',
-                        loop:' . (isset($settings['loop']) && $settings['loop'] != '' ? $settings['loop'] : $constant['Conloop']) . ',
-                        pullDrag:' . (isset($settings['pullDrag']) && $settings['pullDrag'] != '' ? $settings['pullDrag'] : $constant['ConpullDrag']) . ',
-                        freeDrag:' . (isset($settings['freeDrag']) && $settings['freeDrag'] != '' ? $settings['freeDrag'] : $constant['ConfreeDrag']) . ',
+                        loop:' . (isset($settings['loop']) && $settings['loop'] != '' ? $settings['loop'] : (($constant['Conloop'] ?? '') === '' ? 'false' : 'true')) . ',
+                        pullDrag:' . (isset($settings['pullDrag']) && $settings['pullDrag'] != '' ? $settings['pullDrag'] : (($constant['ConpullDrag'] ?? '') === '' ? 'false' : 'true')) . ',
+                        freeDrag:' . (isset($settings['freeDrag']) && $settings['freeDrag'] != '' ? $settings['freeDrag'] : (($constant['ConfreeDrag'] ?? '') === '' ? 'false' : 'true')) . ',
                         stagePadding:' . (isset($settings['stagePadding']) && $settings['stagePadding'] != '' ? $settings['stagePadding'] : $constant['ConstagePadding']) . ',
-                        merge:' . (isset($settings['merge']) && $settings['merge'] != '' ? $settings['merge'] : $constant['Conmerge']) . ',
-                        mergeFit:' . (isset($settings['mergeFit']) && $settings['mergeFit'] != '' ? $settings['mergeFit'] : $constant['ConmergeFit']) . ',
-                        autoWidth:' . (isset($settings['autoWidth']) && $settings['autoWidth'] != '' ? $settings['autoWidth'] : $constant['ConautoWidth']) . ',
+                        merge:' . (isset($settings['merge']) && $settings['merge'] != '' ? $settings['merge'] : (($constant['Conmerge'] ?? '') === '' ? 'false' : 'true')) . ',
+                        mergeFit:' . (isset($settings['mergeFit']) && $settings['mergeFit'] != '' ? $settings['mergeFit'] : (($constant['Conmerge'] ?? '') === '' ? 'false' : 'true')) . ',
+                        autoWidth:' . (isset($settings['autoWidth']) && $settings['autoWidth'] != '' ? $settings['autoWidth'] : (($constant['ConautoWidth'] ?? '') === '' ? 'false' : 'true')) . ',
                         startPosition:' . (isset($settings['startPosition']) && $settings['startPosition'] != '' ? $settings['startPosition'] : $constant['ConstartPosition']) . ',
-                        URLhashListener:' . (isset($settings['URLhashListener']) && $settings['URLhashListener'] != '' ? $settings['URLhashListener'] : $constant['ConURLhashListener']) . ',
-                        rewind:' . (isset($settings['rewind']) && $settings['rewind'] != '' ? $settings['rewind'] : $constant['Conrewind']) . ",
+                        URLhashListener:' . (isset($settings['URLhashListener']) && $settings['URLhashListener'] != '' ? $settings['URLhashListener'] : (($constant['ConURLhashListener'] ?? '') === '' ? 'false' : 'true')) . ',
+                        rewind:' . (isset($settings['rewind']) && $settings['rewind'] != '' ? $settings['rewind'] : (($constant['Conrewind'] ?? '') === '' ? 'false' : 'true')) . ",
                         navElement:'" . (isset($settings['navElement']) && $settings['navElement'] != '' ? $settings['navElement'] : $constant['ConnavElement']) . "',
                         slideBy:" . (isset($settings['slideBy']) && $settings['slideBy'] != '' ? $settings['slideBy'] : $constant['ConslideBy']) . ",
                         slideTransition:'" . (isset($settings['slideTransition']) && $settings['slideTransition'] != '' ? $settings['slideTransition'] : $constant['ConslideTransition']) . "',
-                        dots:" . (isset($settings['dots']) && $settings['dots'] != '' ? $settings['dots'] : $constant['Condots']) . ',
-                        dotsEach:' . (isset($settings['dotsEach']) && $settings['dotsEach'] != '' ? $settings['dotsEach'] : $constant['CondotsEach']) . ',
-                        dotsData:' . (isset($settings['dotsData']) && $settings['dotsData'] != '' ? $settings['dotsData'] : $constant['CondotsData']) . ',
+                        dots:" . (isset($settings['dots']) && $settings['dots'] != '' ? $settings['dots'] : (($constant['Condots'] ?? '') === '' ? 'false' : 'true')) . ',
+                        dotsEach:' . (isset($settings['dotsEach']) && $settings['dotsEach'] != '' ? $settings['dotsEach'] : (($constant['CondotsEach'] ?? '') === '' ? 'false' : 'true')) . ',
+                        dotsData:' . (isset($settings['dotsData']) && $settings['dotsData'] != '' ? $settings['dotsData'] : (($constant['CondotsData'] ?? '') === '' ? 'false' : 'true')) . ',
                         lazyLoadEager:' . (isset($settings['lazyLoadEager']) && $settings['lazyLoadEager'] != '' ? $settings['lazyLoadEager'] : $constant['ConlazyLoadEager']) . ',
                         autoplayTimeout:' . (isset($settings['autoplayTimeout']) && $settings['autoplayTimeout'] != '' ? $settings['autoplayTimeout'] : $constant['ConautoplayTimeout']) . ',
-                        autoplayHoverPause:' . (isset($settings['autoplayHoverPause']) && $settings['autoplayHoverPause'] != '' ? $settings['autoplayHoverPause'] : $constant['ConautoplayHoverPause']) . ',
+                        autoplayHoverPause:' . (isset($settings['autoplayHoverPause']) && $settings['autoplayHoverPause'] != '' ? $settings['autoplayHoverPause'] : (($constant['ConautoplayHoverPause'] ?? '') === '' ? 'false' : 'true')) . ',
                         autoplaySpeed:' . (isset($settings['autoplaySpeed']) && $settings['autoplaySpeed'] != '' ? $settings['autoplaySpeed'] : $constant['ConautoplaySpeed']) . ',
                         navSpeed:' . (isset($settings['navSpeed']) && $settings['navSpeed'] != '' ? $settings['navSpeed'] : $constant['ConnavSpeed']) . ',
-                        dotsSpeed:' . (isset($settings['dotsSpeed']) && $settings['dotsSpeed'] != '' ? $settings['dotsSpeed'] : $constant['CondotsSpeed']) . ',
-                        dragEndSpeed:' . (isset($settings['dragEndSpeed']) && $settings['dragEndSpeed'] != '' ? $settings['dragEndSpeed'] : $constant['CondragEndSpeed']) . ",
+                        dotsSpeed:' . (isset($settings['dotsSpeed']) && $settings['dotsSpeed'] != '' ? $settings['dotsSpeed'] : (($constant['CondotsSpeed'] ?? '') === '' ? 'false' : 'true')) . ',
+                        dragEndSpeed:' . (isset($settings['dragEndSpeed']) && $settings['dragEndSpeed'] != '' ? $settings['dragEndSpeed'] : (($constant['CondragEndSpeed'] ?? '') === '' ? 'false' : 'true')) . ",
                         smartSpeed: 450,
                         animateOut:'" . (isset($settings['animateOut']) && $settings['animateOut'] != '' ? $settings['animateOut'] : $constant['ConanimateOut']) . "',
                         animateIn:'" . (isset($settings['animateIn']) && $settings['animateIn'] != '' ? $settings['animateIn'] : $constant['ConanimateIn']) . "',
                         fallbackEasing:'" . (isset($settings['fallbackEasing']) && $settings['fallbackEasing'] != '' ? $settings['fallbackEasing'] : $constant['ConfallbackEasing']) . "',
-                        info:" . (isset($settings['info']) && $settings['info'] != '' ? $settings['info'] : $constant['Coninfo']) . ',
-                        nestedItemSelector:' . (isset($settings['nestedItemSelector']) && $settings['nestedItemSelector'] != '' ? $settings['nestedItemSelector'] : $constant['ConnestedItemSelector']) . ",
+                        info:" . (isset($settings['info']) && $settings['info'] != '' ? $settings['info'] : (($constant['Coninfo'] ?? '') === '' ? 'false' : 'true')) . ',
+                        nestedItemSelector:"' . (isset($settings['nestedItemSelector']) && $settings['nestedItemSelector'] != '' ? $settings['nestedItemSelector'] : $constant['ConnestedItemSelector']) . '",
 
-                        itemElement:'" . (isset($settings['itemElement']) && $settings['itemElement'] != '' ? $settings['itemElement'] : $constant['ConitemElement']) . "',
-                        navContainer:" . (isset($settings['navContainer']) && $settings['navContainer'] != '' ? $settings['navContainer'] : $constant['ConnavContainer']) . ',
-                        center:' . (isset($settings['center']) && $settings['center'] != '' ? $settings['center'] : $constant['Concenter']) . ',
+                        itemElement:"' . (isset($settings['itemElement']) && $settings['itemElement'] != '' ? $settings['itemElement'] : $constant['ConitemElement']) . '",
+                        navContainer:"' . (isset($settings['navContainer']) && $settings['navContainer'] != '' ? $settings['navContainer'] : $constant['ConnavContainer']) . '",
 
-                        dotsContainer:' . (isset($settings['dotsContainer']) && $settings['dotsContainer'] != '' ? $settings['dotsContainer'] : $constant['CondotsContainer']) . ',
+                        dotsContainer:"' . (isset($settings['dotsContainer']) && $settings['dotsContainer'] != '' ? $settings['dotsContainer'] : $constant['CondotsContainer']) . '",
                         checkVisible:' . (isset($settings['checkVisible']) && $settings['checkVisible'] != '' ? $settings['checkVisible'] : $constant['ConcheckVisible']) . ',
                         ' . $thumbs . "
                     });
@@ -190,10 +185,11 @@ class OwlController extends ActionController
                             })
                     });
                 }
-            </script>";
+            </script>
+        ";
 
         if ($settings['lightbox']) {
-            $GLOBALS['TSFE']->additionalFooterData[$extkey] .= "
+            $jsFileContent .= "
                 <script>
                     // fancybox
                     $().fancybox({
@@ -202,6 +198,11 @@ class OwlController extends ActionController
                     });
                 </script>";
         }
+
+        $pageRenderer->addFooterData(
+            $jsFileContent,
+            $extkey
+        );
 
         //set storage folder
         $pid = $settings['storage_pid_images'];
