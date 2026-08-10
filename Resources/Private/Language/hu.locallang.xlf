@@ -5,213 +5,213 @@
     <body>
       <trans-unit id="flexform.thumbs">
         <source>Enable Thumbs</source>
-        <target state="needs-translation">Enable Thumbs</target>
+        <target state="translated">Miniatűrök engedélyezése</target>
       </trans-unit>
       <!-- Owlcarousel  -->
       <trans-unit id="flexform.paginationSpeed">
         <source>Pagination Speed</source>
-        <target state="needs-translation">Pagination Speed</target>
+        <target state="translated">Lapozás sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.goToFirstSpeed">
         <source>GoTo First Speed</source>
-        <target state="needs-translation">GoTo First Speed</target>
+        <target state="translated">Első elemre ugrás sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.items">
         <source>Items</source>
-        <target state="needs-translation">Items</target>
+        <target state="translated">Elemek</target>
       </trans-unit>
       <trans-unit id="flexform.slideSpeed">
         <source>Slide Speed</source>
-        <target state="needs-translation">Slide Speed</target>
+        <target state="translated">Dia sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.stopOnHover">
         <source>Stop On Hover</source>
-        <target state="needs-translation">Stop On Hover</target>
+        <target state="translated">Leállítás egér fölött</target>
       </trans-unit>
       <trans-unit id="flexform.singleItem">
         <source>Single Item</source>
-        <target state="needs-translation">Single Item</target>
+        <target state="translated">Egyetlen elem</target>
       </trans-unit>
       <trans-unit id="flexform.autoHeight">
         <source>Auto Height</source>
-        <target state="needs-translation">Auto Height</target>
+        <target state="translated">Automatikus magasság</target>
       </trans-unit>
       <trans-unit id="flexform.transitionStyle">
         <source>Transition Style</source>
-        <target state="needs-translation">Transition Style</target>
+        <target state="translated">Átmenet stílusa</target>
       </trans-unit>
       <trans-unit id="flexform.theme">
         <source>Theme</source>
-        <target state="needs-translation">Theme</target>
+        <target state="translated">Téma</target>
       </trans-unit>
       <trans-unit id="flexform.addClassActive">
         <source>Add class active for visible slide</source>
-        <target state="needs-translation">Add class active for visible slide</target>
+        <target state="translated">Aktív osztály hozzáadása a látható diához</target>
       </trans-unit>
       <trans-unit id="flexform.selAction">
         <source>Use global setting</source>
-        <target state="needs-translation">Use global setting</target>
+        <target state="translated">Globális beállítás használata</target>
       </trans-unit>
       <trans-unit id="flexform.margin">
         <source>Margin</source>
-        <target state="needs-translation">Margin</target>
+        <target state="translated">Margó</target>
       </trans-unit>
       <trans-unit id="flexform.center">
         <source>Center</source>
-        <target state="needs-translation">Center</target>
+        <target state="translated">Középre</target>
       </trans-unit>
       <trans-unit id="flexform.freeDrag">
         <source>Free drag</source>
-        <target state="needs-translation">Free drag</target>
+        <target state="translated">Szabad húzás</target>
       </trans-unit>
       <trans-unit id="flexform.merge">
         <source>Merge</source>
-        <target state="needs-translation">Merge</target>
+        <target state="translated">Összevonás</target>
       </trans-unit>
       <trans-unit id="flexform.mergeFit">
         <source>Merge fit</source>
-        <target state="needs-translation">Merge fit</target>
+        <target state="translated">Összevonás illesztése</target>
       </trans-unit>
       <trans-unit id="flexform.autoWidth">
         <source>Auto width</source>
-        <target state="needs-translation">Auto width</target>
+        <target state="translated">Automatikus szélesség</target>
       </trans-unit>
       <trans-unit id="flexform.startPosition">
         <source>Start position</source>
-        <target state="needs-translation">Start position</target>
+        <target state="translated">Kezdő pozíció</target>
       </trans-unit>
       <trans-unit id="flexform.rewind">
         <source>Rewind</source>
-        <target state="needs-translation">Rewind</target>
+        <target state="translated">Visszatekerés</target>
       </trans-unit>
       <trans-unit id="flexform.navText">
         <source>Navigation Text</source>
-        <target state="needs-translation">Navigation Text</target>
+        <target state="translated">Navigációs szöveg</target>
       </trans-unit>
       <trans-unit id="flexform.navElement">
         <source>Navigation element</source>
-        <target state="needs-translation">Navigation element</target>
+        <target state="translated">Navigációs elem</target>
       </trans-unit>
       <trans-unit id="flexform.slideBy">
         <source>Slide by</source>
-        <target state="needs-translation">Slide by</target>
+        <target state="translated">Lapozás mértéke</target>
       </trans-unit>
       <trans-unit id="flexform.slideTransition">
         <source>Slide transition</source>
-        <target state="needs-translation">Slide transition</target>
+        <target state="translated">Dia átmenete</target>
       </trans-unit>
       <trans-unit id="flexform.dots">
         <source>Dots</source>
-        <target state="needs-translation">Dots</target>
+        <target state="translated">Pontok</target>
       </trans-unit>
       <trans-unit id="flexform.dotsEach">
         <source>Dots each</source>
-        <target state="needs-translation">Dots each</target>
+        <target state="translated">Pontok diákként</target>
       </trans-unit>
       <trans-unit id="flexform.dotsData">
         <source>Dots data</source>
-        <target state="needs-translation">Dots data</target>
+        <target state="translated">Pontok adatai</target>
       </trans-unit>
       <trans-unit id="flexform.autoplayTimeout">
         <source>Auto play timeout</source>
-        <target state="needs-translation">Auto play timeout</target>
+        <target state="translated">Automatikus lejátszás időtúllépése</target>
       </trans-unit>
       <trans-unit id="flexform.autoplaySpeed">
         <source>Auto play speed</source>
-        <target state="needs-translation">Auto play speed</target>
+        <target state="translated">Automatikus lejátszás sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.navSpeed">
         <source>Navigation speed</source>
-        <target state="needs-translation">Navigation speed</target>
+        <target state="translated">Navigáció sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.dotsSpeed">
         <source>Dots speed</source>
-        <target state="needs-translation">Dots speed</target>
+        <target state="translated">Pontok sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.dragEndSpeed">
         <source>Drag end speed</source>
-        <target state="needs-translation">Drag end speed</target>
+        <target state="translated">Húzás befejezési sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.videoHeight">
         <source>Video height</source>
-        <target state="needs-translation">Video height</target>
+        <target state="translated">Videó magassága</target>
       </trans-unit>
       <trans-unit id="flexform.videoWidth">
         <source>Video width</source>
-        <target state="needs-translation">Video width</target>
+        <target state="translated">Videó szélessége</target>
       </trans-unit>
       <trans-unit id="flexform.animateOut">
         <source>Animate out</source>
-        <target state="needs-translation">Animate out</target>
+        <target state="translated">Kianimálás</target>
       </trans-unit>
       <trans-unit id="flexform.animateIn">
         <source>Animate In</source>
-        <target state="needs-translation">Animate In</target>
+        <target state="translated">Beanimálás</target>
       </trans-unit>
       <trans-unit id="flexform.nestedItemSelector">
         <source>Nested item selector</source>
-        <target state="needs-translation">Nested item selector</target>
+        <target state="translated">Beágyazott elem kiválasztója</target>
       </trans-unit>
       <trans-unit id="flexform.itemElement">
         <source>Item element</source>
-        <target state="needs-translation">Item element</target>
+        <target state="translated">Elem elem</target>
       </trans-unit>
       <trans-unit id="flexform.stageElement">
         <source>Stage element</source>
-        <target state="needs-translation">Stage element</target>
+        <target state="translated">Színpadi elem</target>
       </trans-unit>
       <trans-unit id="flexform.dotsContainer">
         <source>Dots container</source>
-        <target state="needs-translation">Dots container</target>
+        <target state="translated">Pontok tárolója</target>
       </trans-unit>
       <trans-unit id="flexform.checkVisible">
         <source>Check visible</source>
-        <target state="needs-translation">Check visible</target>
+        <target state="translated">Láthatóság ellenőrzése</target>
       </trans-unit>
       <!-- Owlcarousel  -->
       <trans-unit id="width">
         <source>Slider Width</source>
-        <target state="needs-translation">Slider Width</target>
+        <target state="translated">Diavetítő szélessége</target>
       </trans-unit>
       <trans-unit id="flexform.slidewidthpercentage">
         <source>Slider Width In (%)</source>
-        <target state="needs-translation">Slider Width In (%)</target>
+        <target state="translated">Diavetítő szélessége százalékban (%)</target>
       </trans-unit>
       <trans-unit id="height">
         <source>Slider Height</source>
-        <target state="needs-translation">Slider Height</target>
+        <target state="translated">Diavetítő magassága</target>
       </trans-unit>
       <trans-unit id="flexform.updown">
         <source>Slider Up-Down</source>
-        <target state="needs-translation">Slider Up-Down</target>
+        <target state="translated">Diavetítő fel-le iránya</target>
       </trans-unit>
       <trans-unit id="flexform.sideways">
         <source>Slider Sideways</source>
-        <target state="needs-translation">Slider Sideways</target>
+        <target state="translated">Diavetítő oldalirány</target>
       </trans-unit>
       <trans-unit id="flexform.vertical">
         <source>Display Align</source>
-        <target state="needs-translation">Display Align</target>
+        <target state="translated">Megjelenítés igazítása</target>
       </trans-unit>
       <trans-unit id="flexform.speed">
         <source>Transmission Speed</source>
-        <target state="needs-translation">Transmission Speed</target>
+        <target state="translated">Átmenet sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.autospeed">
         <source>Autoplay Speed</source>
-        <target state="needs-translation">Autoplay Speed</target>
+        <target state="translated">Automatikus lejátszás sebessége</target>
       </trans-unit>
       <trans-unit id="flexform.refLink">
         <source>Slider reference link</source>
-        <target state="needs-translation">Slider reference link</target>
+        <target state="translated">Diavetítő referencia hivatkozása</target>
       </trans-unit>
       <trans-unit id="flexform.nivo.height">
         <source>Slider Height (Image height)</source>
-        <target state="needs-translation">Slider Height (Image height)</target>
+        <target state="translated">Diavetítő magassága (Kép magassága)</target>
       </trans-unit>
       <trans-unit id="flexform.nivo.imageWidth">
         <source>Image width</source>
-        <target state="needs-translation">Image width</target>
+        <target state="translated">Kép szélessége</target>
       </trans-unit>
     </body>
   </file>
