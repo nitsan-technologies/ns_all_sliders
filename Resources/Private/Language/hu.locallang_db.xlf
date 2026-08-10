@@ -5,43 +5,43 @@
     <body>
       <trans-unit id="tx_nsallsliders_domain_model_gallery">
         <source>Gallery</source>
-        <target state="needs-translation">Gallery</target>
+        <target state="translated">Galéria</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.startdate">
         <source>Start Date</source>
-        <target state="needs-translation">Start Date</target>
+        <target state="translated">Kezdő dátum</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.endddate">
         <source>End Date</source>
-        <target state="needs-translation">End Date</target>
+        <target state="translated">Záró dátum</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.hide">
         <source>Hide</source>
-        <target state="needs-translation">Hide</target>
+        <target state="translated">Elrejtés</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.image">
         <source>Image</source>
-        <target state="needs-translation">Image</target>
+        <target state="translated">Kép</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.title">
         <source>Gallery Title (Only For Backend Purpose)</source>
-        <target state="needs-translation">Gallery Title (Only For Backend Purpose)</target>
+        <target state="translated">Galéria címe (csak backend célra)</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.description">
         <source>Description</source>
-        <target state="needs-translation">Description</target>
+        <target state="translated">Leírás</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.access">
         <source>Access</source>
-        <target state="needs-translation">Access</target>
+        <target state="translated">Hozzáférés</target>
       </trans-unit>
       <trans-unit id="tx_nsallsliders_domain_model_gallery.disable">
         <source>Disable</source>
-        <target state="needs-translation">Disable</target>
+        <target state="translated">Letiltás</target>
       </trans-unit>
       <trans-unit id="sliderimage">
         <source>Images</source>
-        <target state="needs-translation">Images</target>
+        <target state="translated">Képek</target>
       </trans-unit>
     </body>
   </file>
