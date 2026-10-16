@@ -45,8 +45,8 @@ Not shown on gallery records or other content elements.
 
 ## Strip
 
-- Labels in `locallang.xlf`: `premium.strip.headline` "You're using the free version of NS All Sliders",
-  `premium.strip.description` "Unlock premium features and get more out of NS All Sliders.",
+- Labels in `locallang.xlf`: `premium.strip.headline` "You're using the free version of All Sliders",
+  `premium.strip.description` "Unlock premium features and get more out of All Sliders.",
   `premium.strip.trial` "Start Free Trial".
 - `Resources/Public/Css/backend-premium-strip.css`: `.ns-all-sliders-premium-strip` — team-wide design
   (light-blue card `#e7f2fc`, border `#8eb6e8`, 4px `#2b6cb0` left accent, 6px radius, padding 14px 18px,
