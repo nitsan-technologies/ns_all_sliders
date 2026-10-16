@@ -3,6 +3,13 @@ services:
     autowire: true
     autoconfigure: true
     public: false
-    
+
   Nsallsliders\NsAllSliders\:
     resource: '../Classes/*'
+
+  Nsallsliders\NsAllSliders\EventListener\PremiumStripPreview:
+    tags:
+      - name: event.listener
+        identifier: 'ns-all-sliders/premium-strip-preview'
+        event: TYPO3\CMS\Backend\View\Event\PageContentPreviewRenderingEvent
+        after: 'typo3-backend/fluid-preview/content'
