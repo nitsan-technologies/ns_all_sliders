@@ -3,6 +3,15 @@
 	<file source-language="en" datatype="plaintext" original="EXT:ns_all_sliders/Resources/Private/Language/locallang.xlf" date="2016-12-14T16:39:34Z" product-name="ns_all_sliders">
 		<header/>
 		<body>
+			<trans-unit id="premium.strip.headline" xml:space="preserve">
+				<source>You're using the free version of All Sliders</source>
+			</trans-unit>
+			<trans-unit id="premium.strip.description" xml:space="preserve">
+				<source>Unlock premium features and get more out of All Sliders.</source>
+			</trans-unit>
+			<trans-unit id="premium.strip.trial" xml:space="preserve">
+				<source>Start Free Trial</source>
+			</trans-unit>
 			<trans-unit id="tx_nsallsliders_domain_model_gallery">
 				<source>Gallery</source>
 			</trans-unit>
